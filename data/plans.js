@@ -2991,7 +2991,7 @@ const PLANS_DATA = {
         "Rx: $0 / $35 / $75 (generic/brand/non-preferred brand); specialty Rx Contact PBM"
       ],
       brochureUrl: "docs/brochures/ameristead-health-brochure.pdf",
-      sbcUrl: null,
+      sbcUrl: "docs/sbc/ameristead-bronze-sbc.pdf",
       description: "Ameristead Health Bronze plan, administered by Marpai on the Cigna PPO network."
     },
     {
@@ -3039,7 +3039,7 @@ const PLANS_DATA = {
         "HSA-compatible — office visits, labs, and diagnostics are coinsurance-based (30% after deductible), not flat copays"
       ],
       brochureUrl: "docs/brochures/ameristead-health-brochure.pdf",
-      sbcUrl: null,
+      sbcUrl: "docs/sbc/ameristead-hsa-sbc.pdf",
       description: "Ameristead Health HSA plan, administered by Marpai on the Cigna PPO network."
     },
     {
@@ -3228,7 +3228,7 @@ const PLANS_DATA = {
         "$0 deductible — richest plan in the lineup; office visits, labs, and diagnostics are coinsurance-based (30%)"
       ],
       brochureUrl: "docs/brochures/ameristead-health-brochure.pdf",
-      sbcUrl: null,
+      sbcUrl: "docs/sbc/ameristead-diamond-sbc.pdf",
       description: "Ameristead Health Diamond plan, administered by Marpai on the Cigna PPO network."
     },
   ]
