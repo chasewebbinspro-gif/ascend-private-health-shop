@@ -3231,5 +3231,1587 @@ const PLANS_DATA = {
       sbcUrl: "docs/sbc/ameristead-diamond-sbc.pdf",
       description: "Ameristead Health Diamond plan, administered by Marpai on the Cigna PPO network."
     },
+    {
+      id: "psm-livelihood-4300-epo",
+      program: "psm-livelihood-epo",
+      category: "major-medical",
+      subType: "EPO",
+      carrier: "PSM Livelihood",
+      planName: "Livelihood 4300 EPO",
+      tier: "N/A",
+      network: "Aetna",
+      monthlyPriceIndividual: 627.1,
+      monthlyPriceFamily: 1539.77,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        rowHeader: "Age",
+        columns: [
+          "Employee Only",
+          "Employee + Child(ren)",
+          "Employee + Spouse",
+          "Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              627.1,
+              995.96,
+              1080.99,
+              1539.77
+            ]
+          },
+          {
+            label: "30-44",
+            prices: [
+              654.27,
+              1042.78,
+              1132.6,
+              1615.9
+            ]
+          },
+          {
+            label: "45-54",
+            prices: [
+              716.05,
+              1177.1,
+              1241.82,
+              1772.83
+            ]
+          },
+          {
+            label: "55-64",
+            prices: [
+              794.69,
+              1319.99,
+              1395.19,
+              2041.22
+            ]
+          }
+        ]
+      },
+      deductible: 4300,
+      outOfPocketMax: 10000,
+      states: [
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CO",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "ME",
+        "MI",
+        "MO",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "WV",
+        "WY"
+      ],
+      keyBenefits: [
+        "Aetna EPO network — no referral needed to see a specialist",
+        "$4,300 individual / $8,600 family deductible, 20/80 coinsurance",
+        "$10,000 individual / $20,000 family out-of-pocket max (no out-of-network coverage)",
+        "$25 primary care / $40 specialist copay; $0 telemedicine through MyLiveDoc",
+        "$0 preventive care; $60 urgent care copay",
+        "Kroger PBM — $5 copay generic (30-day retail, deductible waived); $20 copay 90-day Costco mail order"
+      ],
+      brochureUrl: "docs/brochures/psm-livelihood-4300-epo-brochure.pdf",
+      sbcUrl: "docs/sbc/psm-livelihood-4300-epo-sbc.pdf",
+      description: "PSM Livelihood 4300 EPO — an Aetna EPO plan with a $4,300 individual deductible and 20/80 coinsurance after deductible. Fixed copays for primary care, specialist, and urgent care visits. Deductible $4,300 / $8,600, out-of-pocket max $10,000 / $20,000, coinsurance 20/80. Available in AK, AL, AR, AZ, CO, DC, DE, FL, GA, ID, IL, IN, KS, KY, LA, MA, ME, MI, MO, MS, MT, NC, ND, NJ, NM, NV, NY, OH, OK, RI, SC, SD, TN, TX, UT, VA, WV, and WY."
+    },
+    {
+      id: "psm-livelihood-4500-epo",
+      program: "psm-livelihood-epo",
+      category: "major-medical",
+      subType: "EPO",
+      carrier: "PSM Livelihood",
+      planName: "Livelihood 4500 EPO",
+      tier: "N/A",
+      network: "Aetna",
+      monthlyPriceIndividual: 627.1,
+      monthlyPriceFamily: 1539.77,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        rowHeader: "Age",
+        columns: [
+          "Employee Only",
+          "Employee + Child(ren)",
+          "Employee + Spouse",
+          "Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              627.1,
+              995.96,
+              1080.99,
+              1539.77
+            ]
+          },
+          {
+            label: "30-44",
+            prices: [
+              654.27,
+              1042.78,
+              1132.6,
+              1615.9
+            ]
+          },
+          {
+            label: "45-54",
+            prices: [
+              716.05,
+              1177.1,
+              1241.82,
+              1772.83
+            ]
+          },
+          {
+            label: "55-64",
+            prices: [
+              794.69,
+              1319.99,
+              1395.19,
+              2041.22
+            ]
+          }
+        ]
+      },
+      deductible: 4500,
+      outOfPocketMax: 9200,
+      states: [
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CO",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "ME",
+        "MI",
+        "MO",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "WV",
+        "WY"
+      ],
+      keyBenefits: [
+        "Aetna EPO network — no referral needed to see a specialist",
+        "$4,500 individual / $9,000 family deductible, 25/75 coinsurance",
+        "$9,200 individual / $18,400 family out-of-pocket max",
+        "$40 primary care / $70 specialist copay; $0 telemedicine (PCP, mental health, urgent care) via MyLiveDoc-Bowtie",
+        "$0 preventive care; $85 urgent care copay",
+        "Kroger PBM — generic drugs 25% after deductible"
+      ],
+      brochureUrl: "docs/brochures/psm-livelihood-4500-epo-brochure.pdf",
+      sbcUrl: "docs/sbc/psm-livelihood-4500-epo-sbc.pdf",
+      description: "PSM Livelihood 4500 EPO — an Aetna EPO plan with a $4,500 individual deductible and 25/75 coinsurance after deductible. Fixed copays for primary care, specialist, and urgent care visits. Deductible $4,500 / $9,000, out-of-pocket max $9,200 / $18,400, coinsurance 25/75. Available in AK, AL, AR, AZ, CO, DC, DE, FL, GA, ID, IL, IN, KS, KY, LA, MA, ME, MI, MO, MS, MT, NC, ND, NJ, NM, NV, NY, OH, OK, RI, SC, SD, TN, TX, UT, VA, WV, and WY."
+    },
+    {
+      id: "psm-livelihood-5000-hsa-epo",
+      program: "psm-livelihood-epo",
+      category: "major-medical",
+      subType: "EPO",
+      carrier: "PSM Livelihood",
+      planName: "Livelihood 5000 HSA EPO",
+      tier: "N/A",
+      network: "Aetna",
+      monthlyPriceIndividual: 592.93,
+      monthlyPriceFamily: 1445.31,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        rowHeader: "Age",
+        columns: [
+          "Employee Only",
+          "Employee + Child(ren)",
+          "Employee + Spouse",
+          "Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              592.93,
+              940.0,
+              1011.82,
+              1445.31
+            ]
+          },
+          {
+            label: "30-44",
+            prices: [
+              626.02,
+              1007.92,
+              1094.14,
+              1556.03
+            ]
+          },
+          {
+            label: "45-54",
+            prices: [
+              712.88,
+              1167.62,
+              1220.59,
+              1691.43
+            ]
+          },
+          {
+            label: "55-64",
+            prices: [
+              784.38,
+              1285.17,
+              1365.17,
+              2027.96
+            ]
+          }
+        ]
+      },
+      deductible: 5000,
+      outOfPocketMax: 8300,
+      states: [
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CO",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "ME",
+        "MI",
+        "MO",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "WV",
+        "WY"
+      ],
+      keyBenefits: [
+        "HSA-qualified Aetna EPO plan — no referral needed to see a specialist",
+        "$5,000 individual / $10,000 family deductible, 20/80 coinsurance",
+        "$8,300 individual / $16,600 family out-of-pocket max",
+        "Primary care, specialist, labs, and imaging are all deductible then 20% coinsurance (HSA plan design)",
+        "$0 preventive care; $0 telemedicine via MyLiveDoc",
+        "Kroger PBM — generic drugs deductible then 20% coinsurance"
+      ],
+      brochureUrl: "docs/brochures/psm-livelihood-5000-hsa-epo-brochure.pdf",
+      sbcUrl: "docs/sbc/psm-livelihood-5000-hsa-epo-sbc.pdf",
+      description: "PSM Livelihood 5000 HSA EPO — an HSA-qualified Aetna EPO plan with a $5,000 individual deductible and 20/80 coinsurance. All services, including office visits, apply to the deductible before coinsurance kicks in. Deductible $5,000 / $10,000, out-of-pocket max $8,300 / $16,600, coinsurance 20/80. Available in AK, AL, AR, AZ, CO, DC, DE, FL, GA, ID, IL, IN, KS, KY, LA, MA, ME, MI, MO, MS, MT, NC, ND, NJ, NM, NV, NY, OH, OK, RI, SC, SD, TN, TX, UT, VA, WV, and WY."
+    },
+    {
+      id: "psm-livelihood-6000-epo",
+      program: "psm-livelihood-epo",
+      category: "major-medical",
+      subType: "EPO",
+      carrier: "PSM Livelihood",
+      planName: "Livelihood 6000 EPO",
+      tier: "N/A",
+      network: "Aetna",
+      monthlyPriceIndividual: 588.11,
+      monthlyPriceFamily: 1421.35,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        rowHeader: "Age",
+        columns: [
+          "Employee Only",
+          "Employee + Child(ren)",
+          "Employee + Spouse",
+          "Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              588.11,
+              925.21,
+              1002.27,
+              1421.35
+            ]
+          },
+          {
+            label: "30-44",
+            prices: [
+              613.05,
+              968.0,
+              1049.4,
+              1490.75
+            ]
+          },
+          {
+            label: "45-54",
+            prices: [
+              676.94,
+              1102.41,
+              1160.83,
+              1650.04
+            ]
+          },
+          {
+            label: "55-64",
+            prices: [
+              756.42,
+              1245.22,
+              1313.82,
+              1914.39
+            ]
+          }
+        ]
+      },
+      deductible: 6000,
+      outOfPocketMax: 10000,
+      states: [
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CO",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "ME",
+        "MI",
+        "MO",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "WV",
+        "WY"
+      ],
+      keyBenefits: [
+        "Aetna EPO network — no referral needed to see a specialist",
+        "$6,000 individual / $12,000 family deductible, 20/80 coinsurance",
+        "$10,000 individual / $20,000 family out-of-pocket max (no out-of-network coverage)",
+        "$25 primary care / $40 specialist copay; $0 telemedicine through MyLiveDoc",
+        "$0 preventive care; $60 urgent care copay",
+        "Kroger PBM — $5 copay generic (30-day retail, deductible waived); $20 copay 90-day Costco mail order"
+      ],
+      brochureUrl: "docs/brochures/psm-livelihood-6000-epo-brochure.pdf",
+      sbcUrl: "docs/sbc/psm-livelihood-6000-epo-sbc.pdf",
+      description: "PSM Livelihood 6000 EPO — an Aetna EPO plan with a $6,000 individual deductible and 20/80 coinsurance after deductible. Fixed copays for primary care, specialist, and urgent care visits. Deductible $6,000 / $12,000, out-of-pocket max $10,000 / $20,000, coinsurance 20/80. Available in AK, AL, AR, AZ, CO, DC, DE, FL, GA, ID, IL, IN, KS, KY, LA, MA, ME, MI, MO, MS, MT, NC, ND, NJ, NM, NV, NY, OH, OK, RI, SC, SD, TN, TX, UT, VA, WV, and WY."
+    },
+    {
+      id: "psm-livelihood-6500-hsa-epo",
+      program: "psm-livelihood-epo",
+      category: "major-medical",
+      subType: "EPO",
+      carrier: "PSM Livelihood",
+      planName: "Livelihood 6500 HSA EPO",
+      tier: "N/A",
+      network: "Aetna",
+      monthlyPriceIndividual: 581.07,
+      monthlyPriceFamily: 1416.4,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        rowHeader: "Age",
+        columns: [
+          "Employee Only",
+          "Employee + Child(ren)",
+          "Employee + Spouse",
+          "Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              581.07,
+              921.2,
+              991.58,
+              1416.4
+            ]
+          },
+          {
+            label: "30-44",
+            prices: [
+              613.5,
+              987.76,
+              1072.25,
+              1524.91
+            ]
+          },
+          {
+            label: "45-54",
+            prices: [
+              698.62,
+              1144.27,
+              1196.18,
+              1657.61
+            ]
+          },
+          {
+            label: "55-64",
+            prices: [
+              768.69,
+              1259.47,
+              1337.87,
+              1987.4
+            ]
+          }
+        ]
+      },
+      deductible: 6500,
+      outOfPocketMax: 9200,
+      states: [
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CO",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "ME",
+        "MI",
+        "MO",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "WV",
+        "WY"
+      ],
+      keyBenefits: [
+        "HSA-qualified Aetna EPO plan — no referral needed to see a specialist",
+        "$6,500 individual / $13,000 family deductible, 25/75 coinsurance",
+        "$9,200 individual / $18,400 family out-of-pocket max",
+        "Primary care and specialist visits are 25% after deductible — no flat copay (HSA plan design)",
+        "$0 preventive care; $0 telemedicine (PCP, mental health, urgent care) via MyLiveDoc-Bowtie",
+        "Kroger PBM — generic drugs 25% after deductible"
+      ],
+      brochureUrl: "docs/brochures/psm-livelihood-6500-hsa-epo-brochure.pdf",
+      sbcUrl: "docs/sbc/psm-livelihood-6500-hsa-epo-sbc.pdf",
+      description: "PSM Livelihood 6500 HSA EPO — an HSA-qualified Aetna EPO plan with a $6,500 individual deductible and 25/75 coinsurance. All services, including office visits, apply to the deductible before coinsurance kicks in. Deductible $6,500 / $13,000, out-of-pocket max $9,200 / $18,400, coinsurance 25/75. Available in AK, AL, AR, AZ, CO, DC, DE, FL, GA, ID, IL, IN, KS, KY, LA, MA, ME, MI, MO, MS, MT, NC, ND, NJ, NM, NV, NY, OH, OK, RI, SC, SD, TN, TX, UT, VA, WV, and WY."
+    },
+    {
+      id: "psm-livelihood-6800-epo",
+      program: "psm-livelihood-epo",
+      category: "major-medical",
+      subType: "EPO",
+      carrier: "PSM Livelihood",
+      planName: "Livelihood 6800 EPO",
+      tier: "N/A",
+      network: "Aetna",
+      monthlyPriceIndividual: 552.82,
+      monthlyPriceFamily: 1336.07,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        rowHeader: "Age",
+        columns: [
+          "Employee Only",
+          "Employee + Child(ren)",
+          "Employee + Spouse",
+          "Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              552.82,
+              869.7,
+              942.13,
+              1336.07
+            ]
+          },
+          {
+            label: "30-44",
+            prices: [
+              576.27,
+              909.92,
+              986.44,
+              1401.31
+            ]
+          },
+          {
+            label: "45-54",
+            prices: [
+              636.33,
+              1036.27,
+              1091.18,
+              1551.04
+            ]
+          },
+          {
+            label: "55-64",
+            prices: [
+              711.03,
+              1170.51,
+              1234.99,
+              1799.53
+            ]
+          }
+        ]
+      },
+      deductible: 6800,
+      outOfPocketMax: 9200,
+      states: [
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CO",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "ME",
+        "MI",
+        "MO",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "WV",
+        "WY"
+      ],
+      keyBenefits: [
+        "Aetna EPO network — no referral needed to see a specialist",
+        "$6,800 individual / $13,600 family deductible, 25/75 coinsurance",
+        "$9,200 individual / $18,400 family out-of-pocket max",
+        "$40 primary care / $70 specialist copay; $0 telemedicine via MyLiveDoc-Bowtie",
+        "$0 preventive care; $85 urgent care copay",
+        "Kroger PBM — generic drugs 25% after deductible"
+      ],
+      brochureUrl: "docs/brochures/psm-livelihood-6800-epo-brochure.pdf",
+      sbcUrl: "docs/sbc/psm-livelihood-6800-epo-sbc.pdf",
+      description: "PSM Livelihood 6800 EPO — an Aetna EPO plan with a $6,800 individual deductible and 25/75 coinsurance after deductible. Fixed copays for primary care, specialist, and urgent care visits. Deductible $6,800 / $13,600, out-of-pocket max $9,200 / $18,400, coinsurance 25/75. Available in AK, AL, AR, AZ, CO, DC, DE, FL, GA, ID, IL, IN, KS, KY, LA, MA, ME, MI, MO, MS, MT, NC, ND, NJ, NM, NV, NY, OH, OK, RI, SC, SD, TN, TX, UT, VA, WV, and WY."
+    },
+    {
+      id: "psm-livelihood-7500-epo",
+      program: "psm-livelihood-epo",
+      category: "major-medical",
+      subType: "EPO",
+      carrier: "PSM Livelihood",
+      planName: "Livelihood 7500 EPO",
+      tier: "N/A",
+      network: "Aetna",
+      monthlyPriceIndividual: 535.45,
+      monthlyPriceFamily: 1268.93,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        rowHeader: "Age",
+        columns: [
+          "Employee Only",
+          "Employee + Child(ren)",
+          "Employee + Spouse",
+          "Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              535.45,
+              832.59,
+              899.77,
+              1268.93
+            ]
+          },
+          {
+            label: "30-44",
+            prices: [
+              557.56,
+              870.31,
+              941.27,
+              1329.92
+            ]
+          },
+          {
+            label: "45-54",
+            prices: [
+              622.34,
+              1002.03,
+              1052.71,
+              1488.38
+            ]
+          },
+          {
+            label: "55-64",
+            prices: [
+              701.04,
+              1141.82,
+              1202.14,
+              1743.08
+            ]
+          }
+        ]
+      },
+      deductible: 7500,
+      outOfPocketMax: 10000,
+      states: [
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CO",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "ME",
+        "MI",
+        "MO",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "WV",
+        "WY"
+      ],
+      keyBenefits: [
+        "Aetna EPO network — no referral needed to see a specialist",
+        "$7,500 individual / $15,000 family deductible, 20/80 coinsurance",
+        "$10,000 individual / $20,000 family out-of-pocket max (no out-of-network coverage)",
+        "$25 primary care / $40 specialist copay; $0 telemedicine through MyLiveDoc",
+        "$0 preventive care; $60 urgent care copay",
+        "Kroger PBM — $5 copay generic (30-day retail, deductible waived); $20 copay 90-day Costco mail order"
+      ],
+      brochureUrl: "docs/brochures/psm-livelihood-7500-epo-brochure.pdf",
+      sbcUrl: "docs/sbc/psm-livelihood-7500-epo-sbc.pdf",
+      description: "PSM Livelihood 7500 EPO — an Aetna EPO plan with a $7,500 individual deductible and 20/80 coinsurance after deductible. Fixed copays for primary care, specialist, and urgent care visits. Deductible $7,500 / $15,000, out-of-pocket max $10,000 / $20,000, coinsurance 20/80. Available in AK, AL, AR, AZ, CO, DC, DE, FL, GA, ID, IL, IN, KS, KY, LA, MA, ME, MI, MO, MS, MT, NC, ND, NJ, NM, NV, NY, OH, OK, RI, SC, SD, TN, TX, UT, VA, WV, and WY."
+    },
+    {
+      id: "psm-livelihood-8300-epo",
+      program: "psm-livelihood-epo",
+      category: "major-medical",
+      subType: "EPO",
+      carrier: "PSM Livelihood",
+      planName: "Livelihood 8300 EPO",
+      tier: "N/A",
+      network: "Aetna",
+      monthlyPriceIndividual: 524.74,
+      monthlyPriceFamily: 1243.55,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        rowHeader: "Age",
+        columns: [
+          "Employee Only",
+          "Employee + Child(ren)",
+          "Employee + Spouse",
+          "Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              524.74,
+              815.94,
+              881.77,
+              1243.55
+            ]
+          },
+          {
+            label: "30-44",
+            prices: [
+              546.41,
+              852.9,
+              922.45,
+              1303.32
+            ]
+          },
+          {
+            label: "45-54",
+            prices: [
+              609.89,
+              981.99,
+              1031.66,
+              1458.61
+            ]
+          },
+          {
+            label: "55-64",
+            prices: [
+              687.02,
+              1118.98,
+              1178.1,
+              1708.22
+            ]
+          }
+        ]
+      },
+      deductible: 8300,
+      outOfPocketMax: 9200,
+      states: [
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CO",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "ME",
+        "MI",
+        "MO",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "WV",
+        "WY"
+      ],
+      keyBenefits: [
+        "Aetna EPO network — no referral needed to see a specialist",
+        "$8,300 individual / $16,600 family deductible, 25/75 coinsurance",
+        "$9,200 individual / $18,400 family out-of-pocket max",
+        "$40 primary care / $70 specialist copay; $0 telemedicine via MyLiveDoc-Bowtie",
+        "$0 preventive care; $85 urgent care copay",
+        "Kroger PBM — generic drugs 25% after deductible"
+      ],
+      brochureUrl: "docs/brochures/psm-livelihood-8300-epo-brochure.pdf",
+      sbcUrl: "docs/sbc/psm-livelihood-8300-epo-sbc.pdf",
+      description: "PSM Livelihood 8300 EPO — an Aetna EPO plan with an $8,300 individual deductible and 25/75 coinsurance after deductible. Fixed copays for primary care, specialist, and urgent care visits. Deductible $8,300 / $16,600, out-of-pocket max $9,200 / $18,400, coinsurance 25/75. Available in AK, AL, AR, AZ, CO, DC, DE, FL, GA, ID, IL, IN, KS, KY, LA, MA, ME, MI, MO, MS, MT, NC, ND, NJ, NM, NV, NY, OH, OK, RI, SC, SD, TN, TX, UT, VA, WV, and WY."
+    },
+    {
+      id: "psm-livelihood-1800-ppo",
+      program: "psm-livelihood-ppo",
+      category: "major-medical",
+      subType: "PPO",
+      carrier: "PSM Livelihood",
+      planName: "Livelihood 1800 PPO",
+      tier: "N/A",
+      network: "Aetna",
+      monthlyPriceIndividual: 721.14,
+      monthlyPriceFamily: 1724.51,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        rowHeader: "Age",
+        columns: [
+          "Employee Only",
+          "Employee + Child(ren)",
+          "Employee + Spouse",
+          "Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              721.14,
+              1132.31,
+              1218.83,
+              1724.51
+            ]
+          },
+          {
+            label: "30-44",
+            prices: [
+              779.74,
+              1255.4,
+              1362.8,
+              1854.65
+            ]
+          },
+          {
+            label: "45-54",
+            prices: [
+              851.69,
+              1394.96,
+              1458.26,
+              2020.78
+            ]
+          },
+          {
+            label: "55-64",
+            prices: [
+              946.97,
+              1551.58,
+              1622.54,
+              2325.93
+            ]
+          }
+        ]
+      },
+      deductible: 1800,
+      outOfPocketMax: 10000,
+      states: [
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CO",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "ME",
+        "MI",
+        "MO",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "WV",
+        "WY"
+      ],
+      keyBenefits: [
+        "Aetna PPO network with out-of-network coverage — no referral needed to see a specialist",
+        "$1,800 individual / $3,600 family deductible, 20/80 coinsurance in-network (50/50 out-of-network)",
+        "$10,000 individual / $20,000 family out-of-pocket max in-network ($20,000 / $40,000 out-of-network)",
+        "$25 primary care / $40 specialist copay; $0 telemedicine through MyLiveDoc",
+        "$0 preventive care; $60 urgent care copay",
+        "Kroger PBM — $5 copay generic (30-day retail, deductible waived); $20 copay 90-day mail order"
+      ],
+      brochureUrl: "docs/brochures/psm-livelihood-1800-ppo-brochure.pdf",
+      sbcUrl: "docs/sbc/psm-livelihood-1800-ppo-sbc.pdf",
+      description: "PSM Livelihood 1800 PPO — an Aetna PPO plan with a $1,800 individual deductible and 20/80 coinsurance in-network. Includes out-of-network coverage at 50/50 coinsurance after the higher out-of-network deductible. Deductible $1,800 / $3,600 in-network ($3,600 / $7,200 out-of-network), out-of-pocket max $10,000 / $20,000 in-network ($20,000 / $40,000 out-of-network), coinsurance 20/80 in-network, 50/50 out-of-network. Available in AK, AL, AR, AZ, CO, DC, DE, FL, GA, ID, IL, IN, KS, KY, LA, MA, ME, MI, MO, MS, MT, NC, ND, NJ, NM, NV, NY, OH, OK, RI, SC, SD, TN, TX, UT, VA, WV, and WY."
+    },
+    {
+      id: "psm-livelihood-2600-ppo",
+      program: "psm-livelihood-ppo",
+      category: "major-medical",
+      subType: "PPO",
+      carrier: "PSM Livelihood",
+      planName: "Livelihood 2600 PPO",
+      tier: "N/A",
+      network: "Aetna",
+      monthlyPriceIndividual: 686.8,
+      monthlyPriceFamily: 1642.39,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        rowHeader: "Age",
+        columns: [
+          "Employee Only",
+          "Employee + Child(ren)",
+          "Employee + Spouse",
+          "Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              686.8,
+              1078.39,
+              1160.79,
+              1642.39
+            ]
+          },
+          {
+            label: "30-44",
+            prices: [
+              742.61,
+              1195.62,
+              1297.9,
+              1766.33
+            ]
+          },
+          {
+            label: "45-54",
+            prices: [
+              811.13,
+              1328.54,
+              1388.82,
+              1924.55
+            ]
+          },
+          {
+            label: "55-64",
+            prices: [
+              901.88,
+              1477.69,
+              1545.27,
+              2215.17
+            ]
+          }
+        ]
+      },
+      deductible: 2600,
+      outOfPocketMax: 10000,
+      states: [
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CO",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "ME",
+        "MI",
+        "MO",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "WV",
+        "WY"
+      ],
+      keyBenefits: [
+        "Aetna PPO network with out-of-network coverage — no referral needed to see a specialist",
+        "$2,600 individual / $5,200 family deductible, 20/80 coinsurance in-network (50/50 out-of-network)",
+        "$10,000 individual / $20,000 family out-of-pocket max in-network ($20,000 / $40,000 out-of-network)",
+        "$25 primary care / $40 specialist copay; $0 telemedicine through MyLiveDoc",
+        "$0 preventive care; $60 urgent care copay",
+        "Kroger PBM — $5 copay generic (30-day retail, deductible waived); $20 copay 90-day Costco mail order"
+      ],
+      brochureUrl: "docs/brochures/psm-livelihood-2600-ppo-brochure.pdf",
+      sbcUrl: "docs/sbc/psm-livelihood-2600-ppo-sbc.pdf",
+      description: "PSM Livelihood 2600 PPO — an Aetna PPO plan with a $2,600 individual deductible and 20/80 coinsurance in-network. Includes out-of-network coverage at 50/50 coinsurance after the higher out-of-network deductible. Deductible $2,600 / $5,200 in-network ($5,200 / $10,400 out-of-network), out-of-pocket max $10,000 / $20,000 in-network ($20,000 / $40,000 out-of-network), coinsurance 20/80 in-network, 50/50 out-of-network. Available in AK, AL, AR, AZ, CO, DC, DE, FL, GA, ID, IL, IN, KS, KY, LA, MA, ME, MI, MO, MS, MT, NC, ND, NJ, NM, NV, NY, OH, OK, RI, SC, SD, TN, TX, UT, VA, WV, and WY."
+    },
+    {
+      id: "psm-livelihood-3500-hsa-ppo",
+      program: "psm-livelihood-ppo",
+      category: "major-medical",
+      subType: "PPO",
+      carrier: "PSM Livelihood",
+      planName: "Livelihood 3500 HSA PPO",
+      tier: "N/A",
+      network: "Aetna",
+      monthlyPriceIndividual: 653.09,
+      monthlyPriceFamily: 1592.11,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        rowHeader: "Age",
+        columns: [
+          "Employee Only",
+          "Employee + Child(ren)",
+          "Employee + Spouse",
+          "Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              653.09,
+              1035.43,
+              1114.53,
+              1592.11
+            ]
+          },
+          {
+            label: "30-44",
+            prices: [
+              685.59,
+              1103.83,
+              1198.26,
+              1687.8
+            ]
+          },
+          {
+            label: "45-54",
+            prices: [
+              764.62,
+              1252.37,
+              1309.19,
+              1859.55
+            ]
+          },
+          {
+            label: "55-64",
+            prices: [
+              867.7,
+              1421.69,
+              1486.71,
+              2131.21
+            ]
+          }
+        ]
+      },
+      deductible: 3500,
+      outOfPocketMax: 8300,
+      states: [
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CO",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "ME",
+        "MI",
+        "MO",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "WV",
+        "WY"
+      ],
+      keyBenefits: [
+        "HSA-qualified Aetna PPO plan with out-of-network coverage — no referral needed to see a specialist",
+        "$3,500 individual / $7,000 family deductible, 20/80 coinsurance in-network (50/50 out-of-network)",
+        "$8,300 individual / $16,600 family out-of-pocket max in-network ($16,600 / $33,200 out-of-network)",
+        "Primary care, specialist, labs, and imaging are all deductible then 20% coinsurance (HSA plan design)",
+        "$0 preventive care; $0 telemedicine via MyLiveDoc",
+        "Kroger PBM — generic drugs deductible then 20% coinsurance; 90-day Costco mail order"
+      ],
+      brochureUrl: "docs/brochures/psm-livelihood-3500-hsa-ppo-brochure.pdf",
+      sbcUrl: "docs/sbc/psm-livelihood-3500-hsa-ppo-sbc.pdf",
+      description: "PSM Livelihood 3500 HSA PPO — an HSA-qualified Aetna PPO plan with a $3,500 individual deductible and 20/80 coinsurance in-network. All services, including office visits, apply to the deductible before coinsurance kicks in. Includes out-of-network coverage at 50/50 coinsurance. Deductible $3,500 / $7,000 in-network ($7,000 / $14,000 out-of-network), out-of-pocket max $8,300 / $16,600 in-network ($16,600 / $33,200 out-of-network), coinsurance 20/80 in-network, 50/50 out-of-network. Available in AK, AL, AR, AZ, CO, DC, DE, FL, GA, ID, IL, IN, KS, KY, LA, MA, ME, MI, MO, MS, MT, NC, ND, NJ, NM, NV, NY, OH, OK, RI, SC, SD, TN, TX, UT, VA, WV, and WY."
+    },
+    {
+      id: "psm-livelihood-5000-hsa-ppo",
+      program: "psm-livelihood-ppo",
+      category: "major-medical",
+      subType: "PPO",
+      carrier: "PSM Livelihood",
+      planName: "Livelihood 5000 HSA PPO",
+      tier: "N/A",
+      network: "Aetna",
+      monthlyPriceIndividual: 610.72,
+      monthlyPriceFamily: 1488.67,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        rowHeader: "Age",
+        columns: [
+          "Employee Only",
+          "Employee + Child(ren)",
+          "Employee + Spouse",
+          "Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              610.72,
+              968.2,
+              1042.17,
+              1488.67
+            ]
+          },
+          {
+            label: "30-44",
+            prices: [
+              644.8,
+              1038.15,
+              1126.96,
+              1602.71
+            ]
+          },
+          {
+            label: "45-54",
+            prices: [
+              734.27,
+              1202.65,
+              1257.21,
+              1742.18
+            ]
+          },
+          {
+            label: "55-64",
+            prices: [
+              807.91,
+              1323.73,
+              1406.13,
+              2088.8
+            ]
+          }
+        ]
+      },
+      deductible: 5000,
+      outOfPocketMax: 8300,
+      states: [
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CO",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "ME",
+        "MI",
+        "MO",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "WV",
+        "WY"
+      ],
+      keyBenefits: [
+        "HSA-qualified Aetna PPO plan with out-of-network coverage — no referral needed to see a specialist",
+        "$5,000 individual / $10,000 family deductible, 20/80 coinsurance in-network (50/50 out-of-network)",
+        "$8,300 individual / $16,600 family out-of-pocket max in-network ($16,600 / $33,200 out-of-network)",
+        "Primary care, specialist, labs, and imaging are all deductible then 20% coinsurance (HSA plan design)",
+        "$0 preventive care; $0 telemedicine via MyLiveDoc",
+        "Kroger PBM — generic drugs deductible then 20% coinsurance; 90-day Costco mail order"
+      ],
+      brochureUrl: "docs/brochures/psm-livelihood-5000-hsa-ppo-brochure.pdf",
+      sbcUrl: "docs/sbc/psm-livelihood-5000-hsa-ppo-sbc.pdf",
+      description: "PSM Livelihood 5000 HSA PPO — an HSA-qualified Aetna PPO plan with a $5,000 individual deductible and 20/80 coinsurance in-network. All services, including office visits, apply to the deductible before coinsurance kicks in. Includes out-of-network coverage at 50/50 coinsurance. Deductible $5,000 / $10,000 in-network ($10,000 / $20,000 out-of-network), out-of-pocket max $8,300 / $16,600 in-network ($16,600 / $33,200 out-of-network), coinsurance 20/80 in-network, 50/50 out-of-network. Available in AK, AL, AR, AZ, CO, DC, DE, FL, GA, ID, IL, IN, KS, KY, LA, MA, ME, MI, MO, MS, MT, NC, ND, NJ, NM, NV, NY, OH, OK, RI, SC, SD, TN, TX, UT, VA, WV, and WY."
+    },
+    {
+      id: "psm-livelihood-6000-ppo",
+      program: "psm-livelihood-ppo",
+      category: "major-medical",
+      subType: "PPO",
+      carrier: "PSM Livelihood",
+      planName: "Livelihood 6000 PPO",
+      tier: "N/A",
+      network: "Aetna",
+      monthlyPriceIndividual: 605.75,
+      monthlyPriceFamily: 1463.99,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        rowHeader: "Age",
+        columns: [
+          "Employee Only",
+          "Employee + Child(ren)",
+          "Employee + Spouse",
+          "Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              605.75,
+              952.97,
+              1032.34,
+              1463.99
+            ]
+          },
+          {
+            label: "30-44",
+            prices: [
+              631.44,
+              997.04,
+              1080.88,
+              1535.48
+            ]
+          },
+          {
+            label: "45-54",
+            prices: [
+              697.25,
+              1135.48,
+              1195.66,
+              1699.54
+            ]
+          },
+          {
+            label: "55-64",
+            prices: [
+              746.19,
+              1282.58,
+              1353.23,
+              1971.82
+            ]
+          }
+        ]
+      },
+      deductible: 6000,
+      outOfPocketMax: 10000,
+      states: [
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CO",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "ME",
+        "MI",
+        "MO",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "WV",
+        "WY"
+      ],
+      keyBenefits: [
+        "Aetna PPO network with out-of-network coverage — no referral needed to see a specialist",
+        "$6,000 individual / $12,000 family deductible, 20/80 coinsurance in-network (50/50 out-of-network)",
+        "$10,000 individual / $20,000 family out-of-pocket max in-network ($20,000 / $40,000 out-of-network)",
+        "$25 primary care / $40 specialist copay; $0 telemedicine through MyLiveDoc",
+        "$0 preventive care; $60 urgent care copay",
+        "Kroger PBM — $5 copay generic (30-day retail, deductible waived); $20 copay 90-day Costco mail order"
+      ],
+      brochureUrl: "docs/brochures/psm-livelihood-6000-ppo-brochure.pdf",
+      sbcUrl: "docs/sbc/psm-livelihood-6000-ppo-sbc.pdf",
+      description: "PSM Livelihood 6000 PPO — an Aetna PPO plan with a $6,000 individual deductible and 20/80 coinsurance in-network. Includes out-of-network coverage at 50/50 coinsurance after the higher out-of-network deductible. Deductible $6,000 / $12,000 in-network ($12,000 / $24,000 out-of-network), out-of-pocket max $10,000 / $20,000 in-network ($20,000 / $40,000 out-of-network), coinsurance 20/80 in-network, 50/50 out-of-network. Available in AK, AL, AR, AZ, CO, DC, DE, FL, GA, ID, IL, IN, KS, KY, LA, MA, ME, MI, MO, MS, MT, NC, ND, NJ, NM, NV, NY, OH, OK, RI, SC, SD, TN, TX, UT, VA, WV, and WY."
+    },
+    {
+      id: "psm-livelihood-7500-ppo",
+      program: "psm-livelihood-ppo",
+      category: "major-medical",
+      subType: "PPO",
+      carrier: "PSM Livelihood",
+      planName: "Livelihood 7500 PPO",
+      tier: "N/A",
+      network: "Aetna",
+      monthlyPriceIndividual: 551.52,
+      monthlyPriceFamily: 1307.0,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        rowHeader: "Age",
+        columns: [
+          "Employee Only",
+          "Employee + Child(ren)",
+          "Employee + Spouse",
+          "Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              551.52,
+              857.57,
+              926.76,
+              1307.0
+            ]
+          },
+          {
+            label: "30-44",
+            prices: [
+              574.29,
+              896.42,
+              969.51,
+              1369.81
+            ]
+          },
+          {
+            label: "45-54",
+            prices: [
+              641.01,
+              1032.09,
+              1084.3,
+              1533.03
+            ]
+          },
+          {
+            label: "55-64",
+            prices: [
+              722.07,
+              1238.21,
+              1323.73,
+              1795.37
+            ]
+          }
+        ]
+      },
+      deductible: 7500,
+      outOfPocketMax: 10000,
+      states: [
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CO",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "ME",
+        "MI",
+        "MO",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "WV",
+        "WY"
+      ],
+      keyBenefits: [
+        "Aetna PPO network with out-of-network coverage — no referral needed to see a specialist",
+        "$7,500 individual / $15,000 family deductible, 20/80 coinsurance in-network (50/50 out-of-network)",
+        "$10,000 individual / $20,000 family out-of-pocket max in-network ($20,000 / $40,000 out-of-network)",
+        "$25 primary care / $40 specialist copay; $0 telemedicine through MyLiveDoc",
+        "$0 preventive care; $60 urgent care copay",
+        "Kroger PBM — $5 copay generic (30-day retail, deductible waived); $20 copay 90-day Costco mail order"
+      ],
+      brochureUrl: "docs/brochures/psm-livelihood-7500-ppo-brochure.pdf",
+      sbcUrl: "docs/sbc/psm-livelihood-7500-ppo-sbc.pdf",
+      description: "PSM Livelihood 7500 PPO — an Aetna PPO plan with a $7,500 individual deductible and 20/80 coinsurance in-network. Includes out-of-network coverage at 50/50 coinsurance after the higher out-of-network deductible. Deductible $7,500 / $15,000 in-network ($15,000 / $30,000 out-of-network), out-of-pocket max $10,000 / $20,000 in-network ($20,000 / $40,000 out-of-network), coinsurance 20/80 in-network, 50/50 out-of-network. Available in AK, AL, AR, AZ, CO, DC, DE, FL, GA, ID, IL, IN, KS, KY, LA, MA, ME, MI, MO, MS, MT, NC, ND, NJ, NM, NV, NY, OH, OK, RI, SC, SD, TN, TX, UT, VA, WV, and WY."
+    },
   ]
 };
