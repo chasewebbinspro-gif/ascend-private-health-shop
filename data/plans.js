@@ -1296,6 +1296,1602 @@ const PLANS_DATA = {
       brochureUrl: "docs/brochures/solstice-ppo-vision-brochure.pdf",
       sbcUrl: null,
       description: "Solstice PPO Dental (Plan 11029) bundled with vision coverage — one premium for both dental and vision. Offered through Health & Wellness Education Association (HWEA)."
-    }
+    },
+
+    /* ---- Enroll Prime major medical (AFI, MedAccess, MedValue, MedMax,
+       Med Performance, AHW MEC) and Cigna Dental, loaded 2026-08-19.
+       AFI/MedAccess/MedValue/MedMax/Med Performance pricing pulled directly
+       from each brochure's own rate table. AHW MEC plan pricing and Cigna
+       Dental pricing are owner-provided (those brochures are benefit
+       schedules only, no premiums listed). Breakpoint Supps intentionally
+       excluded per owner decision. ---- */
+
+    {
+      id: "enroll-prime-afi-hsa-8050",
+      program: "enroll-prime",
+      category: "major-medical",
+      subType: "HSA PPO",
+      carrier: "AFI",
+      planName: "AFI HSA 8050",
+      tier: "N/A",
+      network: "PHCS",
+      monthlyPriceIndividual: 585.58,
+      monthlyPriceFamily: 1300.15,
+      rateTiers: [
+        {
+          label: "Employee",
+          price: 585.58
+        },
+        {
+          label: "Employee & Spouse",
+          price: 943.01
+        },
+        {
+          label: "Employee & Child(ren)",
+          price: 1045.14
+        },
+        {
+          label: "Family",
+          price: 1300.15
+        }
+      ],
+      deductible: 8050,
+      outOfPocketMax: 8050,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "PHCS PPO network, accepted in all 50 states",
+        "$8,050 individual / $16,100 family deductible (in-network), 0% coinsurance after deductible",
+        "$0 copay preventive care and unlimited $0 copay telemedicine",
+        "HSA-eligible plan — premium includes a $25/mo contribution toward your HSA",
+        "$20,000 Humana term life insurance included for the primary member"
+      ],
+      brochureUrl: "docs/brochures/enroll-prime-afi-brochure.pdf",
+      sbcUrl: null,
+      description: "AFI HSA 8050 on the PHCS PPO network — the lowest-premium AFI option, HSA-eligible with a built-in monthly HSA contribution."
+    },
+    {
+      id: "enroll-prime-afi-hsa-3500",
+      program: "enroll-prime",
+      category: "major-medical",
+      subType: "HSA PPO",
+      carrier: "AFI",
+      planName: "AFI HSA 3500",
+      tier: "N/A",
+      network: "PHCS",
+      monthlyPriceIndividual: 685.81,
+      monthlyPriceFamily: 1805.5,
+      rateTiers: [
+        {
+          label: "Employee",
+          price: 685.81
+        },
+        {
+          label: "Employee & Spouse",
+          price: 1307.57
+        },
+        {
+          label: "Employee & Child(ren)",
+          price: 1189.78
+        },
+        {
+          label: "Family",
+          price: 1805.5
+        }
+      ],
+      deductible: 3500,
+      outOfPocketMax: 7000,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "PHCS PPO network, accepted in all 50 states",
+        "$3,500 individual / $7,000 family deductible (in-network), 30% coinsurance after deductible",
+        "$0 copay preventive care and unlimited $0 copay telemedicine",
+        "HSA-eligible — you're free to fund an HSA of your choice (no built-in contribution on this tier)",
+        "$20,000 Humana term life insurance included for the primary member"
+      ],
+      brochureUrl: "docs/brochures/enroll-prime-afi-brochure.pdf",
+      sbcUrl: null,
+      description: "AFI HSA 3500 on the PHCS PPO network — a lower-deductible HSA option than the 8050 tier."
+    },
+    {
+      id: "enroll-prime-afi-copay-4500",
+      program: "enroll-prime",
+      category: "major-medical",
+      subType: "Copay PPO",
+      carrier: "AFI",
+      planName: "AFI Copay 4500",
+      tier: "N/A",
+      network: "PHCS",
+      monthlyPriceIndividual: 722.62,
+      monthlyPriceFamily: 1841.97,
+      rateTiers: [
+        {
+          label: "Employee",
+          price: 722.62
+        },
+        {
+          label: "Employee & Spouse",
+          price: 1389.73
+        },
+        {
+          label: "Employee & Child(ren)",
+          price: 1273.36
+        },
+        {
+          label: "Family",
+          price: 1841.97
+        }
+      ],
+      deductible: 4500,
+      outOfPocketMax: 8150,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "PHCS PPO network, accepted in all 50 states",
+        "$40 copay primary care, $75 copay specialist, $90 copay urgent care — no deductible on office visits",
+        "$4,500 individual / $9,000 family deductible, 30% coinsurance after deductible on hospital/surgical care",
+        "$0 copay preventive care and unlimited $0 copay telemedicine",
+        "$20,000 Humana term life insurance included for the primary member"
+      ],
+      brochureUrl: "docs/brochures/enroll-prime-afi-brochure.pdf",
+      sbcUrl: null,
+      description: "AFI Copay 4500 on the PHCS PPO network — flat copays for everyday visits with coinsurance on facility care."
+    },
+    {
+      id: "enroll-prime-afi-copay-3500",
+      program: "enroll-prime",
+      category: "major-medical",
+      subType: "Copay PPO",
+      carrier: "AFI",
+      planName: "AFI Copay 3500",
+      tier: "N/A",
+      network: "PHCS",
+      monthlyPriceIndividual: 815.44,
+      monthlyPriceFamily: 2096.72,
+      rateTiers: [
+        {
+          label: "Employee",
+          price: 815.44
+        },
+        {
+          label: "Employee & Spouse",
+          price: 1460.45
+        },
+        {
+          label: "Employee & Child(ren)",
+          price: 1427.43
+        },
+        {
+          label: "Family",
+          price: 2096.72
+        }
+      ],
+      deductible: 3500,
+      outOfPocketMax: 7350,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "PHCS PPO network, accepted in all 50 states",
+        "$40 copay primary care, $75 copay specialist, $90 copay urgent care — no deductible on office visits",
+        "$3,500 individual / $7,000 family deductible, 20% coinsurance after deductible on hospital/surgical care",
+        "$0 copay preventive care and unlimited $0 copay telemedicine",
+        "$20,000 Humana term life insurance included for the primary member"
+      ],
+      brochureUrl: "docs/brochures/enroll-prime-afi-brochure.pdf",
+      sbcUrl: null,
+      description: "AFI Copay 3500 on the PHCS PPO network — the richest AFI copay plan, with the lowest coinsurance after deductible."
+    },
+    {
+      id: "enroll-prime-medaccess-mvp-basic",
+      program: "enroll-prime",
+      category: "major-medical",
+      subType: "Fixed Indemnity PPO",
+      carrier: "MedAccess",
+      planName: "MedAccess MVP Basic",
+      tier: "N/A",
+      network: "First Health",
+      monthlyPriceIndividual: 432.84,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "varies by age, /mo",
+      rateTable: {
+        rowHeader: "Age Band",
+        columns: [
+          "Employee",
+          "Employee & Spouse",
+          "Employee & Child(ren)",
+          "Family"
+        ],
+        rows: [
+          {
+            label: "18-45",
+            prices: [
+              432.84,
+              776.12,
+              670.15,
+              997.01
+            ]
+          },
+          {
+            label: "46-64",
+            prices: [
+              550.0,
+              878.57,
+              777.14,
+              1090.0
+            ]
+          }
+        ]
+      },
+      deductible: 0,
+      outOfPocketMax: 7350,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "First Health PPO network, $0 deductible",
+        "$25 copay primary care (6 visits/yr), $50 copay specialist (6 visits/yr)",
+        "$350 copay per inpatient hospital admission (3 days/yr)",
+        "$0 copay unlimited telemedicine",
+        "$7,350 individual / $14,700 family out-of-pocket maximum"
+      ],
+      brochureUrl: "docs/brochures/enroll-prime-medaccess-brochure.pdf",
+      sbcUrl: null,
+      description: "MedAccess MVP Basic on the First Health network — a $0-deductible copay plan. Rate shown is the youngest age band (18-45) — see the full age-band pricing table."
+    },
+    {
+      id: "enroll-prime-medaccess-mvp-pro",
+      program: "enroll-prime",
+      category: "major-medical",
+      subType: "Fixed Indemnity PPO",
+      carrier: "MedAccess",
+      planName: "MedAccess MVP Pro",
+      tier: "N/A",
+      network: "First Health",
+      monthlyPriceIndividual: 567.16,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "varies by age, /mo",
+      rateTable: {
+        rowHeader: "Age Band",
+        columns: [
+          "Employee",
+          "Employee & Spouse",
+          "Employee & Child(ren)",
+          "Family"
+        ],
+        rows: [
+          {
+            label: "18-45",
+            prices: [
+              567.16,
+              1097.01,
+              886.57,
+              1455.22
+            ]
+          },
+          {
+            label: "46-64",
+            prices: [
+              714.29,
+              1221.43,
+              1020.0,
+              1564.29
+            ]
+          }
+        ]
+      },
+      deductible: 0,
+      outOfPocketMax: 5000,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "First Health PPO network, $0 deductible",
+        "$15 copay primary care (12 visits/yr), $25 copay specialist (12 visits/yr)",
+        "$350 copay per inpatient hospital admission (10 days/yr)",
+        "Maternity coverage included after a 12-month waiting period",
+        "$5,000 individual / $10,000 family out-of-pocket maximum"
+      ],
+      brochureUrl: "docs/brochures/enroll-prime-medaccess-brochure.pdf",
+      sbcUrl: null,
+      description: "MedAccess MVP Pro on the First Health network — richer copays and higher visit limits than MVP Basic. Rate shown is the youngest age band (18-45) — see the full age-band pricing table."
+    },
+    {
+      id: "enroll-prime-medvalue-2000",
+      program: "enroll-prime",
+      category: "major-medical",
+      subType: "High-Deductible PPO",
+      carrier: "MedValue",
+      planName: "MedValue 2000",
+      tier: "N/A",
+      network: "First Health",
+      monthlyPriceIndividual: 319.99,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "varies by age, /mo",
+      rateTable: {
+        rowHeader: "Age Band",
+        columns: [
+          "Employee",
+          "Employee & Spouse",
+          "Employee & Child(ren)",
+          "Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              319.99,
+              639.99,
+              629.99,
+              879.99
+            ]
+          },
+          {
+            label: "30-44",
+            prices: [
+              379.99,
+              679.99,
+              669.99,
+              939.99
+            ]
+          },
+          {
+            label: "45-54",
+            prices: [
+              409.99,
+              719.99,
+              709.99,
+              989.99
+            ]
+          },
+          {
+            label: "55-64",
+            prices: [
+              459.99,
+              739.99,
+              719.99,
+              1029.99
+            ]
+          }
+        ]
+      },
+      deductible: 2000,
+      outOfPocketMax: 9200,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "First Health PPO network — 5,700+ hospitals, 993,000+ providers nationwide",
+        "$0 copay telemedicine (primary care, urgent care, mental health) — deductible does not apply",
+        "100% covered preventive care, no deductible",
+        "$50 copay office/specialist/urgent care visits after deductible (4 visits/yr combined)",
+        "$2,000 individual / $4,000 family deductible; $9,200 individual / $18,400 family out-of-pocket max"
+      ],
+      brochureUrl: "docs/brochures/enroll-prime-medvalue-2000-brochure.pdf",
+      sbcUrl: null,
+      description: "MedValue 2000 on the First Health PPO network — a high-deductible plan for unexpected, major medical events. Rate shown is the youngest age band (18-29) — see the full age-band pricing table."
+    },
+    {
+      id: "enroll-prime-medvalue-4000",
+      program: "enroll-prime",
+      category: "major-medical",
+      subType: "High-Deductible PPO",
+      carrier: "MedValue",
+      planName: "MedValue 4000",
+      tier: "N/A",
+      network: "First Health",
+      monthlyPriceIndividual: 279.99,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "varies by age, /mo",
+      rateTable: {
+        rowHeader: "Age Band",
+        columns: [
+          "Employee",
+          "Employee & Spouse",
+          "Employee & Child(ren)",
+          "Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              279.99,
+              599.99,
+              589.99,
+              839.99
+            ]
+          },
+          {
+            label: "30-44",
+            prices: [
+              339.99,
+              629.99,
+              619.99,
+              879.99
+            ]
+          },
+          {
+            label: "45-54",
+            prices: [
+              369.99,
+              669.99,
+              659.99,
+              949.99
+            ]
+          },
+          {
+            label: "55-64",
+            prices: [
+              419.99,
+              699.99,
+              689.99,
+              969.99
+            ]
+          }
+        ]
+      },
+      deductible: 4000,
+      outOfPocketMax: 9200,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "First Health PPO network — 5,700+ hospitals, 993,000+ providers nationwide",
+        "$0 copay telemedicine (primary care, urgent care, mental health) — deductible does not apply",
+        "100% covered preventive care, no deductible",
+        "$50 copay office/specialist/urgent care visits after deductible (4 visits/yr combined)",
+        "$4,000 individual / $8,000 family deductible; $9,200 individual / $18,400 family out-of-pocket max"
+      ],
+      brochureUrl: "docs/brochures/enroll-prime-medvalue-4000-brochure.pdf",
+      sbcUrl: null,
+      description: "MedValue 4000 on the First Health PPO network — a high-deductible plan for unexpected, major medical events. Rate shown is the youngest age band (18-29) — see the full age-band pricing table."
+    },
+    {
+      id: "enroll-prime-medvalue-6000",
+      program: "enroll-prime",
+      category: "major-medical",
+      subType: "High-Deductible PPO",
+      carrier: "MedValue",
+      planName: "MedValue 6000",
+      tier: "N/A",
+      network: "First Health",
+      monthlyPriceIndividual: 259.99,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "varies by age, /mo",
+      rateTable: {
+        rowHeader: "Age Band",
+        columns: [
+          "Employee",
+          "Employee & Spouse",
+          "Employee & Child(ren)",
+          "Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              259.99,
+              579.99,
+              569.99,
+              819.99
+            ]
+          },
+          {
+            label: "30-44",
+            prices: [
+              294.99,
+              609.99,
+              593.99,
+              859.99
+            ]
+          },
+          {
+            label: "45-54",
+            prices: [
+              349.99,
+              659.99,
+              639.99,
+              929.99
+            ]
+          },
+          {
+            label: "55-64",
+            prices: [
+              399.99,
+              689.99,
+              649.99,
+              949.99
+            ]
+          }
+        ]
+      },
+      deductible: 6000,
+      outOfPocketMax: 9200,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "First Health PPO network — 5,700+ hospitals, 993,000+ providers nationwide",
+        "$0 copay telemedicine (primary care, urgent care, mental health) — deductible does not apply",
+        "100% covered preventive care, no deductible",
+        "$50 copay office/specialist/urgent care visits after deductible (4 visits/yr combined)",
+        "$6,000 individual / $12,000 family deductible; $9,200 individual / $18,400 family out-of-pocket max"
+      ],
+      brochureUrl: "docs/brochures/enroll-prime-medvalue-6000-brochure.pdf",
+      sbcUrl: null,
+      description: "MedValue 6000 on the First Health PPO network — a high-deductible plan for unexpected, major medical events. Rate shown is the youngest age band (18-29) — see the full age-band pricing table."
+    },
+    {
+      id: "enroll-prime-medmax-250",
+      program: "enroll-prime",
+      category: "major-medical",
+      subType: "Deductible-Value PPO",
+      carrier: "MedMax",
+      planName: "MedMax 250",
+      tier: "N/A",
+      network: "First Health",
+      monthlyPriceIndividual: 369,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "varies by age, /mo",
+      rateTable: {
+        rowHeader: "Age Band",
+        columns: [
+          "Employee",
+          "Employee & Spouse",
+          "Employee & Child(ren)",
+          "Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              369,
+              689,
+              709,
+              959
+            ]
+          },
+          {
+            label: "30-44",
+            prices: [
+              439,
+              759,
+              739,
+              999
+            ]
+          },
+          {
+            label: "45-54",
+            prices: [
+              469,
+              769,
+              759,
+              1049
+            ]
+          },
+          {
+            label: "55-64",
+            prices: [
+              519,
+              789,
+              769,
+              1079
+            ]
+          }
+        ]
+      },
+      deductible: 250,
+      outOfPocketMax: 9200,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "First Health PPO network — 5,700+ hospitals, 993,000+ providers nationwide",
+        "$0 copay telemedicine (primary care, urgent care, mental health) — deductible does not apply",
+        "$50 copay combined PCP / specialist / urgent care / chiropractic visits (10 visits/yr)",
+        "$1,000 copay per inpatient hospital admission (2 admissions/yr, 10-day limit)",
+        "$250 individual / $500 family deductible; $9,200 individual / $18,400 family out-of-pocket max"
+      ],
+      brochureUrl: "docs/brochures/enroll-prime-medmax-brochure.pdf",
+      sbcUrl: null,
+      description: "MedMax 250 on the First Health PPO network. Rate shown is the youngest age band (18-29) — see the full age-band pricing table."
+    },
+    {
+      id: "enroll-prime-medmax-500",
+      program: "enroll-prime",
+      category: "major-medical",
+      subType: "Deductible-Value PPO",
+      carrier: "MedMax",
+      planName: "MedMax 500",
+      tier: "N/A",
+      network: "First Health",
+      monthlyPriceIndividual: 349,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "varies by age, /mo",
+      rateTable: {
+        rowHeader: "Age Band",
+        columns: [
+          "Employee",
+          "Employee & Spouse",
+          "Employee & Child(ren)",
+          "Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              349,
+              669,
+              659,
+              909
+            ]
+          },
+          {
+            label: "30-44",
+            prices: [
+              409,
+              709,
+              699,
+              969
+            ]
+          },
+          {
+            label: "45-54",
+            prices: [
+              439,
+              749,
+              739,
+              1019
+            ]
+          },
+          {
+            label: "55-64",
+            prices: [
+              489,
+              769,
+              749,
+              1059
+            ]
+          }
+        ]
+      },
+      deductible: 500,
+      outOfPocketMax: 9200,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "First Health PPO network — 5,700+ hospitals, 993,000+ providers nationwide",
+        "$0 copay telemedicine (primary care, urgent care, mental health) — deductible does not apply",
+        "$50 copay combined PCP / specialist / urgent care / chiropractic visits (10 visits/yr)",
+        "$1,000 copay per inpatient hospital admission (2 admissions/yr, 10-day limit)",
+        "$500 individual / $1,000 family deductible; $9,200 individual / $18,400 family out-of-pocket max"
+      ],
+      brochureUrl: "docs/brochures/enroll-prime-medmax-brochure.pdf",
+      sbcUrl: null,
+      description: "MedMax 500 on the First Health PPO network. Rate shown is the youngest age band (18-29) — see the full age-band pricing table."
+    },
+    {
+      id: "enroll-prime-medmax-750",
+      program: "enroll-prime",
+      category: "major-medical",
+      subType: "Deductible-Value PPO",
+      carrier: "MedMax",
+      planName: "MedMax 750",
+      tier: "N/A",
+      network: "First Health",
+      monthlyPriceIndividual: 329,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "varies by age, /mo",
+      rateTable: {
+        rowHeader: "Age Band",
+        columns: [
+          "Employee",
+          "Employee & Spouse",
+          "Employee & Child(ren)",
+          "Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              329,
+              649,
+              639,
+              889
+            ]
+          },
+          {
+            label: "30-44",
+            prices: [
+              389,
+              679,
+              669,
+              939
+            ]
+          },
+          {
+            label: "45-54",
+            prices: [
+              419,
+              719,
+              709,
+              999
+            ]
+          },
+          {
+            label: "55-64",
+            prices: [
+              469,
+              749,
+              729,
+              1019
+            ]
+          }
+        ]
+      },
+      deductible: 750,
+      outOfPocketMax: 9200,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "First Health PPO network — 5,700+ hospitals, 993,000+ providers nationwide",
+        "$0 copay telemedicine (primary care, urgent care, mental health) — deductible does not apply",
+        "$50 copay combined PCP / specialist / urgent care / chiropractic visits (10 visits/yr)",
+        "$1,000 copay per inpatient hospital admission (2 admissions/yr, 10-day limit)",
+        "$750 individual / $1,500 family deductible; $9,200 individual / $18,400 family out-of-pocket max"
+      ],
+      brochureUrl: "docs/brochures/enroll-prime-medmax-brochure.pdf",
+      sbcUrl: null,
+      description: "MedMax 750 on the First Health PPO network. Rate shown is the youngest age band (18-29) — see the full age-band pricing table."
+    },
+    {
+      id: "enroll-prime-medmax-1000",
+      program: "enroll-prime",
+      category: "major-medical",
+      subType: "Deductible-Value PPO",
+      carrier: "MedMax",
+      planName: "MedMax 1000",
+      tier: "N/A",
+      network: "First Health",
+      monthlyPriceIndividual: 309,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "varies by age, /mo",
+      rateTable: {
+        rowHeader: "Age Band",
+        columns: [
+          "Employee",
+          "Employee & Spouse",
+          "Employee & Child(ren)",
+          "Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              309,
+              629,
+              619,
+              869
+            ]
+          },
+          {
+            label: "30-44",
+            prices: [
+              369,
+              659,
+              649,
+              909
+            ]
+          },
+          {
+            label: "45-54",
+            prices: [
+              399,
+              699,
+              689,
+              979
+            ]
+          },
+          {
+            label: "55-64",
+            prices: [
+              449,
+              729,
+              719,
+              999
+            ]
+          }
+        ]
+      },
+      deductible: 1000,
+      outOfPocketMax: 9200,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "First Health PPO network — 5,700+ hospitals, 993,000+ providers nationwide",
+        "$0 copay telemedicine (primary care, urgent care, mental health) — deductible does not apply",
+        "$50 copay combined PCP / specialist / urgent care / chiropractic visits (10 visits/yr)",
+        "$1,000 copay per inpatient hospital admission (2 admissions/yr, 10-day limit)",
+        "$1,000 individual / $2,000 family deductible; $9,200 individual / $18,400 family out-of-pocket max"
+      ],
+      brochureUrl: "docs/brochures/enroll-prime-medmax-brochure.pdf",
+      sbcUrl: null,
+      description: "MedMax 1000 on the First Health PPO network. Rate shown is the youngest age band (18-29) — see the full age-band pricing table."
+    },
+    {
+      id: "enroll-prime-medmax-1500",
+      program: "enroll-prime",
+      category: "major-medical",
+      subType: "Deductible-Value PPO",
+      carrier: "MedMax",
+      planName: "MedMax 1500",
+      tier: "N/A",
+      network: "First Health",
+      monthlyPriceIndividual: 289,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "varies by age, /mo",
+      rateTable: {
+        rowHeader: "Age Band",
+        columns: [
+          "Employee",
+          "Employee & Spouse",
+          "Employee & Child(ren)",
+          "Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              289,
+              609,
+              599,
+              849
+            ]
+          },
+          {
+            label: "30-44",
+            prices: [
+              339,
+              639,
+              623,
+              889
+            ]
+          },
+          {
+            label: "45-54",
+            prices: [
+              379,
+              689,
+              669,
+              959
+            ]
+          },
+          {
+            label: "55-64",
+            prices: [
+              429,
+              719,
+              679,
+              979
+            ]
+          }
+        ]
+      },
+      deductible: 1500,
+      outOfPocketMax: 9200,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "First Health PPO network — 5,700+ hospitals, 993,000+ providers nationwide",
+        "$0 copay telemedicine (primary care, urgent care, mental health) — deductible does not apply",
+        "$50 copay combined PCP / specialist / urgent care / chiropractic visits (10 visits/yr)",
+        "$1,000 copay per inpatient hospital admission (2 admissions/yr, 10-day limit)",
+        "$1,500 individual / $3,000 family deductible; $9,200 individual / $18,400 family out-of-pocket max"
+      ],
+      brochureUrl: "docs/brochures/enroll-prime-medmax-brochure.pdf",
+      sbcUrl: null,
+      description: "MedMax 1500 on the First Health PPO network. Rate shown is the youngest age band (18-29) — see the full age-band pricing table."
+    },
+    {
+      id: "enroll-prime-medperformance-3500-classic",
+      program: "enroll-prime",
+      category: "major-medical",
+      subType: "Cigna PPO",
+      carrier: "Med Performance",
+      planName: "Med Performance 3500 Classic",
+      tier: "N/A",
+      network: "Cigna",
+      monthlyPriceIndividual: 731.44,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "varies by age, /mo",
+      rateTable: {
+        rowHeader: "Age Band",
+        columns: [
+          "Employee",
+          "Employee & Spouse",
+          "Employee & Children",
+          "Employee & Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              731.44,
+              1332.82,
+              1222.64,
+              1934.21
+            ]
+          },
+          {
+            label: "30-39",
+            prices: [
+              753.47,
+              1376.89,
+              1262.31,
+              2000.32
+            ]
+          },
+          {
+            label: "40-49",
+            prices: [
+              780.96,
+              1431.87,
+              1311.79,
+              2082.79
+            ]
+          },
+          {
+            label: "50-59",
+            prices: [
+              807.98,
+              1485.91,
+              1360.42,
+              2163.84
+            ]
+          },
+          {
+            label: "60-64",
+            prices: [
+              837.42,
+              1544.77,
+              1413.4,
+              2252.14
+            ]
+          }
+        ]
+      },
+      deductible: 3500,
+      outOfPocketMax: 7350,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "Cigna network nationwide, no lifetime maximum",
+        "80% / 20% in-network coinsurance after deductible (60% / 40% out-of-network)",
+        "$0 copay preventive care; telemedicine included through SwiftMD.com",
+        "$3,500 individual deductible, $7,350 individual out-of-pocket maximum (in-network)"
+      ],
+      brochureUrl: "docs/brochures/enroll-prime-medperformance-brochure.pdf",
+      sbcUrl: null,
+      description: "Med Performance 3500 Classic on the Cigna network. Rate shown is the youngest age band (18-29) — see the full age-band pricing table."
+    },
+    {
+      id: "enroll-prime-medperformance-5000-classic",
+      program: "enroll-prime",
+      category: "major-medical",
+      subType: "Cigna PPO",
+      carrier: "Med Performance",
+      planName: "Med Performance 5000 Classic",
+      tier: "N/A",
+      network: "Cigna",
+      monthlyPriceIndividual: 694.11,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "varies by age, /mo",
+      rateTable: {
+        rowHeader: "Age Band",
+        columns: [
+          "Employee",
+          "Employee & Spouse",
+          "Employee & Children",
+          "Employee & Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              694.11,
+              1259.45,
+              1156.48,
+              1824.8
+            ]
+          },
+          {
+            label: "30-39",
+            prices: [
+              714.7,
+              1300.64,
+              1193.55,
+              1886.59
+            ]
+          },
+          {
+            label: "40-49",
+            prices: [
+              740.4,
+              1352.02,
+              1239.8,
+              1963.66
+            ]
+          },
+          {
+            label: "50-59",
+            prices: [
+              765.65,
+              1402.52,
+              1285.25,
+              2039.41
+            ]
+          },
+          {
+            label: "60-64",
+            prices: [
+              793.15,
+              1457.54,
+              1334.76,
+              2121.94
+            ]
+          }
+        ]
+      },
+      deductible: 5000,
+      outOfPocketMax: 7350,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "Cigna network nationwide, no lifetime maximum",
+        "80% / 20% in-network coinsurance after deductible (60% / 40% out-of-network)",
+        "$0 copay preventive care; telemedicine included through SwiftMD.com",
+        "$5,000 individual deductible, $7,350 individual out-of-pocket maximum (in-network)"
+      ],
+      brochureUrl: "docs/brochures/enroll-prime-medperformance-brochure.pdf",
+      sbcUrl: null,
+      description: "Med Performance 5000 Classic on the Cigna network. Rate shown is the youngest age band (18-29) — see the full age-band pricing table."
+    },
+    {
+      id: "enroll-prime-medperformance-5000-hsa",
+      program: "enroll-prime",
+      category: "major-medical",
+      subType: "Cigna PPO",
+      carrier: "Med Performance",
+      planName: "Med Performance 5000 HSA",
+      tier: "N/A",
+      network: "Cigna",
+      monthlyPriceIndividual: 644.53,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "varies by age, /mo",
+      rateTable: {
+        rowHeader: "Age Band",
+        columns: [
+          "Employee",
+          "Employee & Spouse",
+          "Employee & Children",
+          "Employee & Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              644.53,
+              1162.01,
+              1068.61,
+              1679.49
+            ]
+          },
+          {
+            label: "30-39",
+            prices: [
+              663.21,
+              1199.37,
+              1102.24,
+              1735.53
+            ]
+          },
+          {
+            label: "40-49",
+            prices: [
+              686.51,
+              1245.97,
+              1144.18,
+              1805.44
+            ]
+          },
+          {
+            label: "50-59",
+            prices: [
+              709.42,
+              1291.78,
+              1185.41,
+              1874.15
+            ]
+          },
+          {
+            label: "60-64",
+            prices: [
+              734.37,
+              1341.68,
+              1230.32,
+              1949.0
+            ]
+          }
+        ]
+      },
+      deductible: 5000,
+      outOfPocketMax: 6550,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "Cigna network nationwide, no lifetime maximum",
+        "80% / 20% in-network coinsurance after deductible (60% / 40% out-of-network)",
+        "$0 copay preventive care; telemedicine included through SwiftMD.com",
+        "$5,000 individual deductible, $6,550 individual out-of-pocket maximum (in-network)"
+      ],
+      brochureUrl: "docs/brochures/enroll-prime-medperformance-brochure.pdf",
+      sbcUrl: null,
+      description: "Med Performance 5000 HSA on the Cigna network. Rate shown is the youngest age band (18-29) — see the full age-band pricing table."
+    },
+    {
+      id: "enroll-prime-medperformance-7350-value",
+      program: "enroll-prime",
+      category: "major-medical",
+      subType: "Cigna PPO",
+      carrier: "Med Performance",
+      planName: "Med Performance 7350 Value",
+      tier: "N/A",
+      network: "Cigna",
+      monthlyPriceIndividual: 621.5,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "varies by age, /mo",
+      rateTable: {
+        rowHeader: "Age Band",
+        columns: [
+          "Employee",
+          "Employee & Spouse",
+          "Employee & Children",
+          "Employee & Family"
+        ],
+        rows: [
+          {
+            label: "18-29",
+            prices: [
+              621.5,
+              1116.74,
+              1027.79,
+              1611.99
+            ]
+          },
+          {
+            label: "30-39",
+            prices: [
+              639.29,
+              1152.32,
+              1059.81,
+              1665.36
+            ]
+          },
+          {
+            label: "40-49",
+            prices: [
+              661.48,
+              1196.7,
+              1099.76,
+              1731.94
+            ]
+          },
+          {
+            label: "50-59",
+            prices: [
+              683.3,
+              1240.33,
+              1139.02,
+              1797.38
+            ]
+          },
+          {
+            label: "60-64",
+            prices: [
+              707.06,
+              1287.85,
+              1181.79,
+              1868.66
+            ]
+          }
+        ]
+      },
+      deductible: 7350,
+      outOfPocketMax: 7350,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "Cigna network nationwide, no lifetime maximum",
+        "80% / 20% in-network coinsurance after deductible (60% / 40% out-of-network)",
+        "$0 copay preventive care; telemedicine included through SwiftMD.com",
+        "$7,350 individual deductible, $7,350 individual out-of-pocket maximum (in-network)"
+      ],
+      brochureUrl: "docs/brochures/enroll-prime-medperformance-brochure.pdf",
+      sbcUrl: null,
+      description: "Med Performance 7350 Value on the Cigna network. Rate shown is the youngest age band (18-29) — see the full age-band pricing table."
+    },
+    {
+      id: "enroll-prime-ahw-plan1",
+      program: "enroll-prime",
+      category: "major-medical",
+      subType: "MEC",
+      carrier: "AHW",
+      planName: "AHW Plan 1",
+      tier: "N/A",
+      network: "First Health",
+      monthlyPriceIndividual: 139.99,
+      monthlyPriceFamily: 209.99,
+      rateTiers: [
+        {
+          label: "Employee",
+          price: 139.99
+        },
+        {
+          label: "Employee & Spouse",
+          price: 169.99
+        },
+        {
+          label: "Employee & Child(ren)",
+          price: 164.99
+        },
+        {
+          label: "Family",
+          price: 209.99
+        }
+      ],
+      deductible: null,
+      outOfPocketMax: null,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "First Health PPO network — minimum essential coverage (MEC) plan",
+        "Covers ACA-required preventive care services at $0 copay",
+        "3 primary care visits/yr, $25 copay ($150 max/visit)",
+        "1 specialist/urgent care visit/yr, $50 copay ($300 max/visit)",
+        "$1,000/day inpatient hospitalization, $5,000/yr maximum",
+        "$0 copay preventive generic prescriptions"
+      ],
+      brochureUrl: "docs/brochures/enroll-prime-ahw-plan1-brochure.pdf",
+      sbcUrl: null,
+      description: "AHW Plan 1 — a Minimum Essential Coverage (MEC) plan on the First Health network with fixed copays for everyday care and scheduled inpatient hospital benefits."
+    },
+    {
+      id: "enroll-prime-ahw-plan2",
+      program: "enroll-prime",
+      category: "major-medical",
+      subType: "MEC",
+      carrier: "AHW",
+      planName: "AHW Plan 2",
+      tier: "N/A",
+      network: "First Health",
+      monthlyPriceIndividual: 159.99,
+      monthlyPriceFamily: 239.99,
+      rateTiers: [
+        {
+          label: "Employee",
+          price: 159.99
+        },
+        {
+          label: "Employee & Spouse",
+          price: 199.99
+        },
+        {
+          label: "Employee & Child(ren)",
+          price: 195.99
+        },
+        {
+          label: "Family",
+          price: 239.99
+        }
+      ],
+      deductible: null,
+      outOfPocketMax: null,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "First Health PPO network — minimum essential coverage (MEC) plan",
+        "Covers ACA-required preventive care services at $0 copay",
+        "4 primary care visits/yr, $25 copay ($150 max/visit)",
+        "2 specialist/urgent care visits/yr, $50 copay ($300 max/visit)",
+        "$1,000/day inpatient hospitalization, $10,000/yr maximum",
+        "$0 copay preventive generic, $5 copay preferred generic prescriptions"
+      ],
+      brochureUrl: "docs/brochures/enroll-prime-ahw-plan2-brochure.pdf",
+      sbcUrl: null,
+      description: "AHW Plan 2 — a Minimum Essential Coverage (MEC) plan on the First Health network with fixed copays for everyday care and scheduled inpatient hospital benefits."
+    },
+    {
+      id: "enroll-prime-ahw-plan3",
+      program: "enroll-prime",
+      category: "major-medical",
+      subType: "MEC",
+      carrier: "AHW",
+      planName: "AHW Plan 3",
+      tier: "N/A",
+      network: "First Health",
+      monthlyPriceIndividual: 179.99,
+      monthlyPriceFamily: 289.99,
+      rateTiers: [
+        {
+          label: "Employee",
+          price: 179.99
+        },
+        {
+          label: "Employee & Spouse",
+          price: 249.99
+        },
+        {
+          label: "Employee & Child(ren)",
+          price: 235.99
+        },
+        {
+          label: "Family",
+          price: 289.99
+        }
+      ],
+      deductible: null,
+      outOfPocketMax: null,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "First Health PPO network — minimum essential coverage (MEC) plan",
+        "Covers ACA-required preventive care services at $0 copay",
+        "4 primary care visits/yr, $25 copay ($150 max/visit)",
+        "4 specialist/urgent care visits/yr, $50 copay ($300 max/visit)",
+        "$1,000/day inpatient hospitalization, $15,000/yr maximum",
+        "$0 copay preventive generic, $5 copay preferred generic prescriptions"
+      ],
+      brochureUrl: "docs/brochures/enroll-prime-ahw-plan3-brochure.pdf",
+      sbcUrl: null,
+      description: "AHW Plan 3 — a Minimum Essential Coverage (MEC) plan on the First Health network with fixed copays for everyday care and scheduled inpatient hospital benefits."
+    },
+    {
+      id: "enroll-prime-ahw-plan4",
+      program: "enroll-prime",
+      category: "major-medical",
+      subType: "MEC",
+      carrier: "AHW",
+      planName: "AHW Plan 4",
+      tier: "N/A",
+      network: "First Health",
+      monthlyPriceIndividual: 199.99,
+      monthlyPriceFamily: 324.99,
+      rateTiers: [
+        {
+          label: "Employee",
+          price: 199.99
+        },
+        {
+          label: "Employee & Spouse",
+          price: 279.99
+        },
+        {
+          label: "Employee & Child(ren)",
+          price: 269.99
+        },
+        {
+          label: "Family",
+          price: 324.99
+        }
+      ],
+      deductible: null,
+      outOfPocketMax: null,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "First Health PPO network — minimum essential coverage (MEC) plan",
+        "Covers ACA-required preventive care services at $0 copay",
+        "4 primary care visits/yr, $50 copay ($150 max/visit)",
+        "4 specialist/urgent care visits/yr, $75 copay ($300 max/visit)",
+        "$1,000/day inpatient hospitalization, $10,000/yr maximum",
+        "In/outpatient surgery covered to $2,000/yr; ER $1,000 and ambulance $500 per incident (if admitted)"
+      ],
+      brochureUrl: "docs/brochures/enroll-prime-ahw-plan4-brochure.pdf",
+      sbcUrl: null,
+      description: "AHW Plan 4 — a Minimum Essential Coverage (MEC) plan on the First Health network with fixed copays for everyday care and scheduled inpatient hospital benefits."
+    },
+    {
+      id: "enroll-prime-ahw-plan5",
+      program: "enroll-prime",
+      category: "major-medical",
+      subType: "MEC",
+      carrier: "AHW",
+      planName: "AHW Plan 5",
+      tier: "N/A",
+      network: "First Health",
+      monthlyPriceIndividual: 219.99,
+      monthlyPriceFamily: 374.99,
+      rateTiers: [
+        {
+          label: "Employee",
+          price: 219.99
+        },
+        {
+          label: "Employee & Spouse",
+          price: 319.99
+        },
+        {
+          label: "Employee & Child(ren)",
+          price: 309.99
+        },
+        {
+          label: "Family",
+          price: 374.99
+        }
+      ],
+      deductible: null,
+      outOfPocketMax: null,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "First Health PPO network — minimum essential coverage (MEC) plan",
+        "Covers ACA-required preventive care services at $0 copay",
+        "5 primary care visits/yr, $50 copay ($150 max/visit)",
+        "5 specialist/urgent care visits/yr, $75 copay ($300 max/visit)",
+        "$1,500/day inpatient hospitalization, $15,000/yr maximum",
+        "In/outpatient surgery covered to $4,500/yr; ER $1,000 and ambulance $500 per incident (if admitted)"
+      ],
+      brochureUrl: "docs/brochures/enroll-prime-ahw-plan5-brochure.pdf",
+      sbcUrl: null,
+      description: "AHW Plan 5 — a Minimum Essential Coverage (MEC) plan on the First Health network with fixed copays for everyday care and scheduled inpatient hospital benefits."
+    },
+    {
+      id: "enroll-prime-ahw-plan6",
+      program: "enroll-prime",
+      category: "major-medical",
+      subType: "MEC",
+      carrier: "AHW",
+      planName: "AHW Plan 6",
+      tier: "N/A",
+      network: "First Health",
+      monthlyPriceIndividual: 199.99,
+      monthlyPriceFamily: 399.99,
+      rateTiers: [
+        {
+          label: "Employee",
+          price: 199.99
+        },
+        {
+          label: "Employee & Spouse",
+          price: 279.99
+        },
+        {
+          label: "Employee & Child(ren)",
+          price: 279.99
+        },
+        {
+          label: "Family",
+          price: 399.99
+        }
+      ],
+      deductible: null,
+      outOfPocketMax: null,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "First Health PPO network — minimum essential coverage (MEC) plan",
+        "Covers ACA-required preventive care services at $0 copay",
+        "$35 copay primary care, $75 copay specialist, $85 copay urgent care",
+        "$50 copay non-hospital lab and minor diagnostics (X-ray, ultrasound, bone density)",
+        "$500 copay major diagnostics (MRI/CT/PET), up to 3/yr, non-hospital based only",
+        "$0 copay preventive generic prescriptions"
+      ],
+      brochureUrl: "docs/brochures/enroll-prime-ahw-plan6-brochure.pdf",
+      sbcUrl: null,
+      description: "AHW Plan 6 — a Minimum Essential Coverage (MEC) plan on the First Health network with fixed copays for everyday care and scheduled inpatient hospital benefits."
+    },
+    {
+      id: "cigna-dental-dhmo",
+      program: "cigna-dental",
+      category: "supplemental",
+      subType: "Dental (DHMO)",
+      carrier: "Cigna",
+      planName: "Cigna Dental DHMO",
+      tier: "N/A",
+      monthlyPriceIndividual: 59.99,
+      monthlyPriceFamily: 119.99,
+      rateTiers: [
+        {
+          label: "Employee",
+          price: 59.99
+        },
+        {
+          label: "Employee & Spouse",
+          price: 119.99
+        },
+        {
+          label: "Employee & Child(ren)",
+          price: 119.99
+        },
+        {
+          label: "Family",
+          price: 119.99
+        }
+      ],
+      deductible: 0,
+      outOfPocketMax: null,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "Cigna DHMO dental network — flat copay schedule, no deductible or annual maximum",
+        "$0 copay for exams, cleanings, and most X-rays",
+        "No claim forms to submit when using a network general dentist",
+        "No waiting periods — coverage starts on the effective date"
+      ],
+      brochureUrl: "docs/brochures/cigna-dental-dhmo-brochure.pdf",
+      sbcUrl: "docs/sbc/cigna-dental-dhmo-sbc.pdf",
+      description: "Cigna Dental DHMO — a flat-copay dental plan with no deductible or annual maximum, no claim forms to submit."
+    },
+    {
+      id: "cigna-dental-vision",
+      program: "cigna-dental",
+      category: "supplemental",
+      subType: "Dental & Vision (PPO)",
+      carrier: "Cigna",
+      planName: "Cigna Dental + Vision (PPO)",
+      tier: "N/A",
+      monthlyPriceIndividual: 79.98,
+      monthlyPriceFamily: 174.98,
+      rateTiers: [
+        {
+          label: "Employee",
+          price: 79.98
+        },
+        {
+          label: "Employee & Spouse",
+          price: 154.98
+        },
+        {
+          label: "Employee & Child(ren)",
+          price: 174.98
+        },
+        {
+          label: "Family",
+          price: 174.98
+        }
+      ],
+      deductible: null,
+      outOfPocketMax: null,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "Cigna PPO dental bundled with vision coverage for one combined premium",
+        "See any licensed dentist — network or out-of-network",
+        "Includes routine vision exam, lens, and frame benefits alongside dental coverage"
+      ],
+      brochureUrl: "docs/brochures/cigna-dental-vision-brochure.pdf",
+      sbcUrl: null,
+      description: "Cigna Dental + Vision (PPO) — bundles PPO dental coverage with vision benefits for one combined premium."
+    },
   ]
 };
