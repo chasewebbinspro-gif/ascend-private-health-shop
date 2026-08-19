@@ -16,8 +16,6 @@
 </head>
 <body>
 
-<div class="placeholder-banner">Working draft: state availability is still a placeholder ("licensed nationwide") pending confirmation per plan — remove this banner once that's resolved. (Ameritas Dental plans are rated by state/county and are quote-by-request by design, not a data gap.)</div>
-
 <header class="site-header">
   <div class="container">
     <a href="index.html" class="brand">Ascend Benefits <small>CONSULTING GROUP</small></a>
@@ -25,7 +23,7 @@
     <label for="nav-toggle" class="nav-toggle-btn" aria-label="Menu">&#9776;</label>
     <nav>
       <a href="index.html">Home</a>
-      <a href="plans.html?category=major-medical">Major Medical</a>
+      <a href="plans.html?category=major-medical">Health Plans</a>
       <a href="plans.html?category=supplemental">Supplemental</a>
       <a href="plans.html" class="active">Browse All Plans</a>
       <a href="about.html">About</a>
@@ -37,63 +35,11 @@
 <section class="section">
   <div class="container">
     <h2 id="page-title">Browse Plans</h2>
-    <p class="lead">Filter to find plans available where you live, then open any plan for full pricing, benefits, the brochure, and the Summary of Benefits (SBC).</p>
+    <p class="lead" id="page-lead">Plans are grouped by company. Pick a health plan first, then add the supplemental coverage offered alongside it.</p>
 
-    <div class="plans-layout">
-      <aside class="filters">
-        <h3>Filter Plans</h3>
-
-        <div class="filter-group">
-          <label>Plan Type</label>
-          <div class="filter-chip-row" id="category-chips">
-            <button class="filter-chip active" data-category="all">All</button>
-            <button class="filter-chip" data-category="major-medical">Major Medical</button>
-            <button class="filter-chip" data-category="supplemental">Supplemental</button>
-          </div>
-        </div>
-
-        <div class="filter-group">
-          <label for="subtype-select">Coverage Type</label>
-          <select id="subtype-select">
-            <option value="all">All Coverage Types</option>
-          </select>
-        </div>
-
-        <div class="filter-group">
-          <label for="state-input">State</label>
-          <input type="text" id="state-input" placeholder="e.g. Texas or TX">
-        </div>
-
-        <div class="filter-group">
-          <label for="price-select">Max Monthly Price (Individual)</label>
-          <select id="price-select">
-            <option value="0">Any Price</option>
-            <option value="50">Under $50</option>
-            <option value="150">Under $150</option>
-            <option value="300">Under $300</option>
-            <option value="500">Under $500</option>
-            <option value="750">Under $750</option>
-            <option value="1000">Under $1,000</option>
-          </select>
-        </div>
-
-        <div class="filter-group">
-          <label for="sort-select">Sort By</label>
-          <select id="sort-select">
-            <option value="price-asc">Price: Low to High</option>
-            <option value="price-desc">Price: High to Low</option>
-            <option value="name-asc">Plan Name: A–Z</option>
-          </select>
-        </div>
-      </aside>
-
-      <div>
-        <div id="results-count"></div>
-        <div class="plan-grid" id="plan-grid"></div>
-        <div class="no-results" id="no-results" style="display:none;">
-          <p>No plans match those filters. Try widening your search.</p>
-        </div>
-      </div>
+    <div id="plans-container"></div>
+    <div class="no-results" id="no-results" style="display:none;">
+      <p>No plans are available in this category yet.</p>
     </div>
   </div>
 </section>
@@ -107,7 +53,7 @@
       </div>
       <div>
         <h4>Shop</h4>
-        <a href="plans.html?category=major-medical">Major Medical Plans</a>
+        <a href="plans.html?category=major-medical">Health Plans</a>
         <a href="plans.html?category=supplemental">Supplemental Plans</a>
         <a href="plans.html">Browse All Plans</a>
       </div>

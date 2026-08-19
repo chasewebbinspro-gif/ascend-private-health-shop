@@ -1,10 +1,13 @@
+const PROGRAMS = [
+  { key: 'amerus-summit', label: 'Amerus Summit Health Plans' },
+  { key: 'lifex', label: 'LifeX Research Corp' },
+  { key: 'ameritas', label: 'Ameritas' },
+  { key: 'solstice', label: 'Solstice Dental & Vision' }
+];
+
 const state = {
   plans: [],
-  category: 'all',
-  subtype: 'all',
-  stateFilter: '',
-  maxPrice: 0,
-  sort: 'price-asc'
+  category: 'all' // 'all' | 'major-medical' | 'supplemental'
 };
 
 function formatMoney(n) {
@@ -14,51 +17,20 @@ function formatMoney(n) {
   return '$' + num.toLocaleString(undefined, hasCents ? { minimumFractionDigits: 2, maximumFractionDigits: 2 } : {});
 }
 
-function planMatchesState(plan, query) {
-  if (!query) return true;
-  if (plan.states.includes('ALL')) return true;
-  const q = query.trim().toLowerCase();
-  return plan.states.some(s => s.toLowerCase().includes(q));
+function programLabel(key) {
+  const found = PROGRAMS.find(p => p.key === key);
+  return found ? found.label : key;
 }
 
-function getFilteredPlans() {
-  let list = state.plans.filter(p => {
-    if (state.category !== 'all' && p.category !== state.category) return false;
-    if (state.subtype !== 'all' && p.subType !== state.subtype) return false;
-    if (state.maxPrice > 0 && (p.monthlyPriceIndividual === null || p.monthlyPriceIndividual > state.maxPrice)) return false;
-    if (!planMatchesState(p, state.stateFilter)) return false;
-    return true;
-  });
-
-  list.sort((a, b) => {
-    const priceA = a.monthlyPriceIndividual === null ? Infinity : a.monthlyPriceIndividual;
-    const priceB = b.monthlyPriceIndividual === null ? Infinity : b.monthlyPriceIndividual;
-    if (state.sort === 'price-asc') return priceA - priceB;
-    if (state.sort === 'price-desc') {
-      if (a.monthlyPriceIndividual === null) return 1;
-      if (b.monthlyPriceIndividual === null) return -1;
-      return priceB - priceA;
-    }
-    if (state.sort === 'name-asc') return a.planName.localeCompare(b.planName);
-    return 0;
-  });
-
-  return list;
-}
-
-function renderSubtypeOptions() {
-  const select = document.getElementById('subtype-select');
-  const relevant = state.plans.filter(p => state.category === 'all' || p.category === state.category);
-  const subtypes = [...new Set(relevant.map(p => p.subType))].sort();
-  const current = select.value;
-  select.innerHTML = '<option value="all">All Coverage Types</option>' +
-    subtypes.map(s => `<option value="${s}">${s}</option>`).join('');
-  if (subtypes.includes(current)) select.value = current;
-  else state.subtype = 'all';
+function brochureThumbUrl(plan) {
+  if (!plan.brochureUrl) return null;
+  return plan.brochureUrl
+    .replace('docs/brochures/', 'assets/img/brochure-thumbs/')
+    .replace(/\.pdf$/i, '-1.png');
 }
 
 function planCardHtml(plan) {
-  const badge = plan.category === 'major-medical' ? 'Major Medical' : 'Supplemental';
+  const badge = plan.category === 'major-medical' ? 'Health Plans' : 'Supplemental';
   const benefits = plan.keyBenefits.slice(0, 3).map(b => `<li>${b}</li>`).join('');
   let familyPriceHtml = '';
   if (plan.monthlyPriceFamily !== null) {
@@ -69,40 +41,93 @@ function planCardHtml(plan) {
   const sbcLinkHtml = plan.sbcUrl
     ? `<a href="${plan.sbcUrl}" target="_blank" rel="noopener">SBC</a>`
     : '';
+  const bundleNoteHtml = plan.standalone === false
+    ? `<div class="bundle-note">Requires ${programLabel(plan.program)} major medical</div>`
+    : '';
+  const thumbUrl = brochureThumbUrl(plan);
+  const imageHtml = thumbUrl
+    ? `<div class="plan-card-image"><img src="${thumbUrl}" alt="${plan.planName} brochure cover" onerror="this.closest('.plan-card-image').style.display='none';"></div>`
+    : '';
   return `
     <div class="plan-card" data-id="${plan.id}">
-      <span class="badge">${badge} · ${plan.subType}</span>
-      <p class="carrier">${plan.carrier}</p>
-      <h4>${plan.planName}</h4>
-      <div class="price">${formatMoney(plan.monthlyPriceIndividual)}${plan.monthlyPriceIndividual !== null ? `<span>${plan.priceUnitLabel || '/mo individual'}</span>` : ''}</div>
-      ${familyPriceHtml}
-      <ul>${benefits}</ul>
-      <div class="card-actions">
-        <a href="${plan.brochureUrl}" target="_blank" rel="noopener">Brochure</a>
-        ${sbcLinkHtml}
-        <button class="cta" data-id="${plan.id}">View Details</button>
+      ${imageHtml}
+      <div class="plan-card-body">
+        <span class="badge">${badge} · ${plan.subType}</span>
+        <p class="carrier">${plan.carrier}</p>
+        <h4>${plan.planName}</h4>
+        <div class="price">${formatMoney(plan.monthlyPriceIndividual)}${plan.monthlyPriceIndividual !== null ? `<span>${plan.priceUnitLabel || '/mo individual'}</span>` : ''}</div>
+        ${familyPriceHtml}
+        ${bundleNoteHtml}
+        <ul>${benefits}</ul>
+        <div class="card-actions">
+          <a href="${plan.brochureUrl}" target="_blank" rel="noopener">Brochure</a>
+          ${sbcLinkHtml}
+          <button class="cta" data-id="${plan.id}">View Details</button>
+        </div>
       </div>
     </div>
   `;
 }
 
-function renderPlans() {
-  const grid = document.getElementById('plan-grid');
+function renderPrograms() {
+  const container = document.getElementById('plans-container');
   const noResults = document.getElementById('no-results');
-  const countEl = document.getElementById('results-count');
-  const filtered = getFilteredPlans();
+  if (!container) return;
 
-  countEl.textContent = `${filtered.length} plan${filtered.length === 1 ? '' : 's'} found`;
+  const allProgramKeys = [...new Set(state.plans.map(p => p.program))];
+  const orderedKeys = [
+    ...PROGRAMS.map(p => p.key).filter(k => allProgramKeys.includes(k)),
+    ...allProgramKeys.filter(k => !PROGRAMS.some(p => p.key === k))
+  ];
 
-  if (filtered.length === 0) {
-    grid.innerHTML = '';
+  let html = '';
+  let anySection = false;
+
+  orderedKeys.forEach(key => {
+    const programPlans = state.plans.filter(p => p.program === key);
+    const mmPlans = programPlans.filter(p => p.category === 'major-medical');
+    const suppPlans = programPlans.filter(p => p.category === 'supplemental');
+
+    const showMM = state.category !== 'supplemental' && mmPlans.length > 0;
+    const showSupp = state.category !== 'major-medical' && suppPlans.length > 0;
+
+    if (!showMM && !showSupp) return;
+
+    anySection = true;
+    html += `<div class="program-section">`;
+    html += `<div class="program-header"><h2>${programLabel(key)}</h2></div>`;
+
+    if (showMM) {
+      html += `<div class="plan-grid">${mmPlans.map(planCardHtml).join('')}</div>`;
+    }
+
+    if (showSupp) {
+      const heading = showMM
+        ? `Supplemental Coverage from ${programLabel(key)}`
+        : `${programLabel(key)} Supplemental Plans`;
+      const hasBundleOnly = suppPlans.some(p => p.standalone === false);
+      let note = '';
+      if (hasBundleOnly) {
+        note = `<p>These plans require an active ${programLabel(key)} major medical plan — they are not sold on their own.</p>`;
+      } else if (key === 'ameritas') {
+        note = `<p>Standalone coverage — can be added regardless of which major medical plan you choose.</p>`;
+      }
+      html += `<div class="program-subheader"><h3>${heading}</h3>${note}</div>`;
+      html += `<div class="plan-grid">${suppPlans.map(planCardHtml).join('')}</div>`;
+    }
+
+    html += `</div>`;
+  });
+
+  if (!anySection) {
+    container.innerHTML = '';
     noResults.style.display = 'block';
     return;
   }
   noResults.style.display = 'none';
-  grid.innerHTML = filtered.map(planCardHtml).join('');
+  container.innerHTML = html;
 
-  grid.querySelectorAll('[data-id]').forEach(el => {
+  container.querySelectorAll('[data-id]').forEach(el => {
     el.addEventListener('click', (e) => {
       const id = el.getAttribute('data-id');
       openPlanModal(id);
@@ -148,10 +173,15 @@ function openPlanModal(id) {
     ? `<a href="${plan.sbcUrl}" target="_blank" rel="noopener">📄 Summary of Benefits (SBC)</a>`
     : '';
 
+  const bundleNoticeHtml = plan.standalone === false
+    ? `<p class="bundle-note" style="display:block;">Requires an active ${programLabel(plan.program)} major medical plan — not sold on its own.</p>`
+    : '';
+
   document.getElementById('modal-body').innerHTML = `
-    <span class="badge">${plan.category === 'major-medical' ? 'Major Medical' : 'Supplemental'} · ${plan.subType}</span>
+    <span class="badge">${plan.category === 'major-medical' ? 'Health Plans' : 'Supplemental'} · ${plan.subType}</span>
     <h3>${plan.planName}</h3>
     <p class="carrier">${plan.carrier}</p>
+    ${bundleNoticeHtml}
     <div class="price-row">
       ${priceRowHtml}
     </div>
@@ -174,47 +204,20 @@ function closeModal() {
 function applyUrlParams() {
   const params = new URLSearchParams(window.location.search);
   const category = params.get('category');
-  if (category === 'major-medical' || category === 'supplemental') {
-    state.category = category;
-    document.querySelectorAll('#category-chips .filter-chip').forEach(chip => {
-      chip.classList.toggle('active', chip.dataset.category === category);
-    });
-    document.getElementById('page-title').textContent =
-      category === 'major-medical' ? 'Major Medical Plans' : 'Supplemental & Ancillary Plans';
+  const titleEl = document.getElementById('page-title');
+  const leadEl = document.getElementById('page-lead');
+  if (category === 'major-medical') {
+    state.category = 'major-medical';
+    if (titleEl) titleEl.textContent = 'Health Plans';
+    if (leadEl) leadEl.textContent = 'Health plans, grouped by company. Pick the plan that fits, then check that company’s supplemental options on the Supplemental Plans page.';
+  } else if (category === 'supplemental') {
+    state.category = 'supplemental';
+    if (titleEl) titleEl.textContent = 'Supplemental & Ancillary Plans';
+    if (leadEl) leadEl.textContent = 'Supplemental plans, grouped by company. Some are add-ons to a specific company’s major medical plan; others stand on their own.';
   }
 }
 
-function initFilters() {
-  document.querySelectorAll('#category-chips .filter-chip').forEach(chip => {
-    chip.addEventListener('click', () => {
-      document.querySelectorAll('#category-chips .filter-chip').forEach(c => c.classList.remove('active'));
-      chip.classList.add('active');
-      state.category = chip.dataset.category;
-      renderSubtypeOptions();
-      renderPlans();
-    });
-  });
-
-  document.getElementById('subtype-select').addEventListener('change', (e) => {
-    state.subtype = e.target.value;
-    renderPlans();
-  });
-
-  document.getElementById('state-input').addEventListener('input', (e) => {
-    state.stateFilter = e.target.value;
-    renderPlans();
-  });
-
-  document.getElementById('price-select').addEventListener('change', (e) => {
-    state.maxPrice = Number(e.target.value);
-    renderPlans();
-  });
-
-  document.getElementById('sort-select').addEventListener('change', (e) => {
-    state.sort = e.target.value;
-    renderPlans();
-  });
-
+function initModal() {
   document.getElementById('modal-close').addEventListener('click', closeModal);
   document.getElementById('plan-modal').addEventListener('click', (e) => {
     if (e.target.id === 'plan-modal') closeModal();
@@ -223,6 +226,5 @@ function initFilters() {
 
 state.plans = PLANS_DATA.plans;
 applyUrlParams();
-initFilters();
-renderSubtypeOptions();
-renderPlans();
+initModal();
+renderPrograms();

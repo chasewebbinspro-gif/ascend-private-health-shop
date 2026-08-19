@@ -207,60 +207,44 @@ a { color: var(--navy); }
 .category-card h3 { margin: 0 0 8px; color: var(--navy); }
 .category-card p { color: var(--text-muted); margin: 0 0 18px; }
 
-/* Plans layout */
-.plans-layout {
-  display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 28px;
-  align-items: start;
+/* Plans layout — grouped by company */
+.program-section { margin-bottom: 56px; }
+.program-section:last-child { margin-bottom: 0; }
+.program-header {
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 10px;
+  margin-bottom: 22px;
 }
-@media (max-width: 860px) {
-  .plans-layout { grid-template-columns: 1fr; }
+.program-header h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: var(--navy);
 }
+.program-header p { margin: 4px 0 0; color: var(--text-muted); font-size: 0.92rem; }
 
-.filters {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 20px;
+.program-subheader {
+  margin: 34px 0 18px;
+  padding-top: 4px;
 }
-@media (min-width: 861px) {
-  .filters {
-    position: sticky;
-    top: 88px;
-  }
+.program-subheader h3 {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+  color: var(--navy);
+  font-family: "Playfair Display", Georgia, serif;
 }
-.filters h3 { margin: 0 0 14px; font-size: 1rem; color: var(--navy); font-family: "Playfair Display", Georgia, serif; }
-.filter-group { margin-bottom: 20px; }
-.filter-group label {
-  display: block;
-  font-size: 0.85rem;
+.program-subheader p { margin: 0; color: var(--text-muted); font-size: 0.85rem; }
+
+.bundle-note {
+  display: inline-block;
+  background: #fff6e0;
+  border: 1px solid var(--gold);
+  color: var(--navy);
+  font-size: 0.78rem;
   font-weight: 600;
-  margin-bottom: 6px;
-  color: var(--text);
-}
-.filter-group select,
-.filter-group input {
-  width: 100%;
-  padding: 9px 10px;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  font-size: 0.9rem;
-  background: #fff;
-  font-family: inherit;
-}
-.filter-chip-row { display: flex; flex-wrap: wrap; gap: 8px; }
-.filter-chip {
-  border: 1px solid var(--border);
-  background: #fff;
-  padding: 6px 12px;
+  padding: 3px 10px;
   border-radius: 20px;
-  font-size: 0.82rem;
-  cursor: pointer;
-  color: var(--text);
-  font-family: inherit;
+  margin-top: 6px;
 }
-.filter-chip.active { background: var(--navy); color: #fff; border-color: var(--navy); }
 
 #results-count { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px; }
 
@@ -274,7 +258,7 @@ a { color: var(--navy); }
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 22px;
+  overflow: hidden;
   box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
@@ -282,6 +266,21 @@ a { color: var(--navy); }
   transition: box-shadow 0.15s, transform 0.15s;
 }
 .plan-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+.plan-card-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--off-white, #f0ede4);
+  border-bottom: 1px solid var(--border);
+}
+.plan-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+.plan-card-body { padding: 22px; display: flex; flex-direction: column; flex-grow: 1; }
 .plan-card .badge {
   align-self: flex-start;
   background: #f5eed9;

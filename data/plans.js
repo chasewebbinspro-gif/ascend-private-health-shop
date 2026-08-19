@@ -21,6 +21,7 @@ const PLANS_DATA = {
   plans: [
     {
       id: "cigna-epo",
+      program: "amerus-summit",
       category: "major-medical",
       subType: "EPO",
       carrier: "Amerus Summit Health Plans",
@@ -51,6 +52,7 @@ const PLANS_DATA = {
     },
     {
       id: "cigna-ppo",
+      program: "amerus-summit",
       category: "major-medical",
       subType: "PPO",
       carrier: "Amerus Summit Health Plans",
@@ -81,6 +83,7 @@ const PLANS_DATA = {
     },
     {
       id: "phcs",
+      program: "amerus-summit",
       category: "major-medical",
       subType: "PHCS Network",
       carrier: "Amerus Summit Health Plans",
@@ -111,7 +114,8 @@ const PLANS_DATA = {
     },
     {
       id: "maintenance-plan-high",
-      category: "major-medical",
+      program: "amerus-summit",
+      category: "supplemental",
       subType: "Fixed Indemnity",
       carrier: "Amerus Summit Health Plans",
       planName: "Maintenance Plan High",
@@ -146,7 +150,8 @@ const PLANS_DATA = {
     },
     {
       id: "maintenance-plan-low",
-      category: "major-medical",
+      program: "amerus-summit",
+      category: "supplemental",
       subType: "Fixed Indemnity",
       carrier: "Amerus Summit Health Plans",
       planName: "Maintenance Plan Low",
@@ -181,6 +186,7 @@ const PLANS_DATA = {
     },
     {
       id: "dental",
+      program: "amerus-summit",
       category: "supplemental",
       subType: "Dental",
       carrier: "Humana (Amerus Summit Dental)",
@@ -210,6 +216,7 @@ const PLANS_DATA = {
     },
     {
       id: "vision",
+      program: "amerus-summit",
       category: "supplemental",
       subType: "Vision",
       carrier: "Humana (Amerus Summit Vision)",
@@ -239,6 +246,7 @@ const PLANS_DATA = {
     },
     {
       id: "accident",
+      program: "amerus-summit",
       category: "supplemental",
       subType: "Accident",
       carrier: "AmeriShield",
@@ -268,6 +276,7 @@ const PLANS_DATA = {
     },
     {
       id: "critical-illness",
+      program: "amerus-summit",
       category: "supplemental",
       subType: "Critical Illness",
       carrier: "AmeriShield",
@@ -300,6 +309,7 @@ const PLANS_DATA = {
     },
     {
       id: "term-life-enrollee",
+      program: "amerus-summit",
       category: "supplemental",
       subType: "Term Life",
       carrier: "AmeriShield",
@@ -332,6 +342,7 @@ const PLANS_DATA = {
     },
     {
       id: "term-life-spouse",
+      program: "amerus-summit",
       category: "supplemental",
       subType: "Term Life",
       carrier: "AmeriShield",
@@ -367,6 +378,7 @@ const PLANS_DATA = {
 
     {
       id: "lifex-mm-1000",
+      program: "lifex",
       category: "major-medical",
       subType: "LifeX MM",
       carrier: "LifeX Research Corp",
@@ -402,6 +414,7 @@ const PLANS_DATA = {
     },
     {
       id: "lifex-mm-2500",
+      program: "lifex",
       category: "major-medical",
       subType: "LifeX MM",
       carrier: "LifeX Research Corp",
@@ -437,6 +450,7 @@ const PLANS_DATA = {
     },
     {
       id: "lifex-mm-3500",
+      program: "lifex",
       category: "major-medical",
       subType: "LifeX MM",
       carrier: "LifeX Research Corp",
@@ -472,6 +486,7 @@ const PLANS_DATA = {
     },
     {
       id: "lifex-mmplus-4900",
+      program: "lifex",
       category: "major-medical",
       subType: "LifeX MM+",
       carrier: "LifeX Research Corp",
@@ -507,6 +522,7 @@ const PLANS_DATA = {
     },
     {
       id: "lifex-mmplus-7250",
+      program: "lifex",
       category: "major-medical",
       subType: "LifeX MM+",
       carrier: "LifeX Research Corp",
@@ -542,6 +558,7 @@ const PLANS_DATA = {
     },
     {
       id: "lifex-vl-500",
+      program: "lifex",
       category: "major-medical",
       subType: "LifeX VL",
       carrier: "LifeX Research Corp",
@@ -577,6 +594,7 @@ const PLANS_DATA = {
     },
     {
       id: "lifex-vl-750",
+      program: "lifex",
       category: "major-medical",
       subType: "LifeX VL",
       carrier: "LifeX Research Corp",
@@ -612,6 +630,7 @@ const PLANS_DATA = {
     },
     {
       id: "lifex-vl-1000",
+      program: "lifex",
       category: "major-medical",
       subType: "LifeX VL",
       carrier: "LifeX Research Corp",
@@ -647,6 +666,7 @@ const PLANS_DATA = {
     },
     {
       id: "lifex-vl-1500",
+      program: "lifex",
       category: "major-medical",
       subType: "LifeX VL",
       carrier: "LifeX Research Corp",
@@ -682,6 +702,7 @@ const PLANS_DATA = {
     },
     {
       id: "lifex-copay-ppo-500",
+      program: "lifex",
       category: "major-medical",
       subType: "LifeX Copay PPO",
       carrier: "LifeX Research Corp",
@@ -717,6 +738,7 @@ const PLANS_DATA = {
     },
     {
       id: "lifex-copay-ppo-750",
+      program: "lifex",
       category: "major-medical",
       subType: "LifeX Copay PPO",
       carrier: "LifeX Research Corp",
@@ -752,6 +774,7 @@ const PLANS_DATA = {
     },
     {
       id: "lifex-copay-ppo-1000",
+      program: "lifex",
       category: "major-medical",
       subType: "LifeX Copay PPO",
       carrier: "LifeX Research Corp",
@@ -787,6 +810,7 @@ const PLANS_DATA = {
     },
     {
       id: "lifex-copay-ppo-1500",
+      program: "lifex",
       category: "major-medical",
       subType: "LifeX Copay PPO",
       carrier: "LifeX Research Corp",
@@ -822,6 +846,8 @@ const PLANS_DATA = {
     },
     {
       id: "lifex-dental-ppo-1500",
+      program: "lifex",
+      standalone: false,
       category: "supplemental",
       subType: "Dental",
       carrier: "Humana (LifeX Research Corp)",
@@ -852,6 +878,8 @@ const PLANS_DATA = {
     },
     {
       id: "lifex-dental-ppo-unlimited-ortho",
+      program: "lifex",
+      standalone: false,
       category: "supplemental",
       subType: "Dental",
       carrier: "Humana (LifeX Research Corp)",
@@ -882,6 +910,8 @@ const PLANS_DATA = {
     },
     {
       id: "lifex-dental-trp-1500",
+      program: "lifex",
+      standalone: false,
       category: "supplemental",
       subType: "Dental",
       carrier: "Humana (LifeX Research Corp)",
@@ -912,6 +942,8 @@ const PLANS_DATA = {
     },
     {
       id: "lifex-dental-trp-unlimited-ortho",
+      program: "lifex",
+      standalone: false,
       category: "supplemental",
       subType: "Dental",
       carrier: "Humana (LifeX Research Corp)",
@@ -942,6 +974,8 @@ const PLANS_DATA = {
     },
     {
       id: "lifex-vision-150",
+      program: "lifex",
+      standalone: false,
       category: "supplemental",
       subType: "Vision",
       carrier: "Humana (LifeX Research Corp)",
@@ -981,6 +1015,7 @@ const PLANS_DATA = {
 
     {
       id: "ameritas-dental-care-lite",
+      program: "ameritas",
       category: "supplemental",
       subType: "Dental",
       carrier: "Ameritas",
@@ -1007,6 +1042,7 @@ const PLANS_DATA = {
     },
     {
       id: "ameritas-dental-care-boost",
+      program: "ameritas",
       category: "supplemental",
       subType: "Dental",
       carrier: "Ameritas",
@@ -1033,6 +1069,7 @@ const PLANS_DATA = {
     },
     {
       id: "ameritas-dental-care-complete",
+      program: "ameritas",
       category: "supplemental",
       subType: "Dental",
       carrier: "Ameritas",
@@ -1059,6 +1096,7 @@ const PLANS_DATA = {
     },
     {
       id: "ameritas-vision-choice-vsp",
+      program: "ameritas",
       category: "supplemental",
       subType: "Vision",
       carrier: "Ameritas",
@@ -1095,6 +1133,7 @@ const PLANS_DATA = {
     },
     {
       id: "ameritas-vision-select-eyemed",
+      program: "ameritas",
       category: "supplemental",
       subType: "Vision",
       carrier: "Ameritas",
@@ -1128,6 +1167,135 @@ const PLANS_DATA = {
       brochureUrl: "docs/brochures/ameritas-vision-brochure.pdf",
       sbcUrl: null,
       description: "Ameritas PrimeStar Vision, Select Vision plan on the EyeMed network — generally the lower-cost of the two Ameritas vision options. Rate shown is the lowest state-tier price (MN) — see the full state pricing table for your rate."
+    },
+
+    /* ---- Solstice Dental & Vision (via Health & Wellness Education
+       Association / HWEA), loaded 2026-08-19. Owner-provided retail
+       pricing (not derived from the source brochures, which contain
+       benefit schedules only, no premiums). Owner confirmed the
+       standalone Solstice Vision PPO plan is NOT sold on its own, so it
+       is not listed here. ---- */
+
+    {
+      id: "solstice-dhmo",
+      program: "solstice",
+      category: "supplemental",
+      subType: "Dental",
+      carrier: "Solstice",
+      planName: "Solstice DHMO Dental (Plan S700B)",
+      tier: "N/A",
+      monthlyPriceIndividual: 59.99,
+      monthlyPriceFamily: 114.99,
+      rateTiers: [
+        { label: "Employee", price: 59.99 },
+        { label: "Employee + Spouse", price: 84.99 },
+        { label: "Employee + Children", price: 94.99 },
+        { label: "Employee + Family", price: 114.99 }
+      ],
+      deductible: 0,
+      outOfPocketMax: null,
+      states: ["ALL"],
+      keyBenefits: [
+        "$0 copay for exams, cleanings, X-rays, and most amalgam fillings — no deductibles, no annual maximum, no claim forms",
+        "Porcelain/ceramic crowns at a $245 copay; anterior root canal at a $110 copay; simple extractions at a $20 copay",
+        "No waiting periods — coverage starts on the effective date",
+        "Adult orthodontia available at a $2,200–$2,350 flat copay",
+        "Offered through Health & Wellness Education Association (HWEA)"
+      ],
+      brochureUrl: "docs/brochures/solstice-dhmo-brochure.pdf",
+      sbcUrl: null,
+      description: "Solstice DHMO Dental (Plan S700B), offered through Health & Wellness Education Association (HWEA). Flat-copay DHMO plan — no deductibles, no annual maximum, and no claim forms to submit."
+    },
+    {
+      id: "solstice-dhmo-vision",
+      program: "solstice",
+      category: "supplemental",
+      subType: "Dental & Vision",
+      carrier: "Solstice",
+      planName: "Solstice DHMO Dental + Vision (Plan S700B)",
+      tier: "N/A",
+      monthlyPriceIndividual: 79.98,
+      monthlyPriceFamily: 164.98,
+      rateTiers: [
+        { label: "Employee", price: 79.98 },
+        { label: "Employee + Spouse", price: 119.98 },
+        { label: "Employee + Children", price: 134.98 },
+        { label: "Employee + Family", price: 164.98 }
+      ],
+      deductible: 0,
+      outOfPocketMax: null,
+      states: ["ALL"],
+      keyBenefits: [
+        "Bundles the Solstice DHMO Dental plan (S700B) with the Solstice Vision SV6 plan for one combined premium",
+        "$0 copay for dental exams, cleanings, X-rays, and most amalgam fillings — no deductibles or annual maximum",
+        "$10 vision exam copay, $25 copay for eyeglasses (lenses & frame) or contacts, $100 frame allowance",
+        "Vision exam, lenses/frame, or contacts each covered once every 12 months",
+        "Offered through Health & Wellness Education Association (HWEA)"
+      ],
+      brochureUrl: "docs/brochures/solstice-dhmo-vision-brochure.pdf",
+      sbcUrl: null,
+      description: "Solstice DHMO Dental (Plan S700B) bundled with the Solstice Vision SV6 plan — one premium covers both dental and vision. Offered through Health & Wellness Education Association (HWEA)."
+    },
+    {
+      id: "solstice-ppo",
+      program: "solstice",
+      category: "supplemental",
+      subType: "Dental",
+      carrier: "Solstice",
+      planName: "Solstice PPO Dental (Plan 11029)",
+      tier: "N/A",
+      monthlyPriceIndividual: 89.99,
+      monthlyPriceFamily: 245.99,
+      rateTiers: [
+        { label: "Employee", price: 89.99 },
+        { label: "Employee + Spouse", price: 145.99 },
+        { label: "Employee + Children", price: 174.99 },
+        { label: "Employee + Family", price: 245.99 }
+      ],
+      deductible: 50,
+      outOfPocketMax: null,
+      states: ["ALL"],
+      keyBenefits: [
+        "See any licensed dentist — network or out-of-network — at the same benefit percentages",
+        "100% coverage for preventive & diagnostic services (exams, cleanings, X-rays, fluoride, sealants)",
+        "80% coverage for basic services (fillings, simple extractions, oral surgery)",
+        "50% coverage for major services (crowns, dentures, bridges)",
+        "$50 individual / $150 family annual deductible; $1,500 per person annual maximum (network + out-of-network combined)",
+        "Solstice BenefitsBooster included — annual maximum increases the longer you stay enrolled"
+      ],
+      brochureUrl: "docs/brochures/solstice-ppo-brochure.pdf",
+      sbcUrl: null,
+      description: "Solstice PPO Dental (Plan 11029), offered through Health & Wellness Education Association (HWEA). Freedom-of-choice PPO dental — no network required."
+    },
+    {
+      id: "solstice-ppo-vision",
+      program: "solstice",
+      category: "supplemental",
+      subType: "Dental & Vision",
+      carrier: "Solstice",
+      planName: "Solstice PPO Dental + Vision (Plan 11029)",
+      tier: "N/A",
+      monthlyPriceIndividual: 109.98,
+      monthlyPriceFamily: 295.98,
+      rateTiers: [
+        { label: "Employee", price: 109.98 },
+        { label: "Employee + Spouse", price: 180.98 },
+        { label: "Employee + Children", price: 214.98 },
+        { label: "Employee + Family", price: 295.98 }
+      ],
+      deductible: 50,
+      outOfPocketMax: null,
+      states: ["ALL"],
+      keyBenefits: [
+        "Bundles the Solstice PPO Dental plan (Plan 11029) with vision coverage for one combined premium",
+        "100% coverage for preventive & diagnostic dental services; 80% basic, 50% major services",
+        "See any licensed dentist — network or out-of-network — at the same benefit percentages",
+        "$50 individual / $150 family annual deductible; $1,500 per person annual dental maximum",
+        "Offered through Health & Wellness Education Association (HWEA)"
+      ],
+      brochureUrl: "docs/brochures/solstice-ppo-vision-brochure.pdf",
+      sbcUrl: null,
+      description: "Solstice PPO Dental (Plan 11029) bundled with vision coverage — one premium for both dental and vision. Offered through Health & Wellness Education Association (HWEA)."
     }
   ]
 };
