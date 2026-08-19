@@ -2893,5 +2893,343 @@ const PLANS_DATA = {
       sbcUrl: null,
       description: "Cigna Dental + Vision (PPO) — bundles PPO dental coverage with vision benefits for one combined premium."
     },
+
+    /* ---- Ameristead Health (administered by Marpai), loaded 2026-08-19.
+       Pricing and benefit data extracted from an owner-provided rate sheet
+       image (Marpai / Ameristead Health), not a downloadable brochure PDF.
+       A brochure PDF was generated from the extracted table data for the
+       site's Brochure link, since no source PDF exists. ---- */
+
+    {
+      id: "ameristead-value",
+      program: "ameristead",
+      category: "major-medical",
+      subType: "Open Access",
+      carrier: "Ameristead Health",
+      planName: "Ameristead Value",
+      tier: "N/A",
+      network: "Open Access",
+      monthlyPriceIndividual: 303,
+      monthlyPriceFamily: 601,
+      rateTiers: [
+        {
+          label: "Employee",
+          price: 303
+        },
+        {
+          label: "Employee & Spouse",
+          price: 475
+        },
+        {
+          label: "Employee & Child(ren)",
+          price: 492
+        },
+        {
+          label: "Family",
+          price: 601
+        }
+      ],
+      deductible: 5000,
+      outOfPocketMax: 9000,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "Open Access network",
+        "$5,000 individual / $10,000 family deductible, 60/40 coinsurance",
+        "$9,000 individual / $18,000 family out-of-pocket maximum",
+        "$0 copay preventive care and $0 copay teledoctor visits",
+        "$50 primary care, $50 specialist, $75 urgent care",
+        "40% After Deductible for labs/X-ray, diagnostic imaging, ER, outpatient surgery, hospital admission, and maternity",
+        "Rx: $0 / $35 / $75 (generic/brand/non-preferred brand); specialty Rx 100% Member Cost"
+      ],
+      brochureUrl: "docs/brochures/ameristead-health-brochure.pdf",
+      sbcUrl: null,
+      description: "Ameristead Health Value plan, administered by Marpai on the Open Access network."
+    },
+    {
+      id: "ameristead-bronze",
+      program: "ameristead",
+      category: "major-medical",
+      subType: "Cigna PPO",
+      carrier: "Ameristead Health",
+      planName: "Ameristead Bronze",
+      tier: "N/A",
+      network: "Cigna PPO",
+      monthlyPriceIndividual: 544,
+      monthlyPriceFamily: 1134,
+      rateTiers: [
+        {
+          label: "Employee",
+          price: 544
+        },
+        {
+          label: "Employee & Spouse",
+          price: 856
+        },
+        {
+          label: "Employee & Child(ren)",
+          price: 753
+        },
+        {
+          label: "Family",
+          price: 1134
+        }
+      ],
+      deductible: 8000,
+      outOfPocketMax: 8700,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "Cigna PPO network",
+        "$8,000 individual / $16,000 family deductible, 70/30 coinsurance",
+        "$8,700 individual / $17,400 family out-of-pocket maximum",
+        "$0 copay preventive care and $0 copay teledoctor visits",
+        "$50 primary care, $120 specialist, $100 urgent care",
+        "30% After Deductible for labs/X-ray, diagnostic imaging, ER, outpatient surgery, hospital admission, and maternity",
+        "Rx: $0 / $35 / $75 (generic/brand/non-preferred brand); specialty Rx Contact PBM"
+      ],
+      brochureUrl: "docs/brochures/ameristead-health-brochure.pdf",
+      sbcUrl: null,
+      description: "Ameristead Health Bronze plan, administered by Marpai on the Cigna PPO network."
+    },
+    {
+      id: "ameristead-hsa",
+      program: "ameristead",
+      category: "major-medical",
+      subType: "Cigna PPO",
+      carrier: "Ameristead Health",
+      planName: "Ameristead HSA",
+      tier: "N/A",
+      network: "Cigna PPO",
+      monthlyPriceIndividual: 640,
+      monthlyPriceFamily: 1340,
+      rateTiers: [
+        {
+          label: "Employee",
+          price: 640
+        },
+        {
+          label: "Employee & Spouse",
+          price: 1012
+        },
+        {
+          label: "Employee & Child(ren)",
+          price: 889
+        },
+        {
+          label: "Family",
+          price: 1340
+        }
+      ],
+      deductible: 6000,
+      outOfPocketMax: 7000,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "Cigna PPO network",
+        "$6,000 individual / $12,000 family deductible, 70/30 coinsurance",
+        "$7,000 individual / $14,000 family out-of-pocket maximum",
+        "$0 copay preventive care and $0 copay teledoctor visits",
+        "30% After Deductible for office visits, labs, and diagnostics before the deductible is met",
+        "30% After Deductible for labs/X-ray, diagnostic imaging, ER, outpatient surgery, hospital admission, and maternity",
+        "Rx: Contact PBM (generic/brand/non-preferred brand); specialty Rx Contact PBM",
+        "HSA-compatible — office visits, labs, and diagnostics are coinsurance-based (30% after deductible), not flat copays"
+      ],
+      brochureUrl: "docs/brochures/ameristead-health-brochure.pdf",
+      sbcUrl: null,
+      description: "Ameristead Health HSA plan, administered by Marpai on the Cigna PPO network."
+    },
+    {
+      id: "ameristead-silver",
+      program: "ameristead",
+      category: "major-medical",
+      subType: "Cigna PPO",
+      carrier: "Ameristead Health",
+      planName: "Ameristead Silver",
+      tier: "N/A",
+      network: "Cigna PPO",
+      monthlyPriceIndividual: 674,
+      monthlyPriceFamily: 1413,
+      rateTiers: [
+        {
+          label: "Employee",
+          price: 674
+        },
+        {
+          label: "Employee & Spouse",
+          price: 1067
+        },
+        {
+          label: "Employee & Child(ren)",
+          price: 945
+        },
+        {
+          label: "Family",
+          price: 1413
+        }
+      ],
+      deductible: 5000,
+      outOfPocketMax: 8700,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "Cigna PPO network",
+        "$5,000 individual / $10,000 family deductible, 70/30 coinsurance",
+        "$8,700 individual / $17,400 family out-of-pocket maximum",
+        "$0 copay preventive care and $0 copay teledoctor visits",
+        "$35 primary care, $80 specialist, $60 urgent care",
+        "30% After Deductible for labs/X-ray, diagnostic imaging, ER, outpatient surgery, hospital admission, and maternity",
+        "Rx: $0 / $35 / $75 (generic/brand/non-preferred brand); specialty Rx Contact PBM"
+      ],
+      brochureUrl: "docs/brochures/ameristead-health-brochure.pdf",
+      sbcUrl: null,
+      description: "Ameristead Health Silver plan, administered by Marpai on the Cigna PPO network."
+    },
+    {
+      id: "ameristead-gold",
+      program: "ameristead",
+      category: "major-medical",
+      subType: "Cigna PPO",
+      carrier: "Ameristead Health",
+      planName: "Ameristead Gold",
+      tier: "N/A",
+      network: "Cigna PPO",
+      monthlyPriceIndividual: 941,
+      monthlyPriceFamily: 1981,
+      rateTiers: [
+        {
+          label: "Employee",
+          price: 941
+        },
+        {
+          label: "Employee & Spouse",
+          price: 1493
+        },
+        {
+          label: "Employee & Child(ren)",
+          price: 1309
+        },
+        {
+          label: "Family",
+          price: 1981
+        }
+      ],
+      deductible: 3000,
+      outOfPocketMax: 8700,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "Cigna PPO network",
+        "$3,000 individual / $6,000 family deductible, 80/20 coinsurance",
+        "$8,700 individual / $17,400 family out-of-pocket maximum",
+        "$0 copay preventive care and $0 copay teledoctor visits",
+        "$25 primary care, $55 specialist, $55 urgent care",
+        "20% After Deductible for labs/X-ray, diagnostic imaging, ER, outpatient surgery, hospital admission, and maternity",
+        "Rx: $0 / $35 / $75 (generic/brand/non-preferred brand); specialty Rx Contact PBM"
+      ],
+      brochureUrl: "docs/brochures/ameristead-health-brochure.pdf",
+      sbcUrl: null,
+      description: "Ameristead Health Gold plan, administered by Marpai on the Cigna PPO network."
+    },
+    {
+      id: "ameristead-platinum",
+      program: "ameristead",
+      category: "major-medical",
+      subType: "Cigna PPO",
+      carrier: "Ameristead Health",
+      planName: "Ameristead Platinum",
+      tier: "N/A",
+      network: "Cigna PPO",
+      monthlyPriceIndividual: 1003,
+      monthlyPriceFamily: 2993,
+      rateTiers: [
+        {
+          label: "Employee",
+          price: 1003
+        },
+        {
+          label: "Employee & Spouse",
+          price: 1632
+        },
+        {
+          label: "Employee & Child(ren)",
+          price: 1563
+        },
+        {
+          label: "Family",
+          price: 2993
+        }
+      ],
+      deductible: 250,
+      outOfPocketMax: 1250,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "Cigna PPO network",
+        "$250 individual / $500 family deductible, 80/20 coinsurance",
+        "$1,250 individual / $2,500 family out-of-pocket maximum",
+        "$0 copay preventive care and $0 copay teledoctor visits",
+        "$25 primary care, $45 specialist, $50 urgent care",
+        "20% After Deductible for labs/X-ray, diagnostic imaging, ER, outpatient surgery, hospital admission, and maternity",
+        "Rx: Contact PBM (generic/brand/non-preferred brand); specialty Rx Contact PBM"
+      ],
+      brochureUrl: "docs/brochures/ameristead-health-brochure.pdf",
+      sbcUrl: null,
+      description: "Ameristead Health Platinum plan, administered by Marpai on the Cigna PPO network."
+    },
+    {
+      id: "ameristead-diamond",
+      program: "ameristead",
+      category: "major-medical",
+      subType: "Cigna PPO",
+      carrier: "Ameristead Health",
+      planName: "Ameristead Diamond",
+      tier: "N/A",
+      network: "Cigna PPO",
+      monthlyPriceIndividual: 873,
+      monthlyPriceFamily: 1687,
+      rateTiers: [
+        {
+          label: "Employee",
+          price: 873
+        },
+        {
+          label: "Employee & Spouse",
+          price: 1372
+        },
+        {
+          label: "Employee & Child(ren)",
+          price: 1243
+        },
+        {
+          label: "Family",
+          price: 1687
+        }
+      ],
+      deductible: 0,
+      outOfPocketMax: 7000,
+      states: [
+        "ALL"
+      ],
+      keyBenefits: [
+        "Cigna PPO network",
+        "$0 individual / $0 family deductible, 70/30 coinsurance",
+        "$7,000 individual / $14,000 family out-of-pocket maximum",
+        "$0 copay preventive care and $0 copay teledoctor visits",
+        "30% for office visits, labs, and diagnostics before the deductible is met",
+        "30% for labs/X-ray, diagnostic imaging, ER, outpatient surgery, hospital admission, and maternity",
+        "Rx: $0 / $35 / $75 (generic/brand/non-preferred brand); specialty Rx 100% Member Cost",
+        "$0 deductible — richest plan in the lineup; office visits, labs, and diagnostics are coinsurance-based (30%)"
+      ],
+      brochureUrl: "docs/brochures/ameristead-health-brochure.pdf",
+      sbcUrl: null,
+      description: "Ameristead Health Diamond plan, administered by Marpai on the Cigna PPO network."
+    },
   ]
 };

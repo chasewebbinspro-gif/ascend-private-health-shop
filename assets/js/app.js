@@ -2,6 +2,7 @@ const PROGRAMS = [
   { key: 'amerus-summit', label: 'Amerus Summit Health Plans' },
   { key: 'lifex', label: 'LifeX Research Corp' },
   { key: 'enroll-prime', label: 'Enroll Prime' },
+  { key: 'ameristead', label: 'Ameristead Health' },
   { key: 'ameritas', label: 'Ameritas' },
   { key: 'solstice', label: 'Solstice Dental & Vision' },
   { key: 'cigna-dental', label: 'Cigna Dental' }
