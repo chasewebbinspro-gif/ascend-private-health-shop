@@ -15,6 +15,98 @@ const state = {
   category: 'all' // 'all' | 'major-medical' | 'supplemental'
 };
 
+// Provider/doctor lookup instructions, keyed by the plan's `network` value.
+const PROVIDER_SEARCH = {
+  'PHCS': [
+    {
+      label: 'PHCS PPO Provider Search',
+      url: 'https://providersearch.multiplan.com/',
+      steps: [
+        'Visit providersearch.multiplan.com',
+        'Highlight PHCS (logo on the front card) and click Select and Search',
+        'Enter your search parameters, your zip code, and select Search'
+      ]
+    },
+    {
+      label: 'MagnaCare Provider Search',
+      note: 'New York and New Jersey',
+      url: 'https://www.magnacare.com/',
+      steps: [
+        'Visit magnacare.com',
+        'Click "Find a Provider" in the top right-hand corner of the site',
+        'Select "Search MagnaCare Providers"'
+      ]
+    }
+  ],
+  'Aetna': [
+    {
+      label: 'Aetna Provider Search',
+      url: 'https://www.aetna.com/dsepublic/#/contentPage?page=providerSearchLanding&site_id=asa&language=en',
+      steps: [
+        'Enter your address, city, or zip code',
+        'Select the provider type to search',
+        'Continue as Guest'
+      ]
+    }
+  ],
+  'Cigna': [
+    {
+      label: 'Cigna Provider Search',
+      url: 'https://hcpdirectory.cigna.com/web/public/consumer/directory',
+      steps: [
+        'Visit hcpdirectory.cigna.com/web/public/consumer/directory',
+        'Click "Employer or School"'
+      ]
+    }
+  ],
+  'First Health': [
+    {
+      label: 'First Health Provider Search',
+      url: 'https://www.myfirsthealth.com',
+      steps: [
+        'Visit myfirsthealth.com',
+        'Click "Start" and search'
+      ]
+    }
+  ]
+};
+// "PHCS PPO" plans use the same lookup process as "PHCS" plans.
+PROVIDER_SEARCH['PHCS PPO'] = PROVIDER_SEARCH['PHCS'];
+// "Cigna PPO" plans use the same lookup process as "Cigna" plans.
+PROVIDER_SEARCH['Cigna PPO'] = PROVIDER_SEARCH['Cigna'];
+
+function providerSearchBoxHtml(entry) {
+  const noteHtml = entry.note ? `<p class="provider-note">${entry.note}</p>` : '';
+  return `
+    <div class="provider-search-box">
+      <h4>${entry.label}</h4>
+      ${noteHtml}
+      <ol>${entry.steps.map(s => `<li>${s}</li>`).join('')}</ol>
+      <a href="${entry.url}" target="_blank" rel="noopener">${entry.url}</a>
+    </div>
+  `;
+}
+
+function providerSearchSectionHtml(programPlans) {
+  const networks = [...new Set(programPlans.map(p => p.network).filter(Boolean))];
+  const entries = networks.flatMap(n => PROVIDER_SEARCH[n] || []);
+  // Dedupe by label in case two plans share a network already covered
+  const seen = new Set();
+  const uniqueEntries = entries.filter(e => {
+    if (seen.has(e.label)) return false;
+    seen.add(e.label);
+    return true;
+  });
+  if (!uniqueEntries.length) return '';
+  return `
+    <div class="provider-search-heading">
+      <h3>Find a Provider</h3>
+      <p>Confirm your doctor or facility is in-network before you enroll.</p>
+    </div>
+    <div class="provider-search-wrap">${uniqueEntries.map(providerSearchBoxHtml).join('')}</div>
+  `;
+}
+
 function formatMoney(n) {
   if (n === null || n === undefined) return 'Contact for pricing';
   const num = Number(n);
@@ -120,6 +212,9 @@ function renderPrograms() {
       html += `<div class="program-subheader"><h3>${heading}</h3>${note}</div>`;
       html += `<div class="plan-grid">${suppPlans.map(planCardHtml).join('')}</div>`;
     }
+
+    const visiblePlans = [...(showMM ? mmPlans : []), ...(showSupp ? suppPlans : [])];
+    html += providerSearchSectionHtml(visiblePlans);
 
     html += `</div>`;
   });

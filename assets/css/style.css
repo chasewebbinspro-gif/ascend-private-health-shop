@@ -234,6 +234,44 @@ a { color: var(--navy); }
 }
 .program-subheader p { margin: 0; color: var(--text-muted); font-size: 0.85rem; }
 
+.disclaimer-banner {
+  background: #f2f4f7;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-muted);
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  padding: 10px 20px;
+}
+
+.provider-search-heading {
+  margin: 34px 0 14px;
+}
+.provider-search-heading h3 {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+  color: var(--navy);
+  font-family: "Playfair Display", Georgia, serif;
+}
+.provider-search-heading p { margin: 0; color: var(--text-muted); font-size: 0.85rem; }
+
+.provider-search-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+.provider-search-box {
+  background: #f7f9fb;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+}
+.provider-search-box h4 { margin: 0 0 4px; color: var(--navy); font-size: 0.98rem; }
+.provider-search-box .provider-note { margin: 0 0 8px; color: var(--text-muted); font-size: 0.8rem; font-style: italic; }
+.provider-search-box ol { margin: 0 0 10px; padding-left: 20px; font-size: 0.85rem; color: var(--text-muted); }
+.provider-search-box ol li { margin-bottom: 4px; }
+.provider-search-box a { font-size: 0.85rem; word-break: break-all; }
+
 .bundle-note {
   display: inline-block;
   background: #fff6e0;
