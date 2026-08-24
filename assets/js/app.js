@@ -16,28 +16,31 @@ const state = {
 };
 
 // Provider/doctor lookup instructions, keyed by the plan's `network` value.
+const PHCS_PROVIDER_SEARCH_ENTRY = {
+  label: 'PHCS PPO Provider Search',
+  url: 'https://providersearch.multiplan.com/',
+  steps: [
+    'Visit providersearch.multiplan.com',
+    'Highlight PHCS (logo on the front card) and click Select and Search',
+    'Enter your search parameters, your zip code, and select Search'
+  ]
+};
+const MAGNACARE_PROVIDER_SEARCH_ENTRY = {
+  label: 'MagnaCare Provider Search',
+  note: 'New York and New Jersey',
+  url: 'https://www.magnacare.com/',
+  steps: [
+    'Visit magnacare.com',
+    'Click "Find a Provider" in the top right-hand corner of the site',
+    'Select "Search MagnaCare Providers"'
+  ]
+};
+
 const PROVIDER_SEARCH = {
-  'PHCS': [
-    {
-      label: 'PHCS PPO Provider Search',
-      url: 'https://providersearch.multiplan.com/',
-      steps: [
-        'Visit providersearch.multiplan.com',
-        'Highlight PHCS (logo on the front card) and click Select and Search',
-        'Enter your search parameters, your zip code, and select Search'
-      ]
-    },
-    {
-      label: 'MagnaCare Provider Search',
-      note: 'New York and New Jersey',
-      url: 'https://www.magnacare.com/',
-      steps: [
-        'Visit magnacare.com',
-        'Click "Find a Provider" in the top right-hand corner of the site',
-        'Select "Search MagnaCare Providers"'
-      ]
-    }
-  ],
+  // Plain "PHCS" network (Amerus Summit, Enroll Prime AFI plans) — PHCS/MultiPlan search only.
+  'PHCS': [PHCS_PROVIDER_SEARCH_ENTRY],
+  // "PHCS PPO" network (LifeX plans only) — PHCS/MultiPlan search plus the MagnaCare NY/NJ alternative.
+  'PHCS PPO': [PHCS_PROVIDER_SEARCH_ENTRY, MAGNACARE_PROVIDER_SEARCH_ENTRY],
   'Aetna': [
     {
       label: 'Aetna Provider Search',
@@ -70,8 +73,6 @@ const PROVIDER_SEARCH = {
     }
   ]
 };
-// "PHCS PPO" plans use the same lookup process as "PHCS" plans.
-PROVIDER_SEARCH['PHCS PPO'] = PROVIDER_SEARCH['PHCS'];
 // "Cigna PPO" plans use the same lookup process as "Cigna" plans.
 PROVIDER_SEARCH['Cigna PPO'] = PROVIDER_SEARCH['Cigna'];
 
