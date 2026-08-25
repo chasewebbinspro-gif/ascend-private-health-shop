@@ -192,8 +192,11 @@ function renderPrograms() {
     if (!showMM && !showSupp) return;
 
     anySection = true;
+    const sectionNoteHtml = key === 'ameristead'
+      ? ` <span class="program-header-note">(Requires an EIN number to apply for coverage)</span>`
+      : '';
     html += `<div class="program-section">`;
-    html += `<div class="program-header"><h2>${programLabel(key)}</h2></div>`;
+    html += `<div class="program-header"><h2>${programLabel(key)}${sectionNoteHtml}</h2></div>`;
 
     if (showMM) {
       html += `<div class="plan-grid">${mmPlans.map(planCardHtml).join('')}</div>`;

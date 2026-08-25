@@ -221,6 +221,12 @@ a { color: var(--navy); }
   color: var(--navy);
 }
 .program-header p { margin: 4px 0 0; color: var(--text-muted); font-size: 0.92rem; }
+.program-header-note {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  font-family: "DM Sans", system-ui, sans-serif;
+}
 
 .program-subheader {
   margin: 34px 0 18px;
