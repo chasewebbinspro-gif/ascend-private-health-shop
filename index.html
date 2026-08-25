@@ -98,6 +98,7 @@
   <div class="container" style="max-width:640px;">
     <h2>Talk to a Licensed Agent</h2>
     <p class="lead">Tell us a bit about what you're looking for and we'll follow up to help you enroll — no obligation.</p>
+    <p class="lead" id="agent-note" style="display:none;font-weight:600;color:var(--navy);"></p>
     <form class="contact-form" id="contact-form" action="https://formspree.io/f/xeepdnvz" method="POST">
       <div>
         <label for="name">Full Name</label>
@@ -167,11 +168,37 @@
 </footer>
 
 <script>
+// Per-agent contact form routing. Each agent's link (e.g. ?agent=jeannie) sends
+// inquiries straight to that agent's own Formspree form/inbox instead of the
+// default one. Add a new agent here once their Formspree form is created.
+const AGENT_FORMS = {
+  jeannie: { name: 'Jeannie Demmer', endpoint: 'https://formspree.io/f/xyegrkak' },
+  job: { name: 'Job Suarez', endpoint: 'https://formspree.io/f/mjybnglq' },
+  doron: { name: 'Doron Sharel', endpoint: 'https://formspree.io/f/xqpzrprn' },
+  daniel: { name: 'Daniel Lampinen', endpoint: 'https://formspree.io/f/xvkpeapk' }
+};
+
 (function () {
   const params = new URLSearchParams(window.location.search);
   const plan = params.get('plan');
   if (plan) {
     document.getElementById('interest').value = plan;
+  }
+
+  const agentKey = (params.get('agent') || '').toLowerCase();
+  const agent = AGENT_FORMS[agentKey];
+  if (agent) {
+    const form = document.getElementById('contact-form');
+    form.action = agent.endpoint;
+    const subjectField = form.querySelector('input[name="_subject"]');
+    if (subjectField) {
+      subjectField.value = `New plan inquiry from Ascend website (via ${agent.name})`;
+    }
+    const noteEl = document.getElementById('agent-note');
+    if (noteEl) {
+      noteEl.textContent = `You're connecting with ${agent.name}, a licensed Ascend agent.`;
+      noteEl.style.display = 'block';
+    }
   }
 })();
 
