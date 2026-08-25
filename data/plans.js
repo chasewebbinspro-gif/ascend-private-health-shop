@@ -73,13 +73,15 @@ const PLANS_DATA = {
       keyBenefits: [
         "Cigna PPO network — no specialist referral needed",
         "$0 in-network deductible and $0 in-network out-of-pocket max",
-        "Most in-network care covered at no charge",
+        "$25 primary care / $50 specialist copay",
+        "$500 ER copay, $50 urgent care copay",
+        "Most other in-network care covered at no charge",
         "Out-of-network coverage available (higher cost-share)",
         "Nationwide Cigna provider network"
       ],
       brochureUrl: "docs/brochures/cigna-ppo-brochure.pdf",
       sbcUrl: "docs/sbc/cigna-ppo-sbc.pdf",
-      description: "The richest plan in the lineup — in-network care is covered at no charge, with no deductible and no out-of-pocket maximum to reach."
+      description: "In-network care is covered with no deductible and no out-of-pocket maximum, plus low fixed copays for everyday visits — $25 for primary care, $50 for a specialist, $50 for urgent care, and $500 for the ER."
     },
     {
       id: "phcs",
