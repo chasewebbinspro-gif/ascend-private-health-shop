@@ -4815,5 +4815,165 @@ const PLANS_DATA = {
       sbcUrl: "docs/sbc/psm-livelihood-7500-ppo-sbc.pdf",
       description: "PSM Livelihood 7500 PPO — an Aetna PPO plan with a $7,500 individual deductible and 20/80 coinsurance in-network. Includes out-of-network coverage at 50/50 coinsurance after the higher out-of-network deductible. Deductible $7,500 / $15,000 in-network ($15,000 / $30,000 out-of-network), out-of-pocket max $10,000 / $20,000 in-network ($20,000 / $40,000 out-of-network), coinsurance 20/80 in-network, 50/50 out-of-network. Available in AK, AL, AR, AZ, CO, DC, DE, FL, GA, ID, IL, IN, KS, KY, LA, MA, ME, MI, MO, MS, MT, NC, ND, NJ, NM, NV, NY, OH, OK, RI, SC, SD, TN, TX, UT, VA, WV, and WY."
     },
+    {
+      id: "ultimate-hsa",
+      program: "amerus-summit",
+      category: "major-medical",
+      subType: "HSA",
+      carrier: "Amerus Summit Health Plans",
+      planName: "Ultimate HSA Plan",
+      tier: "N/A",
+      network: "Cigna",
+      monthlyPriceIndividual: 499.00,
+      monthlyPriceFamily: 1599.00,
+      rateTiers: [
+        { label: "Member Only", price: 499.00 },
+        { label: "Member + Spouse", price: 999.00 },
+        { label: "Member + Children", price: 949.00 },
+        { label: "Family", price: 1599.00 }
+      ],
+      deductible: 6000,
+      outOfPocketMax: 7000,
+      states: ["ALL"],
+      keyBenefits: [
+        "Cigna network — HSA-qualified high-deductible plan with in- and out-of-network coverage",
+        "$6,000 individual / $12,000 family deductible",
+        "$7,000 individual / $14,000 family out-of-pocket max (in-network)",
+        "30% coinsurance after deductible on most services (primary care, specialist, diagnostic, imaging)",
+        "Preventive care covered at no charge",
+        "Rx after deductible: generic no charge, 25% preferred brand, 45% non-preferred brand, 30% specialty"
+      ],
+      brochureUrl: "docs/brochures/ultimate-hsa-brochure.pdf",
+      sbcUrl: null,
+      description: "An HSA-qualified high-deductible Cigna plan with both in-network and out-of-network coverage. Preventive care is covered at no charge; most other services are 30% coinsurance after the $6,000 individual / $12,000 family deductible is met."
+    },
+    {
+      id: "ultimate-vl-phcs",
+      program: "amerus-summit",
+      category: "major-medical",
+      subType: "PHCS Network",
+      carrier: "Amerus Summit Health Plans",
+      planName: "Ultimate VL – PHCS",
+      tier: "N/A",
+      network: "PHCS",
+      monthlyPriceIndividual: 399.00,
+      monthlyPriceFamily: 1199.00,
+      rateTiers: [
+        { label: "Member Only", price: 399.00 },
+        { label: "Member + Spouse", price: 799.00 },
+        { label: "Member + Children", price: 799.00 },
+        { label: "Family", price: 1199.00 }
+      ],
+      deductible: 1500,
+      outOfPocketMax: 10600,
+      states: ["ALL"],
+      keyBenefits: [
+        "PHCS network — in-network coverage only",
+        "$1,500 individual / $3,000 family deductible",
+        "$10,600 individual / $21,200 family out-of-pocket max",
+        "$50 primary care / $50 specialist copay after deductible",
+        "Preventive care covered at no charge",
+        "Rx: $0 generic copay; preferred/non-preferred/specialty drugs use a Patient Assistance program"
+      ],
+      brochureUrl: "docs/brochures/ultimate-vl-phcs-brochure.pdf",
+      sbcUrl: null,
+      description: "A value-tier PHCS network plan with a $1,500 individual / $3,000 family deductible and $10,600 / $21,200 out-of-pocket max. In-network coverage only."
+    },
+    {
+      id: "ultimate-vl-first-health",
+      program: "amerus-summit",
+      category: "major-medical",
+      subType: "First Health Network",
+      carrier: "Amerus Summit Health Plans",
+      planName: "Ultimate VL – First Health",
+      tier: "N/A",
+      network: "First Health",
+      monthlyPriceIndividual: 377.20,
+      monthlyPriceFamily: 1142.25,
+      rateTiers: [
+        { label: "Member Only", price: 377.20 },
+        { label: "Member + Spouse", price: 772.25 },
+        { label: "Member + Children", price: 772.25 },
+        { label: "Family", price: 1142.25 }
+      ],
+      deductible: 1500,
+      outOfPocketMax: 10600,
+      states: ["ALL"],
+      keyBenefits: [
+        "First Health network — in-network coverage only",
+        "$1,500 individual / $3,000 family deductible",
+        "$10,600 individual / $21,200 family out-of-pocket max",
+        "$50 primary care / $50 specialist copay after deductible",
+        "Preventive care covered at no charge",
+        "Rx: $0 generic copay; preferred/non-preferred/specialty drugs use a Patient Assistance program"
+      ],
+      brochureUrl: "docs/brochures/ultimate-vl-first-health-brochure.pdf",
+      sbcUrl: null,
+      description: "A value-tier First Health network plan with a $1,500 individual / $3,000 family deductible and $10,600 / $21,200 out-of-pocket max. In-network coverage only."
+    },
+    {
+      id: "ultimate-vl-cigna",
+      program: "amerus-summit",
+      category: "major-medical",
+      subType: "EPO",
+      carrier: "Amerus Summit Health Plans",
+      planName: "Ultimate VL – Cigna",
+      tier: "N/A",
+      network: "Cigna",
+      monthlyPriceIndividual: 548.25,
+      monthlyPriceFamily: 1363.25,
+      rateTiers: [
+        { label: "Member Only", price: 548.25 },
+        { label: "Member + Spouse", price: 973.75 },
+        { label: "Member + Children", price: 973.25 },
+        { label: "Family", price: 1363.25 }
+      ],
+      deductible: 500,
+      outOfPocketMax: 10600,
+      states: ["ALL"],
+      keyBenefits: [
+        "Cigna network — in-network coverage only",
+        "$500 individual / $1,000 family deductible — the lowest deductible in the Amerus VL lineup",
+        "$10,600 individual / $21,200 family out-of-pocket max",
+        "$50 primary care / $50 specialist copay after deductible",
+        "Preventive care covered at no charge",
+        "Rx: $0 generic copay; preferred/non-preferred/specialty drugs use a Patient Assistance program"
+      ],
+      brochureUrl: "docs/brochures/ultimate-vl-cigna-brochure.pdf",
+      sbcUrl: null,
+      description: "A value-tier Cigna network plan with a low $500 individual / $1,000 family deductible and a $10,600 / $21,200 out-of-pocket max. In-network coverage only."
+    },
+    {
+      id: "ultimate-epo-1500",
+      program: "amerus-summit",
+      category: "major-medical",
+      subType: "EPO",
+      carrier: "Amerus Summit Health Plans",
+      planName: "Ultimate EPO 1500",
+      tier: "N/A",
+      network: "Cigna",
+      monthlyPriceIndividual: 799.00,
+      monthlyPriceFamily: 2250.00,
+      rateTiers: [
+        { label: "Member Only", price: 799.00 },
+        { label: "Member + Spouse", price: 1649.00 },
+        { label: "Member + Children", price: 1549.00 },
+        { label: "Family", price: 2250.00 }
+      ],
+      deductible: 1500,
+      outOfPocketMax: 1500,
+      states: ["ALL"],
+      keyBenefits: [
+        "Cigna EPO network — no specialist referral needed, in-network coverage only",
+        "$1,500 individual / $3,000 family deductible; $1,500 individual / $3,000 family out-of-pocket max",
+        "$40 primary care / $60 specialist copay",
+        "$75 urgent care copay; $500 ER copay then 30% coinsurance",
+        "Preventive care covered at no charge",
+        "Rx: generic no charge, $35 retail / $105 mail order preferred brand, $75 retail / $225 mail order non-preferred brand, $200 specialty"
+      ],
+      brochureUrl: "docs/brochures/ultimate-epo-1500-brochure.pdf",
+      sbcUrl: null,
+      description: "A Cigna EPO plan with a $1,500 individual / $3,000 family deductible and matching out-of-pocket max, fixed copays for everyday visits, and no specialist referral required."
+    },
   ]
 };
