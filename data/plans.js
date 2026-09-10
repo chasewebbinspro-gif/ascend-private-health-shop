@@ -4920,13 +4920,13 @@ const PLANS_DATA = {
       planName: "Ultimate VL – Cigna",
       tier: "N/A",
       network: "Cigna",
-      monthlyPriceIndividual: 548.25,
-      monthlyPriceFamily: 1363.25,
+      monthlyPriceIndividual: 588.67,
+      monthlyPriceFamily: 1393.25,
       rateTiers: [
-        { label: "Member Only", price: 548.25 },
-        { label: "Member + Spouse", price: 973.75 },
-        { label: "Member + Children", price: 973.25 },
-        { label: "Family", price: 1363.25 }
+        { label: "Member Only", price: 588.67 },
+        { label: "Member + Spouse", price: 1063.45 },
+        { label: "Member + Children", price: 1063.45 },
+        { label: "Family", price: 1393.25 }
       ],
       deductible: 500,
       outOfPocketMax: 10600,
