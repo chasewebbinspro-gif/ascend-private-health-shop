@@ -219,6 +219,36 @@ const AGENT_FORMS = {
   }
 })();
 
+// Every "Talk to a Licensed Agent" submission is also sent to Chase's GHL
+// (GoHighLevel) inbound webhook so it lands as a lead/contact in the CRM,
+// in addition to the Formspree email routing above.
+const GHL_WEBHOOK_URL = 'https://services.leadconnectorhq.com/hooks/iBtCBs8d8NyJmX1W06Tr/webhook-trigger/5f01a8a3-cf98-4485-a171-3a87bc24a872';
+
+function sendToGHL(form) {
+  const params = new URLSearchParams(window.location.search);
+  const agentKey = (params.get('agent') || '').toLowerCase();
+  const agent = AGENT_FORMS[agentKey];
+  const payload = {
+    full_name: form.querySelector('#name').value,
+    email: form.querySelector('#email').value,
+    phone: form.querySelector('#phone').value,
+    state: form.querySelector('#state').value,
+    plans_interested: form.querySelector('#interest').value,
+    message: form.querySelector('#message').value,
+    agent: agent ? agent.name : 'Unassigned / default',
+    source: 'Ascend Benefits Website',
+    page_url: window.location.href
+  };
+  fetch(GHL_WEBHOOK_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  }).catch(function () {
+    // Non-blocking: a GHL sync hiccup should never stop the visitor's
+    // request from going through via the Formspree email path above.
+  });
+}
+
 document.getElementById('contact-form').addEventListener('submit', function (e) {
   e.preventDefault();
   const form = e.target;
@@ -227,6 +257,8 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
   errorEl.style.display = 'none';
   submitBtn.disabled = true;
   submitBtn.textContent = 'Sending…';
+
+  sendToGHL(form);
 
   fetch(form.action, {
     method: 'POST',
