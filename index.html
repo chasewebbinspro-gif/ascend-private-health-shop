@@ -197,6 +197,24 @@ const AGENT_FORMS = {
   bill: { name: 'Bill Elliot', endpoint: 'https://formspree.io/f/mjykwqdd', skipGHL: true }
 };
 
+// Remember which agent's link the visitor came in on (for 30 days), so the
+// lead still routes to that agent after they browse the plans page and come
+// back through a "Talk to an Agent" link that doesn't carry ?agent=.
+function getAgentKey() {
+  const fromUrl = (new URLSearchParams(window.location.search).get('agent') || '').toLowerCase();
+  try {
+    if (fromUrl && AGENT_FORMS[fromUrl]) {
+      localStorage.setItem('ascendAgent', JSON.stringify({ key: fromUrl, ts: Date.now() }));
+      return fromUrl;
+    }
+    const saved = JSON.parse(localStorage.getItem('ascendAgent') || 'null');
+    if (saved && AGENT_FORMS[saved.key] && Date.now() - saved.ts < 30 * 24 * 60 * 60 * 1000) {
+      return saved.key;
+    }
+  } catch (e) {}
+  return fromUrl;
+}
+
 (function () {
   const params = new URLSearchParams(window.location.search);
   const plan = params.get('plan');
@@ -204,7 +222,7 @@ const AGENT_FORMS = {
     document.getElementById('interest').value = plan;
   }
 
-  const agentKey = (params.get('agent') || '').toLowerCase();
+  const agentKey = getAgentKey();
   const agent = AGENT_FORMS[agentKey];
   if (agent) {
     const form = document.getElementById('contact-form');
@@ -228,7 +246,7 @@ const GHL_WEBHOOK_URL = 'https://services.leadconnectorhq.com/hooks/iBtCBs8d8NyJ
 
 function sendToGHL(form) {
   const params = new URLSearchParams(window.location.search);
-  const agentKey = (params.get('agent') || '').toLowerCase();
+  const agentKey = getAgentKey();
   const agent = AGENT_FORMS[agentKey];
   if (agent && agent.skipGHL) return; // this agent's leads go to their email only
   const payload = {
