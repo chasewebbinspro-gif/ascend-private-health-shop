@@ -289,6 +289,14 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
     if (response.ok) {
       form.style.display = 'none';
       document.getElementById('contact-form-success').style.display = 'block';
+      // Meta Pixel: count a Lead on every successful submission, for every agent's link
+      if (typeof fbq === 'function') {
+        const leadAgent = AGENT_FORMS[getAgentKey()];
+        fbq('track', 'Lead', {
+          content_name: 'Talk to an Agent',
+          agent: leadAgent ? leadAgent.name : 'Unassigned / default'
+        });
+      }
     } else {
       throw new Error('Form submission failed');
     }
