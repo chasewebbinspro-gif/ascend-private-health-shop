@@ -1,4 +1,5 @@
 const PROGRAMS = [
+  { key: 'bright-life', label: 'Bright Life Health & Wellness' },
   { key: 'amerus-summit', label: 'Amerus Summit Health Plans' },
   { key: 'lifex', label: 'LifeX Research Corp' },
   { key: 'enroll-prime', label: 'Enroll Prime' },

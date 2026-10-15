@@ -4975,5 +4975,602 @@ const PLANS_DATA = {
       sbcUrl: null,
       description: "A Cigna EPO plan with a $1,500 individual / $3,000 family deductible and matching out-of-pocket max, fixed copays for everyday visits, and no specialist referral required."
     },
+
+    /* ---- Bright Life Health & Wellness plans (medical + Humana dental/vision/life add-ons), loaded 2026-10-15. Rates effective 9/1/2026. ---- */
+
+    {
+      id: "bright-life-mm-2500",
+      program: "bright-life",
+      category: "major-medical",
+      subType: "Major Medical",
+      carrier: "Bright Life Health & Wellness",
+      planName: "MM $2,500",
+      tier: "N/A",
+      network: "Cigna",
+      monthlyPriceIndividual: 689.00,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        columns: ["Employee", "Employee + Spouse", "Employee + Child(ren)", "Family"],
+        rows: [
+          { label: "18-29", prices: [689.00, 1219.00, 1189.00, 1679.00] },
+          { label: "30-44", prices: [719.00, 1269.00, 1249.00, 1749.00] },
+          { label: "45-54", prices: [759.00, 1319.00, 1279.00, 1819.00] },
+          { label: "55-64", prices: [839.00, 1489.00, 1359.00, 2099.00] }
+        ]
+      },
+      deductible: 2500,
+      outOfPocketMax: 10600,
+      states: ["ALL"],
+      keyBenefits: [
+        "Rate is age-banded and varies by household tier — see the full pricing table",
+        "Cigna network with in- and out-of-network coverage — no referral needed",
+        "$2,500 individual / $5,000 family in-network deductible; 20% coinsurance",
+        "$10,600 individual / $21,200 family in-network out-of-pocket max; unlimited annual benefit",
+        "$50 PCP / $60 specialist / $75 urgent care copay",
+        "Preventive care at $0 copay / $0 deductible",
+        "$0 unlimited telemedicine via Our Live Doc (virtual primary, urgent care & behavioral health)",
+        "Rx via Verus: $0 preventive, $10 generic, $90 preferred / $110 non-preferred brand (30-day retail)"
+      ],
+      brochureUrl: "docs/brochures/bright-life-mm-2500-brochure.pdf",
+      sbcUrl: "docs/sbc/bright-life-mm-sbc.pdf",
+      description: "Bright Life's Major Medical plan on the Cigna network — $2,500 in-network deductible, 20% coinsurance after deductible, unlimited annual maximum benefit, and out-of-network coverage included. Rate shown is the starting price (age 18-29, Employee only) — see the full age/tier pricing table."
+    },
+    {
+      id: "bright-life-mm-5300",
+      program: "bright-life",
+      category: "major-medical",
+      subType: "Major Medical",
+      carrier: "Bright Life Health & Wellness",
+      planName: "MM $5,300",
+      tier: "N/A",
+      network: "Cigna",
+      monthlyPriceIndividual: 614.00,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        columns: ["Employee", "Employee + Spouse", "Employee + Child(ren)", "Family"],
+        rows: [
+          { label: "18-29", prices: [614.00, 1089.00, 984.00, 1479.00] },
+          { label: "30-44", prices: [634.00, 1119.00, 1024.00, 1539.00] },
+          { label: "45-54", prices: [654.00, 1179.00, 1064.00, 1599.00] },
+          { label: "55-64", prices: [684.00, 1269.00, 1134.00, 1729.00] }
+        ]
+      },
+      deductible: 5300,
+      outOfPocketMax: 10600,
+      states: ["ALL"],
+      keyBenefits: [
+        "Rate is age-banded and varies by household tier — see the full pricing table",
+        "Cigna network with in- and out-of-network coverage — no referral needed",
+        "$5,300 individual / $10,600 family in-network deductible; 20% coinsurance",
+        "$10,600 individual / $21,200 family in-network out-of-pocket max; unlimited annual benefit",
+        "$50 PCP / $60 specialist / $75 urgent care copay",
+        "Preventive care at $0 copay / $0 deductible",
+        "$0 unlimited telemedicine via Our Live Doc (virtual primary, urgent care & behavioral health)",
+        "Rx via Verus: $0 preventive, $10 generic, $90 preferred / $110 non-preferred brand (30-day retail)"
+      ],
+      brochureUrl: "docs/brochures/bright-life-mm-5300-brochure.pdf",
+      sbcUrl: "docs/sbc/bright-life-mm-sbc.pdf",
+      description: "Bright Life's Major Medical plan on the Cigna network — $5,300 in-network deductible, 20% coinsurance after deductible, unlimited annual maximum benefit, and out-of-network coverage included. Rate shown is the starting price (age 18-29, Employee only) — see the full age/tier pricing table."
+    },
+    {
+      id: "bright-life-mm-8100",
+      program: "bright-life",
+      category: "major-medical",
+      subType: "Major Medical",
+      carrier: "Bright Life Health & Wellness",
+      planName: "MM $8,100",
+      tier: "N/A",
+      network: "Cigna",
+      monthlyPriceIndividual: 514.00,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        columns: ["Employee", "Employee + Spouse", "Employee + Child(ren)", "Family"],
+        rows: [
+          { label: "18-29", prices: [514.00, 909.00, 834.00, 1199.00] },
+          { label: "30-44", prices: [534.00, 939.00, 864.00, 1249.00] },
+          { label: "45-54", prices: [564.00, 989.00, 884.00, 1299.00] },
+          { label: "55-64", prices: [604.00, 1049.00, 964.00, 1399.00] }
+        ]
+      },
+      deductible: 8100,
+      outOfPocketMax: 10600,
+      states: ["ALL"],
+      keyBenefits: [
+        "Rate is age-banded and varies by household tier — see the full pricing table",
+        "Cigna network with in- and out-of-network coverage — no referral needed",
+        "$8,100 individual / $16,200 family in-network deductible; 20% coinsurance",
+        "$10,600 individual / $21,200 family in-network out-of-pocket max; unlimited annual benefit",
+        "$50 PCP / $60 specialist / $75 urgent care copay",
+        "Preventive care at $0 copay / $0 deductible",
+        "$0 unlimited telemedicine via Our Live Doc (virtual primary, urgent care & behavioral health)",
+        "Rx via Verus: $0 preventive, $10 generic, $90 preferred / $110 non-preferred brand (30-day retail)"
+      ],
+      brochureUrl: "docs/brochures/bright-life-mm-8100-brochure.pdf",
+      sbcUrl: "docs/sbc/bright-life-mm-sbc.pdf",
+      description: "Bright Life's Major Medical plan on the Cigna network — $8,100 in-network deductible, 20% coinsurance after deductible, unlimited annual maximum benefit, and out-of-network coverage included. Rate shown is the starting price (age 18-29, Employee only) — see the full age/tier pricing table."
+    },
+    {
+      id: "bright-life-hsa-5500",
+      program: "bright-life",
+      category: "major-medical",
+      subType: "HSA",
+      carrier: "Bright Life Health & Wellness",
+      planName: "HSA $5,500",
+      tier: "N/A",
+      network: "Cigna",
+      monthlyPriceIndividual: 514.00,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        columns: ["Employee", "Employee + Spouse", "Employee + Child(ren)", "Family"],
+        rows: [
+          { label: "18-29", prices: [514.00, 909.00, 834.00, 1239.00] },
+          { label: "30-44", prices: [534.00, 939.00, 864.00, 1289.00] },
+          { label: "45-54", prices: [564.00, 989.00, 904.00, 1349.00] },
+          { label: "55-64", prices: [604.00, 1079.00, 1044.00, 1459.00] }
+        ]
+      },
+      deductible: 5500,
+      outOfPocketMax: 8500,
+      states: ["ALL"],
+      keyBenefits: [
+        "Rate is age-banded and varies by household tier — see the full pricing table",
+        "HSA-qualified high-deductible plan on the Cigna network (in- and out-of-network)",
+        "$5,500 individual / $11,000 family in-network deductible; 20% coinsurance",
+        "$8,500 individual / $17,000 family in-network out-of-pocket max",
+        "Office visits, urgent care and ER at 20% after deductible",
+        "Preventive care at $0 deductible",
+        "$0 Our Live Doc telemedicine after deductible"
+      ],
+      brochureUrl: "docs/brochures/bright-life-hsa-5500-brochure.pdf",
+      sbcUrl: "docs/sbc/bright-life-hsa-sbc.pdf",
+      description: "Bright Life's HSA-compatible plan on the Cigna network — $5,500 in-network deductible, then 20% coinsurance up to an $8,500 individual out-of-pocket max. Pairs with a Health Savings Account. Rate shown is the starting price (age 18-29, Employee only) — see the full age/tier pricing table."
+    },
+    {
+      id: "bright-life-hsa-8500",
+      program: "bright-life",
+      category: "major-medical",
+      subType: "HSA",
+      carrier: "Bright Life Health & Wellness",
+      planName: "HSA $8,500",
+      tier: "N/A",
+      network: "Cigna",
+      monthlyPriceIndividual: 454.00,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        columns: ["Employee", "Employee + Spouse", "Employee + Child(ren)", "Family"],
+        rows: [
+          { label: "18-29", prices: [454.00, 734.00, 719.00, 889.00] },
+          { label: "30-44", prices: [484.00, 839.00, 824.00, 949.00] },
+          { label: "45-54", prices: [514.00, 909.00, 884.00, 1059.00] },
+          { label: "55-64", prices: [554.00, 1009.00, 984.00, 1169.00] }
+        ]
+      },
+      deductible: 8500,
+      outOfPocketMax: 8500,
+      states: ["ALL"],
+      keyBenefits: [
+        "Rate is age-banded and varies by household tier — see the full pricing table",
+        "HSA-qualified high-deductible plan on the Cigna network (in- and out-of-network)",
+        "$8,500 individual / $17,000 family in-network deductible; 20% coinsurance",
+        "$8,500 individual / $17,000 family in-network out-of-pocket max",
+        "Office visits, urgent care and ER at 20% after deductible",
+        "Preventive care at $0 deductible",
+        "$0 Our Live Doc telemedicine after deductible"
+      ],
+      brochureUrl: "docs/brochures/bright-life-hsa-8500-brochure.pdf",
+      sbcUrl: "docs/sbc/bright-life-hsa-sbc.pdf",
+      description: "Bright Life's HSA-compatible plan on the Cigna network — $8,500 in-network deductible, then 20% coinsurance up to an $8,500 individual out-of-pocket max. Pairs with a Health Savings Account. Rate shown is the starting price (age 18-29, Employee only) — see the full age/tier pricing table."
+    },
+    {
+      id: "bright-life-copay-ppo-1250",
+      program: "bright-life",
+      category: "major-medical",
+      subType: "Copay PPO",
+      carrier: "Bright Life Health & Wellness",
+      planName: "Copay PPO $1,250",
+      tier: "N/A",
+      network: "Cigna",
+      monthlyPriceIndividual: 389.00,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        columns: ["Employee", "Employee + Spouse", "Employee + Child(ren)", "Family"],
+        rows: [
+          { label: "18-29", prices: [389.00, 729.00, 719.00, 1029.00] },
+          { label: "30-44", prices: [409.00, 769.00, 759.00, 1059.00] },
+          { label: "45-54", prices: [429.00, 829.00, 819.00, 1129.00] },
+          { label: "55-64", prices: [459.00, 849.00, 829.00, 1169.00] }
+        ]
+      },
+      deductible: 1250,
+      outOfPocketMax: 9200,
+      states: ["ALL"],
+      keyBenefits: [
+        "Rate is age-banded and varies by household tier — see the full pricing table",
+        "Cigna PPO network with out-of-network coverage — no referral needed",
+        "$1,250 individual / $2,500 family in-network deductible; 80/20 coinsurance",
+        "$9,200 individual / $18,400 family out-of-pocket max",
+        "$50 PCP / $75 specialist / $90 urgent care copay (deductible doesn't apply)",
+        "$1,000 ER copay after deductible",
+        "$0 unlimited telemedicine via Our Live Doc (virtual primary, urgent care & behavioral health)",
+        "Rx via Verus: $0 generic copay in-network"
+      ],
+      brochureUrl: "docs/brochures/bright-life-copay-ppo-1250-brochure.pdf",
+      sbcUrl: "docs/sbc/bright-life-copay-ppo-sbc.pdf",
+      description: "Bright Life's Copay PPO on the Cigna network — flat copays for office, specialist and urgent care visits, with a $1,250 in-network deductible for bigger-ticket care. Rate shown is the starting price (age 18-29, Employee only) — see the full age/tier pricing table."
+    },
+    {
+      id: "bright-life-copay-ppo-2200",
+      program: "bright-life",
+      category: "major-medical",
+      subType: "Copay PPO",
+      carrier: "Bright Life Health & Wellness",
+      planName: "Copay PPO $2,200",
+      tier: "N/A",
+      network: "Cigna",
+      monthlyPriceIndividual: 379.00,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        columns: ["Employee", "Employee + Spouse", "Employee + Child(ren)", "Family"],
+        rows: [
+          { label: "18-29", prices: [379.00, 719.00, 709.00, 979.00] },
+          { label: "30-44", prices: [399.00, 749.00, 739.00, 1019.00] },
+          { label: "45-54", prices: [419.00, 809.00, 799.00, 1099.00] },
+          { label: "55-64", prices: [449.00, 839.00, 819.00, 1129.00] }
+        ]
+      },
+      deductible: 2200,
+      outOfPocketMax: 9200,
+      states: ["ALL"],
+      keyBenefits: [
+        "Rate is age-banded and varies by household tier — see the full pricing table",
+        "Cigna PPO network with out-of-network coverage — no referral needed",
+        "$2,200 individual / $4,400 family in-network deductible; 80/20 coinsurance",
+        "$9,200 individual / $18,400 family out-of-pocket max",
+        "$50 PCP / $75 specialist / $90 urgent care copay (deductible doesn't apply)",
+        "$1,000 ER copay after deductible",
+        "$0 unlimited telemedicine via Our Live Doc (virtual primary, urgent care & behavioral health)",
+        "Rx via Verus: $0 generic copay in-network"
+      ],
+      brochureUrl: "docs/brochures/bright-life-copay-ppo-2200-brochure.pdf",
+      sbcUrl: "docs/sbc/bright-life-copay-ppo-sbc.pdf",
+      description: "Bright Life's Copay PPO on the Cigna network — flat copays for office, specialist and urgent care visits, with a $2,200 in-network deductible for bigger-ticket care. Rate shown is the starting price (age 18-29, Employee only) — see the full age/tier pricing table."
+    },
+    {
+      id: "bright-life-copay-ppo-3500",
+      program: "bright-life",
+      category: "major-medical",
+      subType: "Copay PPO",
+      carrier: "Bright Life Health & Wellness",
+      planName: "Copay PPO $3,500",
+      tier: "N/A",
+      network: "Cigna",
+      monthlyPriceIndividual: 359.00,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        columns: ["Employee", "Employee + Spouse", "Employee + Child(ren)", "Family"],
+        rows: [
+          { label: "18-29", prices: [359.00, 689.00, 679.00, 949.00] },
+          { label: "30-44", prices: [379.00, 719.00, 709.00, 989.00] },
+          { label: "45-54", prices: [399.00, 779.00, 769.00, 1079.00] },
+          { label: "55-64", prices: [429.00, 809.00, 799.00, 1099.00] }
+        ]
+      },
+      deductible: 3500,
+      outOfPocketMax: 9200,
+      states: ["ALL"],
+      keyBenefits: [
+        "Rate is age-banded and varies by household tier — see the full pricing table",
+        "Cigna PPO network with out-of-network coverage — no referral needed",
+        "$3,500 individual / $7,000 family in-network deductible; 80/20 coinsurance",
+        "$9,200 individual / $18,400 family out-of-pocket max",
+        "$50 PCP / $75 specialist / $90 urgent care copay (deductible doesn't apply)",
+        "$1,000 ER copay after deductible",
+        "$0 unlimited telemedicine via Our Live Doc (virtual primary, urgent care & behavioral health)",
+        "Rx via Verus: $0 generic copay in-network"
+      ],
+      brochureUrl: "docs/brochures/bright-life-copay-ppo-3500-brochure.pdf",
+      sbcUrl: "docs/sbc/bright-life-copay-ppo-sbc.pdf",
+      description: "Bright Life's Copay PPO on the Cigna network — flat copays for office, specialist and urgent care visits, with a $3,500 in-network deductible for bigger-ticket care. Rate shown is the starting price (age 18-29, Employee only) — see the full age/tier pricing table."
+    },
+    {
+      id: "bright-life-vl-1500",
+      program: "bright-life",
+      category: "major-medical",
+      subType: "Visit Limit",
+      carrier: "Bright Life Health & Wellness",
+      planName: "VL $1,500",
+      tier: "N/A",
+      network: "PHCS",
+      monthlyPriceIndividual: 309.00,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        columns: ["Employee", "Employee + Spouse", "Employee + Child(ren)", "Family"],
+        rows: [
+          { label: "18-29", prices: [309.00, 589.00, 579.00, 849.00] },
+          { label: "30-44", prices: [339.00, 644.00, 629.00, 909.00] },
+          { label: "45-54", prices: [389.00, 714.00, 699.00, 979.00] },
+          { label: "55-64", prices: [399.00, 764.00, 749.00, 1009.00] }
+        ]
+      },
+      deductible: 1500,
+      outOfPocketMax: 10600,
+      states: ["ALL"],
+      keyBenefits: [
+        "Rate is age-banded and varies by household tier — see the full pricing table",
+        "PHCS network (in-network only); lowest premium in the Bright Life lineup",
+        "$1,500 individual / $3,000 family deductible",
+        "$50 PCP / specialist / urgent care copay — 10 combined office visits per benefit period",
+        "$750 ER copay after deductible (2 accident + 2 sickness visits per period)",
+        "$2,500 copay per hospital admission after deductible (10 days/admission, 3 admissions/period)",
+        "$0 unlimited telemedicine via Our Live Doc (virtual primary, urgent care & behavioral health)"
+      ],
+      brochureUrl: "docs/brochures/bright-life-vl-1500-brochure.pdf",
+      sbcUrl: "docs/sbc/bright-life-vl-sbc.pdf",
+      description: "Bright Life's Visit Limit plan on the PHCS network — a lower-premium option with a $1,500 deductible, flat copays and set visit limits per service rather than unlimited coverage. Rate shown is the starting price (age 18-29, Employee only) — see the full age/tier pricing table."
+    },
+    {
+      id: "bright-life-vl-2500",
+      program: "bright-life",
+      category: "major-medical",
+      subType: "Visit Limit",
+      carrier: "Bright Life Health & Wellness",
+      planName: "VL $2,500",
+      tier: "N/A",
+      network: "PHCS",
+      monthlyPriceIndividual: 299.00,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        columns: ["Employee", "Employee + Spouse", "Employee + Child(ren)", "Family"],
+        rows: [
+          { label: "18-29", prices: [299.00, 564.00, 549.00, 829.00] },
+          { label: "30-44", prices: [329.00, 624.00, 609.00, 889.00] },
+          { label: "45-54", prices: [379.00, 694.00, 679.00, 959.00] },
+          { label: "55-64", prices: [389.00, 744.00, 729.00, 989.00] }
+        ]
+      },
+      deductible: 2500,
+      outOfPocketMax: 10600,
+      states: ["ALL"],
+      keyBenefits: [
+        "Rate is age-banded and varies by household tier — see the full pricing table",
+        "PHCS network (in-network only); lowest premium in the Bright Life lineup",
+        "$2,500 individual / $5,000 family deductible",
+        "$50 PCP / specialist / urgent care copay — 10 combined office visits per benefit period",
+        "$750 ER copay after deductible (2 accident + 2 sickness visits per period)",
+        "$2,500 copay per hospital admission after deductible (10 days/admission, 3 admissions/period)",
+        "$0 unlimited telemedicine via Our Live Doc (virtual primary, urgent care & behavioral health)"
+      ],
+      brochureUrl: "docs/brochures/bright-life-vl-2500-brochure.pdf",
+      sbcUrl: "docs/sbc/bright-life-vl-sbc.pdf",
+      description: "Bright Life's Visit Limit plan on the PHCS network — a lower-premium option with a $2,500 deductible, flat copays and set visit limits per service rather than unlimited coverage. Rate shown is the starting price (age 18-29, Employee only) — see the full age/tier pricing table."
+    },
+    {
+      id: "bright-life-vl-3500",
+      program: "bright-life",
+      category: "major-medical",
+      subType: "Visit Limit",
+      carrier: "Bright Life Health & Wellness",
+      planName: "VL $3,500",
+      tier: "N/A",
+      network: "PHCS",
+      monthlyPriceIndividual: 289.00,
+      monthlyPriceFamily: null,
+      priceUnitLabel: "starting /mo",
+      rateTable: {
+        columns: ["Employee", "Employee + Spouse", "Employee + Child(ren)", "Family"],
+        rows: [
+          { label: "18-29", prices: [289.00, 544.00, 529.00, 809.00] },
+          { label: "30-44", prices: [319.00, 604.00, 589.00, 869.00] },
+          { label: "45-54", prices: [359.00, 674.00, 659.00, 939.00] },
+          { label: "55-64", prices: [379.00, 724.00, 709.00, 969.00] }
+        ]
+      },
+      deductible: 3500,
+      outOfPocketMax: 10600,
+      states: ["ALL"],
+      keyBenefits: [
+        "Rate is age-banded and varies by household tier — see the full pricing table",
+        "PHCS network (in-network only); lowest premium in the Bright Life lineup",
+        "$3,500 individual / $7,000 family deductible",
+        "$50 PCP / specialist / urgent care copay — 10 combined office visits per benefit period",
+        "$750 ER copay after deductible (2 accident + 2 sickness visits per period)",
+        "$2,500 copay per hospital admission after deductible (10 days/admission, 3 admissions/period)",
+        "$0 unlimited telemedicine via Our Live Doc (virtual primary, urgent care & behavioral health)"
+      ],
+      brochureUrl: "docs/brochures/bright-life-vl-3500-brochure.pdf",
+      sbcUrl: "docs/sbc/bright-life-vl-sbc.pdf",
+      description: "Bright Life's Visit Limit plan on the PHCS network — a lower-premium option with a $3,500 deductible, flat copays and set visit limits per service rather than unlimited coverage. Rate shown is the starting price (age 18-29, Employee only) — see the full age/tier pricing table."
+    },
+    {
+      id: "bright-life-dental-silver-ppo",
+      program: "bright-life",
+      standalone: false,
+      category: "supplemental",
+      subType: "Dental",
+      carrier: "Humana (Bright Life Health & Wellness)",
+      planName: "Dental Silver PPO",
+      tier: "N/A",
+      monthlyPriceIndividual: 53.33,
+      monthlyPriceFamily: 183.96,
+      rateTiers: [
+        { label: "Employee", price: 53.33 },
+        { label: "Employee + Spouse", price: 106.66 },
+        { label: "Employee + Child(ren)", price: 119.99 },
+        { label: "Family", price: 183.96 }
+      ],
+      deductible: 50,
+      outOfPocketMax: null,
+      states: ["AL", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "TN", "UT", "VT", "VA", "WA", "WI", "WY"],
+      keyBenefits: [
+        "Humana PPO/Traditional Preferred network",
+        "$1,500 annual maximum + 30% extended coverage after it's met",
+        "100% preventive care, no deductible (exams, cleanings, x-rays)",
+        "80% basic services after deductible (fillings, extractions)",
+        "50% major services after deductible (crowns, bridges, dentures)",
+        "$50 individual / $150 family deductible"
+      ],
+      brochureUrl: "docs/brochures/bright-life-dental-silver-ppo-brochure.pdf",
+      sbcUrl: null,
+      description: "Humana Dental Silver PPO, $1,500 annual max. Not offered in AK, GA, LA, SD, TX, or WV — the Dental Silver TRP plan is offered in those states instead."
+    },
+    {
+      id: "bright-life-dental-gold-ppo-ortho",
+      program: "bright-life",
+      standalone: false,
+      category: "supplemental",
+      subType: "Dental",
+      carrier: "Humana (Bright Life Health & Wellness)",
+      planName: "Dental Gold PPO + Ortho",
+      tier: "N/A",
+      monthlyPriceIndividual: 60.95,
+      monthlyPriceFamily: 227.72,
+      rateTiers: [
+        { label: "Employee", price: 60.95 },
+        { label: "Employee + Spouse", price: 121.92 },
+        { label: "Employee + Child(ren)", price: 151.06 },
+        { label: "Family", price: 227.72 }
+      ],
+      deductible: 50,
+      outOfPocketMax: null,
+      states: ["AL", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "TN", "UT", "VT", "VA", "WA", "WI", "WY"],
+      keyBenefits: [
+        "Humana PPO/Traditional Preferred network",
+        "Unlimited annual maximum",
+        "100% preventive care, no deductible (exams, cleanings, x-rays)",
+        "80% basic / 50% major services after deductible",
+        "Adult & child orthodontia: 50%, up to $1,500 lifetime max",
+        "$50 individual / $150 family deductible"
+      ],
+      brochureUrl: "docs/brochures/bright-life-dental-gold-ppo-ortho-brochure.pdf",
+      sbcUrl: null,
+      description: "Humana Dental Gold PPO with unlimited annual max and adult/child orthodontia. Not offered in AK, GA, LA, SD, TX, or WV — the Dental Gold TRP plan is offered in those states instead."
+    },
+    {
+      id: "bright-life-dental-silver-trp",
+      program: "bright-life",
+      standalone: false,
+      category: "supplemental",
+      subType: "Dental",
+      carrier: "Humana (Bright Life Health & Wellness)",
+      planName: "Dental Silver TRP",
+      tier: "N/A",
+      monthlyPriceIndividual: 58.77,
+      monthlyPriceFamily: 202.73,
+      rateTiers: [
+        { label: "Employee", price: 58.77 },
+        { label: "Employee + Spouse", price: 117.52 },
+        { label: "Employee + Child(ren)", price: 132.23 },
+        { label: "Family", price: 202.73 }
+      ],
+      deductible: 50,
+      outOfPocketMax: null,
+      states: ["AK", "GA", "LA", "SD", "TX", "WV"],
+      keyBenefits: [
+        "Only offered in AK, GA, LA, SD, TX & WV",
+        "Humana PPO/Traditional Preferred network",
+        "$1,500 annual maximum + 30% extended coverage after it's met",
+        "100% preventive care, no deductible (exams, cleanings, x-rays)",
+        "80% basic / 50% major services after deductible (in or out of network)"
+      ],
+      brochureUrl: "docs/brochures/bright-life-dental-silver-trp-brochure.pdf",
+      sbcUrl: null,
+      description: "Humana Dental Silver TRP, $1,500 annual max — the Silver option for AK, GA, LA, SD, TX, and WV residents."
+    },
+    {
+      id: "bright-life-dental-gold-trp-ortho",
+      program: "bright-life",
+      standalone: false,
+      category: "supplemental",
+      subType: "Dental",
+      carrier: "Humana (Bright Life Health & Wellness)",
+      planName: "Dental Gold TRP + Ortho",
+      tier: "N/A",
+      monthlyPriceIndividual: 68.14,
+      monthlyPriceFamily: 252.48,
+      rateTiers: [
+        { label: "Employee", price: 68.14 },
+        { label: "Employee + Spouse", price: 136.27 },
+        { label: "Employee + Child(ren)", price: 164.24 },
+        { label: "Family", price: 252.48 }
+      ],
+      deductible: 50,
+      outOfPocketMax: null,
+      states: ["AK", "GA", "LA", "SD", "TX", "WV"],
+      keyBenefits: [
+        "Only offered in AK, GA, LA, SD, TX & WV",
+        "Humana PPO/Traditional Preferred network",
+        "Unlimited annual maximum",
+        "100% preventive care, no deductible (exams, cleanings, x-rays)",
+        "Adult & child orthodontia: 50%, up to $1,500 lifetime max"
+      ],
+      brochureUrl: "docs/brochures/bright-life-dental-gold-trp-ortho-brochure.pdf",
+      sbcUrl: null,
+      description: "Humana Dental Gold TRP with unlimited annual max and adult/child orthodontia — the Gold option for AK, GA, LA, SD, TX, and WV residents."
+    },
+    {
+      id: "bright-life-vision",
+      program: "bright-life",
+      standalone: false,
+      category: "supplemental",
+      subType: "Vision",
+      carrier: "Humana (Bright Life Health & Wellness)",
+      planName: "Humana Vision",
+      tier: "N/A",
+      monthlyPriceIndividual: 12.22,
+      monthlyPriceFamily: 36.48,
+      rateTiers: [
+        { label: "Employee", price: 12.22 },
+        { label: "Employee + Spouse", price: 24.45 },
+        { label: "Employee + Child(ren)", price: 23.22 },
+        { label: "Family", price: 36.48 }
+      ],
+      deductible: null,
+      outOfPocketMax: null,
+      states: ["ALL"],
+      keyBenefits: ["Humana vision coverage", "Add-on to any Bright Life medical plan"],
+      brochureUrl: "docs/brochures/bright-life-dental-vision-life-rates.pdf",
+      sbcUrl: null,
+      description: "Humana vision coverage available alongside a Bright Life medical plan. Ask your agent for the full vision benefit summary."
+    },
+    {
+      id: "bright-life-basic-life",
+      program: "bright-life",
+      standalone: false,
+      category: "supplemental",
+      subType: "Life",
+      carrier: "Humana (Bright Life Health & Wellness)",
+      planName: "Basic Life with AD&D",
+      tier: "N/A",
+      monthlyPriceIndividual: 14.85,
+      monthlyPriceFamily: 35.85,
+      rateTiers: [
+        { label: "Employee", price: 14.85 },
+        { label: "Employee + Spouse", price: 25.35 },
+        { label: "Employee + Child(ren)", price: 25.35 },
+        { label: "Family", price: 35.85 }
+      ],
+      deductible: null,
+      outOfPocketMax: null,
+      states: ["ALL"],
+      keyBenefits: [
+        "$25,000 employee / $10,000 spouse / $5,000 per child coverage",
+        "Includes Accidental Death & Dismemberment (AD&D)",
+        "Children covered from 6 months to age 26",
+        "Claims handled by Humana life service specialists"
+      ],
+      brochureUrl: "docs/brochures/bright-life-basic-life-brochure.pdf",
+      sbcUrl: null,
+      description: "Humana Basic Life insurance with AD&D — $25k for the employee, $10k for a spouse, and $5k per child (ages 6 months to 26)."
+    },
   ]
 };
