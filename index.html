@@ -142,6 +142,8 @@ src="https://www.facebook.com/tr?id=854676951004368&ev=PageView&noscript=1"
         <textarea id="message" name="message"></textarea>
       </div>
       <input type="hidden" name="_subject" value="New plan inquiry from Ascend website">
+      <input type="hidden" name="page_url" id="page_url" value="">
+      <input type="hidden" name="agent_link" id="agent_link" value="">
       <button type="submit" class="btn btn-primary" style="background:var(--gold);color:var(--navy);">Request a Callback</button>
       <p style="font-size:0.8rem;color:var(--text-muted);margin-top:-6px;">Submitting a form here does not enroll you in any plan.</p>
     </form>
@@ -202,8 +204,21 @@ const AGENT_FORMS = {
 // to that agent after they browse the plans page and come back through a
 // "Talk to an Agent" link that doesn't carry ?agent=. The plain site with no
 // agent link always goes to the default inbox (info@).
+// Reads the agent from the link forgivingly: "?agent=rey", "?Agent=Rey",
+// "?agent=rey." (period picked up when a link is pasted into a text) and
+// "?agent=rey%20" all count as Rey.
+function agentFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  for (const [k, v] of params) {
+    if (k.trim().toLowerCase() === 'agent') {
+      return (v || '').toLowerCase().replace(/[^a-z]/g, '');
+    }
+  }
+  return '';
+}
+
 function getAgentKey() {
-  const fromUrl = (new URLSearchParams(window.location.search).get('agent') || '').toLowerCase();
+  const fromUrl = agentFromUrl();
   try {
     localStorage.removeItem('ascendAgent'); // clear the old 30-day memory
     if (fromUrl && AGENT_FORMS[fromUrl]) {
@@ -225,6 +240,10 @@ function getAgentKey() {
 
   const agentKey = getAgentKey();
   const agent = AGENT_FORMS[agentKey];
+  const pageUrlEl = document.getElementById('page_url');
+  if (pageUrlEl) pageUrlEl.value = window.location.href;
+  const agentLinkEl = document.getElementById('agent_link');
+  if (agentLinkEl) agentLinkEl.value = agent ? agent.name : (agentKey ? 'Unknown agent: ' + agentKey : 'None');
   if (agent) {
     const form = document.getElementById('contact-form');
     form.action = agent.endpoint;

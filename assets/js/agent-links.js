@@ -12,7 +12,10 @@
 */
 (function () {
   function currentAgent() {
-    var fromUrl = (new URLSearchParams(window.location.search).get('agent') || '').toLowerCase();
+    var fromUrl = '';
+    new URLSearchParams(window.location.search).forEach(function (v, k) {
+      if (!fromUrl && k.trim().toLowerCase() === 'agent') fromUrl = (v || '').toLowerCase().replace(/[^a-z]/g, '');
+    });
     try {
       if (fromUrl) {
         sessionStorage.setItem('ascendAgent', fromUrl);
@@ -30,7 +33,9 @@
     try { url = new URL(href, window.location.href); } catch (e) { return href; }
     if (url.origin !== window.location.origin) return href; // external link
     if (!/(\.html|\/)$/i.test(url.pathname)) return href;    // PDFs, images, etc.
-    if (!url.searchParams.get('agent')) url.searchParams.set('agent', agent);
+    var hasAgent = false;
+    url.searchParams.forEach(function (v, k) { if (k.trim().toLowerCase() === 'agent') hasAgent = true; });
+    if (!hasAgent) url.searchParams.set('agent', agent);
     return url.pathname.replace(/^\//, '') + url.search + url.hash;
   }
 
