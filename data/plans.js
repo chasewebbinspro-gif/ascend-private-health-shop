@@ -106,15 +106,18 @@ const PLANS_DATA = {
       keyBenefits: [
         "Cigna PPO network with out-of-network coverage — no specialist referral needed",
         "$40 primary care / $80 specialist / $60 urgent care copay — deductible doesn't apply",
-        "$5,000 individual / $10,000 family deductible; 30% coinsurance after",
+        "$5,000 individual / $10,000 family deductible; 30% coinsurance after (in-network)",
         "$8,700 individual / $17,400 family out-of-pocket max (in-network)",
-        "Preventive care covered at no charge",
-        "Rx: $0 generic, $35/$105 preferred brand, $75/$225 non-preferred, $200 specialty",
-        "Monthly rate includes a hospital & accident gap plan"
+        "Preventive care, prenatal visits & emergency transportation covered at no charge",
+        "Rx (Phoenix PBM, no deductible): $0 generic, $35/$105 preferred brand, $75/$225 non-preferred, $200 specialty",
+        "ER & urgent care cost the same in or out of network",
+        "Out-of-network: $10,000 / $20,000 deductible, 50% coinsurance, $17,400 / $34,800 out-of-pocket max",
+        "Pre-certification required for imaging, surgery and hospital stays ($500 penalty if not obtained)",
+        "Monthly rate also includes a hospital & accident gap plan — ask your agent for the gap plan details"
       ],
       brochureUrl: "docs/brochures/ultimate-5k-ppo-brochure.pdf",
-      sbcUrl: null,
-      description: "A Cigna PPO plan with flat copays for doctor and urgent care visits that don't wait on the deductible, a $5,000 deductible for bigger-ticket care, and an $8,700 out-of-pocket max. The monthly rate includes a hospital and accident gap plan."
+      sbcUrl: "docs/sbc/ultimate-5k-ppo-sbc.pdf",
+      description: "A Cigna PPO plan (Bronze 4.3 PPO) with flat copays for doctor and urgent care visits that don't wait on the deductible, a $5,000 deductible for bigger-ticket care, and an $8,700 in-network out-of-pocket max. The monthly rate also includes a hospital and accident gap plan; ask your agent how the gap benefits work with this plan."
     },
     {
       id: "phcs",
