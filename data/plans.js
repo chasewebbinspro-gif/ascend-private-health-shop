@@ -2941,53 +2941,6 @@ const PLANS_DATA = {
        site's Brochure link, since no source PDF exists. ---- */
 
     {
-      id: "ameristead-value",
-      program: "ameristead",
-      category: "major-medical",
-      subType: "Open Access",
-      carrier: "Ameristead Health",
-      planName: "Ameristead Value",
-      tier: "N/A",
-      network: "Open Access",
-      monthlyPriceIndividual: 303,
-      monthlyPriceFamily: 601,
-      rateTiers: [
-        {
-          label: "Employee",
-          price: 303
-        },
-        {
-          label: "Employee & Spouse",
-          price: 475
-        },
-        {
-          label: "Employee & Child(ren)",
-          price: 492
-        },
-        {
-          label: "Family",
-          price: 601
-        }
-      ],
-      deductible: 5000,
-      outOfPocketMax: 9000,
-      states: [
-        "ALL"
-      ],
-      keyBenefits: [
-        "Open Access network",
-        "$5,000 individual / $10,000 family deductible, 60/40 coinsurance",
-        "$9,000 individual / $18,000 family out-of-pocket maximum",
-        "$0 copay preventive care and $0 copay teledoctor visits",
-        "$50 primary care, $50 specialist, $75 urgent care",
-        "40% After Deductible for labs/X-ray, diagnostic imaging, ER, outpatient surgery, hospital admission, and maternity",
-        "Rx: $0 / $35 / $75 (generic/brand/non-preferred brand); specialty Rx 100% Member Cost"
-      ],
-      brochureUrl: "docs/brochures/ameristead-health-brochure.pdf",
-      sbcUrl: null,
-      description: "Ameristead Health Value plan, administered by Marpai on the Open Access network."
-    },
-    {
       id: "ameristead-bronze",
       program: "ameristead",
       category: "major-medical",
