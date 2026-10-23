@@ -2941,6 +2941,38 @@ const PLANS_DATA = {
        site's Brochure link, since no source PDF exists. ---- */
 
     {
+      id: "ameristead-hsa-9000",
+      program: "ameristead",
+      category: "major-medical",
+      subType: "Cigna PPO",
+      carrier: "Ameristead Health",
+      planName: "Ameristead HSA 9000",
+      tier: "N/A",
+      network: "Cigna PPO",
+      monthlyPriceIndividual: 426,
+      monthlyPriceFamily: 789,
+      rateTiers: [
+        { label: "Employee", price: 426 },
+        { label: "Employee & Spouse", price: 589 },
+        { label: "Employee & Child(ren)", price: 549 },
+        { label: "Family", price: 789 }
+      ],
+      deductible: 9000,
+      outOfPocketMax: 10100,
+      states: ["ALL"],
+      keyBenefits: [
+        "Cigna PPO network with in- and out-of-network coverage; no referral needed",
+        "$9,000 individual / $18,000 family deductible, 70/30 coinsurance",
+        "$10,100 individual / $20,200 family out-of-pocket maximum",
+        "$0 preventive care; free telehealth visits",
+        "HSA-compatible: office visits, urgent care, ER and hospital care are 30% after deductible",
+        "Rx after deductible: generic 0%, preferred brand 25%, non-preferred brand 45%, specialty 30%"
+      ],
+      brochureUrl: "docs/brochures/ameristead-health-brochure.pdf",
+      sbcUrl: "docs/sbc/ameristead-hsa-9000-sbc.pdf",
+      description: "Ameristead Health's lowest-premium plan: an HSA-compatible Cigna PPO plan (Bronze 4.2 HSA PPO), administered by Marpai, with a $9,000 deductible and a $10,100 out-of-pocket max."
+    },
+    {
       id: "ameristead-bronze",
       program: "ameristead",
       category: "major-medical",
@@ -2993,7 +3025,7 @@ const PLANS_DATA = {
       category: "major-medical",
       subType: "Cigna PPO",
       carrier: "Ameristead Health",
-      planName: "Ameristead HSA",
+      planName: "Ameristead HSA 6000",
       tier: "N/A",
       network: "Cigna PPO",
       monthlyPriceIndividual: 640,
@@ -3033,7 +3065,7 @@ const PLANS_DATA = {
       ],
       brochureUrl: "docs/brochures/ameristead-health-brochure.pdf",
       sbcUrl: "docs/sbc/ameristead-hsa-sbc.pdf",
-      description: "Ameristead Health HSA plan, administered by Marpai on the Cigna PPO network."
+      description: "Ameristead Health HSA 6000 plan, administered by Marpai on the Cigna PPO network."
     },
     {
       id: "ameristead-silver",
@@ -3079,7 +3111,7 @@ const PLANS_DATA = {
         "Rx: $0 / $35 / $75 (generic/brand/non-preferred brand); specialty Rx Contact PBM"
       ],
       brochureUrl: "docs/brochures/ameristead-health-brochure.pdf",
-      sbcUrl: null,
+      sbcUrl: "docs/sbc/ameristead-silver-sbc.pdf",
       description: "Ameristead Health Silver plan, administered by Marpai on the Cigna PPO network."
     },
     {
@@ -3126,7 +3158,7 @@ const PLANS_DATA = {
         "Rx: $0 / $35 / $75 (generic/brand/non-preferred brand); specialty Rx Contact PBM"
       ],
       brochureUrl: "docs/brochures/ameristead-health-brochure.pdf",
-      sbcUrl: null,
+      sbcUrl: "docs/sbc/ameristead-gold-sbc.pdf",
       description: "Ameristead Health Gold plan, administered by Marpai on the Cigna PPO network."
     },
     {
@@ -3173,7 +3205,7 @@ const PLANS_DATA = {
         "Rx: Contact PBM (generic/brand/non-preferred brand); specialty Rx Contact PBM"
       ],
       brochureUrl: "docs/brochures/ameristead-health-brochure.pdf",
-      sbcUrl: null,
+      sbcUrl: "docs/sbc/ameristead-platinum-sbc.pdf",
       description: "Ameristead Health Platinum plan, administered by Marpai on the Cigna PPO network."
     },
     {
