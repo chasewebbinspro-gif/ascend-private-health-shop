@@ -1,9 +1,9 @@
 const PROGRAMS = [
-  { key: 'bright-life', label: 'Bright Life Health & Wellness' },
   { key: 'amerus-summit', label: 'Amerus Summit Health Plans' },
+  { key: 'ameristead', label: 'Ameristead Health' },
+  { key: 'bright-life', label: 'Bright Life Health & Wellness' },
   { key: 'lifex', label: 'LifeX Research Corp' },
   { key: 'enroll-prime', label: 'Enroll Prime' },
-  { key: 'ameristead', label: 'Ameristead Health' },
   { key: 'psm-livelihood-epo', label: 'PSM Livelihood Plans — EPO' },
   { key: 'psm-livelihood-ppo', label: 'PSM Livelihood Plans — PPO' },
   { key: 'ameritas', label: 'Ameritas' },
