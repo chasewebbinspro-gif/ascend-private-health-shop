@@ -277,6 +277,9 @@ function openPlanModal(id) {
   const sbcDocHtml = plan.sbcUrl
     ? `<a href="${plan.sbcUrl}" target="_blank" rel="noopener">📄 Summary of Benefits (SBC)</a>`
     : '';
+  const extraDocsHtml = (plan.extraDocs || [])
+    .map(d => `<a href="${d.url}" target="_blank" rel="noopener">📄 ${d.label}</a>`)
+    .join('');
 
   const bundleNoticeHtml = plan.standalone === false
     ? `<p class="bundle-note" style="display:block;">Requires an active ${programLabel(plan.program)} major medical plan — not sold on its own.</p>`
@@ -296,6 +299,7 @@ function openPlanModal(id) {
     <div class="doc-links">
       <a href="${plan.brochureUrl}" target="_blank" rel="noopener">📄 Download Brochure</a>
       ${sbcDocHtml}
+      ${extraDocsHtml}
     </div>
     <a href="index.html?plan=${encodeURIComponent(plan.planName)}#contact" class="btn btn-primary" style="background:var(--gold);color:var(--navy);display:block;text-align:center;">Talk to an Agent About This Plan</a>
   `;

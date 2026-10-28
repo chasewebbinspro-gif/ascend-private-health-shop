@@ -20,12 +20,46 @@
 const PLANS_DATA = {
   plans: [
     {
-      id: "cigna-epo",
+      id: "ultimate-epo-1500",
       program: "amerus-summit",
       category: "major-medical",
       subType: "EPO",
       carrier: "Amerus Summit Health Plans",
-      planName: "Ultimate EPO",
+      planName: "Ultimate EPO 1500",
+      tier: "N/A",
+      network: "Cigna",
+      monthlyPriceIndividual: 799.00,
+      monthlyPriceFamily: 2250.00,
+      rateTiers: [
+        { label: "Member Only", price: 799.00 },
+        { label: "Member + Spouse", price: 1649.00 },
+        { label: "Member + Children", price: 1549.00 },
+        { label: "Family", price: 2250.00 }
+      ],
+      deductible: 1500,
+      outOfPocketMax: 1500,
+      states: ["ALL"],
+      keyBenefits: [
+        "Cigna EPO network — no specialist referral needed, in-network coverage only",
+        "$1,500 individual / $3,000 family deductible and out-of-pocket max — your deductible is your max",
+        "$40 primary care / $60 specialist / $75 urgent care copay",
+        "Preventive care and maternity office visits covered at no charge",
+        "$500 ER copay, then 30% after deductible; most other in-network care 30% after deductible",
+        "Rx (no deductible): $0 generic, $35/$105 preferred brand, $75/$225 non-preferred, $200 specialty",
+        "Built-in gap benefit brings the plan's $9,000 / $18,000 deductible down to $1,500 / $3,000 for eligible in-network costs",
+        "Pre-certification required for surgery, hospital stays and certain services ($500 penalty if not obtained)"
+      ],
+      brochureUrl: "docs/brochures/ultimate-epo-1500-brochure.pdf",
+      sbcUrl: "docs/sbc/ultimate-epo-1500-sbc.pdf",
+      description: "A Cigna EPO plan where your deductible and out-of-pocket max are the same: $1,500 individual / $3,000 family. Everyday visits are flat copays, prescriptions skip the deductible, and no specialist referral is needed. In-network coverage only, except emergencies. The plan's built-in gap benefit covers the difference between the underlying $9,000 deductible and your $1,500 share on eligible in-network costs."
+    },
+    {
+      id: "ultimate-epo-3500",
+      program: "amerus-summit",
+      category: "major-medical",
+      subType: "EPO",
+      carrier: "Amerus Summit Health Plans",
+      planName: "Ultimate EPO 3500",
       tier: "N/A",
       network: "Cigna",
       monthlyPriceIndividual: 699.95,
@@ -36,22 +70,28 @@ const PLANS_DATA = {
         { label: "Member + Children", price: 1449.95 },
         { label: "Family", price: 2149.95 }
       ],
-      deductible: 0,
+      deductible: 3500,
       outOfPocketMax: 3500,
       states: ["ALL"],
       keyBenefits: [
-        "Cigna EPO network — no specialist referral needed",
-        "$0 in-network deductible",
-        "$3,500 individual / $7,000 family out-of-pocket max (in-network)",
-        "$40 primary care / $60 specialist copay",
-        "Preventive care covered at no charge"
+        "Cigna EPO network — no specialist referral needed, in-network coverage only",
+        "$3,500 individual / $7,000 family deductible and out-of-pocket max — your deductible is your max",
+        "$40 primary care / $60 specialist / $75 urgent care copay",
+        "Preventive care and maternity office visits covered at no charge",
+        "$500 ER copay, then 30%; most other in-network care 30% coinsurance",
+        "Rx (no deductible): $0 generic, $35/$105 preferred brand, $75/$225 non-preferred, $200 specialty",
+        "Built-in gap benefit pays the first $5,500 individual / $11,000 family of the plan's $9,000 / $18,000 deductible — see the Gap Explained sheet",
+        "Pre-certification required for surgery, hospital stays and certain services ($500 penalty if not obtained)"
       ],
-      brochureUrl: "docs/brochures/cigna-epo-brochure.pdf",
-      sbcUrl: "docs/sbc/cigna-epo-sbc.pdf",
-      description: "Cigna EPO network access with no deductible and predictable copays for everyday care. Out-of-network care is not covered except emergencies."
+      brochureUrl: "docs/brochures/ultimate-epo-3500-brochure.pdf",
+      sbcUrl: "docs/sbc/ultimate-epo-3500-sbc.pdf",
+      extraDocs: [
+        { label: "How the Deductible & Gap Coverage Work", url: "docs/guides/ultimate-epo-3500-gap-explained.pdf" }
+      ],
+      description: "A Cigna EPO plan where your deductible and out-of-pocket max are the same: $3,500 individual / $7,000 family. Everyday visits are flat copays, prescriptions skip the deductible, and no specialist referral is needed. In-network coverage only, except emergencies. The built-in gap benefit pays the first $5,500 ($11,000 family) of the underlying $9,000 deductible, so you're only responsible for the next $3,500 ($7,000 family)."
     },
     {
-      id: "cigna-ppo",
+      id: "ultimate-ppo",
       program: "amerus-summit",
       category: "major-medical",
       subType: "PPO",
@@ -71,17 +111,17 @@ const PLANS_DATA = {
       outOfPocketMax: 0,
       states: ["ALL"],
       keyBenefits: [
-        "Cigna PPO network — no specialist referral needed",
-        "$0 in-network deductible and $0 in-network out-of-pocket max",
-        "$25 primary care / $50 specialist copay",
-        "$500 ER copay, $50 urgent care copay",
-        "Most other in-network care covered at no charge",
-        "Out-of-network coverage available (higher cost-share)",
-        "Nationwide Cigna provider network"
+        "Cigna PPO network with out-of-network coverage — no specialist referral needed",
+        "$0 in-network deductible — built-in gap benefit offsets the plan's $6,000 / $12,000 deductible on eligible in-network costs",
+        "$25 primary care / $50 specialist / $50 urgent care copay; $500 ER copay",
+        "Preventive care, lab work, imaging, surgery and hospital stays covered at no charge in-network",
+        "Rx: $0 generic, $35/$105 preferred brand, $75/$225 non-preferred, $200 specialty",
+        "Out-of-network: $7,000 / $14,000 deductible, 50% coinsurance, $14,000 / $28,000 out-of-pocket max",
+        "Pre-certification required for imaging, surgery and hospital stays ($500 penalty if not obtained)"
       ],
-      brochureUrl: "docs/brochures/cigna-ppo-brochure.pdf",
-      sbcUrl: "docs/sbc/cigna-ppo-sbc.pdf",
-      description: "In-network care is covered with no deductible and no out-of-pocket maximum, plus low fixed copays for everyday visits — $25 for primary care, $50 for a specialist, $50 for urgent care, and $500 for the ER."
+      brochureUrl: "docs/brochures/ultimate-ppo-brochure.pdf",
+      sbcUrl: "docs/sbc/ultimate-ppo-sbc.pdf",
+      description: "A Cigna PPO plan with a $0 in-network deductible and low fixed copays — $25 for primary care, $50 for a specialist or urgent care, and $500 for the ER — with most other in-network care, including imaging, surgery and hospital stays, covered at no charge. The plan's built-in gap benefit offsets the underlying $6,000 deductible on eligible in-network costs. Out-of-network care is also covered at a higher cost share."
     },
     {
       id: "ultimate-5k-ppo",
@@ -4933,38 +4973,6 @@ const PLANS_DATA = {
       brochureUrl: "docs/brochures/ultimate-vl-first-health-brochure.pdf",
       sbcUrl: null,
       description: "A value-tier First Health network plan with a $1,500 individual / $3,000 family deductible and $10,600 / $21,200 out-of-pocket max. In-network coverage only."
-    },
-    {
-      id: "ultimate-epo-1500",
-      program: "amerus-summit",
-      category: "major-medical",
-      subType: "EPO",
-      carrier: "Amerus Summit Health Plans",
-      planName: "Ultimate EPO 1500",
-      tier: "N/A",
-      network: "Cigna",
-      monthlyPriceIndividual: 799.00,
-      monthlyPriceFamily: 2250.00,
-      rateTiers: [
-        { label: "Member Only", price: 799.00 },
-        { label: "Member + Spouse", price: 1649.00 },
-        { label: "Member + Children", price: 1549.00 },
-        { label: "Family", price: 2250.00 }
-      ],
-      deductible: 1500,
-      outOfPocketMax: 1500,
-      states: ["ALL"],
-      keyBenefits: [
-        "Cigna EPO network — no specialist referral needed, in-network coverage only",
-        "$1,500 individual / $3,000 family deductible; $1,500 individual / $3,000 family out-of-pocket max",
-        "$40 primary care / $60 specialist copay",
-        "$75 urgent care copay; $500 ER copay then 30% coinsurance",
-        "Preventive care covered at no charge",
-        "Rx: generic no charge, $35 retail / $105 mail order preferred brand, $75 retail / $225 mail order non-preferred brand, $200 specialty"
-      ],
-      brochureUrl: "docs/brochures/ultimate-epo-1500-brochure.pdf",
-      sbcUrl: null,
-      description: "A Cigna EPO plan with a $1,500 individual / $3,000 family deductible and matching out-of-pocket max, fixed copays for everyday visits, and no specialist referral required."
     },
 
     /* ---- Bright Life Health & Wellness plans (medical + Humana dental/vision/life add-ons), loaded 2026-10-15. Rates effective 9/1/2026. ---- */
