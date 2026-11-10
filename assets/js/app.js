@@ -220,7 +220,7 @@ function badgesFor(plan) {
     b.push({ text: "Can't be declined", tone: 'good' });
     b.push({ text: 'Membership required', tone: 'warn' });
   }
-  if (plan.program === 'ameristead') b.push({ text: 'Requires an EIN', tone: 'warn' });
+  if (plan.program === 'ameristead' || plan.program === 'ameribenefit') b.push({ text: 'Requires an EIN', tone: 'warn' });
   if (plan.standalone === false) b.push({ text: `Add-on to ${companyOf(plan)} medical`, tone: 'warn' });
   const sl = stateLimitNote(plan);
   if (sl) b.push({ text: sl.replace(/^Only offered in/i, 'Only in'), tone: 'warn' });
@@ -480,7 +480,7 @@ function associationBoxHtml() {
   return `
     <div class="assoc-box">
       <h4>AmeriBenefit membership required</h4>
-      <p>To get an AmeriBenefit medical plan you join the AmeriBenefit association. Pick one level — the monthly fee is added to your plan rate.</p>
+      <p>AmeriBenefit plans require a business EIN to apply. To get an AmeriBenefit medical plan you also join the AmeriBenefit association. Pick one level — the monthly fee is added to your plan rate.</p>
       <div class="assoc-levels">
         ${ASSOCIATION_LEVELS.map(l => `
           <details class="assoc-level">
