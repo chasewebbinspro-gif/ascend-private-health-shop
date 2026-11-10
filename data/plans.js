@@ -5571,5 +5571,1995 @@ const PLANS_DATA = {
       sbcUrl: null,
       description: "Humana Basic Life insurance with AD&D — $25k for the employee, $10k for a spouse, and $5k per child (ages 6 months to 26)."
     },
+    // AmeriBenefit Plan (association-based, self-employed / business owners) — added 2026-11-10
+    {
+      "id": "ameribenefit-cat-10000",
+      "program": "ameribenefit",
+      "category": "major-medical",
+      "subType": "Catastrophic",
+      "carrier": "AmeriBenefit Plan",
+      "planName": "$10,000 CAT",
+      "tier": "N/A",
+      "network": "Cigna PPO",
+      "monthlyPriceIndividual": 307.0,
+      "monthlyPriceFamily": null,
+      "priceUnitLabel": "starting /mo",
+      "healthTierRates": {
+        "Tier 1": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                307.0,
+                557.0,
+                547.0,
+                837.0
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                317.0,
+                587.0,
+                577.0,
+                887.0
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                337.0,
+                617.0,
+                607.0,
+                917.0
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                357.0,
+                677.0,
+                667.0,
+                997.0
+              ]
+            }
+          ]
+        },
+        "Tier 2": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                351.84,
+                631.84,
+                620.64,
+                945.44
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                363.04,
+                665.44,
+                654.24,
+                1001.44
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                385.44,
+                699.04,
+                687.84,
+                1035.04
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                407.84,
+                766.24,
+                755.04,
+                1124.64
+              ]
+            }
+          ]
+        },
+        "Tier 3": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                423.17,
+                753.57,
+                740.36,
+                1123.62
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                436.39,
+                793.22,
+                780.0,
+                1189.7
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                462.82,
+                832.87,
+                819.65,
+                1229.35
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                489.25,
+                912.16,
+                898.95,
+                1335.08
+              ]
+            }
+          ]
+        }
+      },
+      "deductible": 10000,
+      "outOfPocketMax": 10000,
+      "states": [
+        "ALL"
+      ],
+      "keyBenefits": [
+        "Cigna PPO network with out-of-network coverage — no referral needed",
+        "$10,000 individual / $20,000 family deductible; 100/0 coinsurance in-network",
+        "No copays — everything is covered 100% after the deductible",
+        "$10,000 individual / $20,000 family out-of-pocket max (in-network)",
+        "$0 preventive care and $0 telemedicine (Our Live Doc)",
+        "Generic Rx $0 copay; brand-name not covered (patient assistance program available)",
+        "Elective surgeries/procedures not covered the first 90 days"
+      ],
+      "brochureUrl": "docs/sbc/ameribenefit-cat-10000-sbc.pdf",
+      "sbcUrl": "docs/sbc/ameribenefit-cat-10000-sbc.pdf",
+      "extraDocs": [
+        {
+          "label": "Association Plan Comparison (Basic / Plus / Preferred)",
+          "url": "docs/brochures/ameribenefit-association-plans.pdf"
+        }
+      ],
+      "requiresAssociation": true,
+      "description": "AmeriBenefit $10,000 CAT on the Cigna PPO network. Medically underwritten, but you can't be declined — your rate is set by your health tier (Tier 1 very healthy, Tier 2 somewhat healthy, Tier 3 higher health needs). Rate shown is the starting price (Tier 1, age 18-29, Employee only). Requires an AmeriBenefit Association Plan membership ($19.99–$49.99/mo, not included in the rate)."
+    },
+    {
+      "id": "ameribenefit-mm-5500",
+      "program": "ameribenefit",
+      "category": "major-medical",
+      "subType": "Major Medical",
+      "carrier": "AmeriBenefit Plan",
+      "planName": "MM $5,500",
+      "tier": "N/A",
+      "network": "Cigna PPO",
+      "monthlyPriceIndividual": 628.14,
+      "monthlyPriceFamily": null,
+      "priceUnitLabel": "starting /mo",
+      "healthTierRates": {
+        "Tier 1": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                628.14,
+                1107.89,
+                1001.84,
+                1501.79
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                648.34,
+                1138.19,
+                1042.24,
+                1562.39
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                668.54,
+                1198.79,
+                1082.64,
+                1622.99
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                698.84,
+                1289.69,
+                1153.34,
+                1754.29
+              ]
+            }
+          ]
+        },
+        "Tier 2": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                757.08,
+                1336.58,
+                1208.48,
+                1812.38
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                781.48,
+                1373.18,
+                1257.28,
+                1885.58
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                805.88,
+                1446.38,
+                1306.08,
+                1958.78
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                842.48,
+                1556.18,
+                1391.48,
+                2117.38
+              ]
+            }
+          ]
+        },
+        "Tier 3": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                941.28,
+                1663.28,
+                1503.68,
+                2256.08
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                971.68,
+                1708.88,
+                1564.48,
+                2347.28
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                1002.08,
+                1800.08,
+                1625.28,
+                2438.48
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                1047.68,
+                1936.88,
+                1731.68,
+                2636.08
+              ]
+            }
+          ]
+        }
+      },
+      "deductible": 5500,
+      "outOfPocketMax": 9000,
+      "states": [
+        "ALL"
+      ],
+      "keyBenefits": [
+        "Cigna PPO network with out-of-network coverage — no referral needed",
+        "$5,500 individual / $11,000 family deductible; 80/20 coinsurance in-network",
+        "$50 primary care / $75 specialist / $90 urgent care copay",
+        "$9,000 individual / $18,000 family out-of-pocket max (in-network)",
+        "$0 preventive care and $0 telemedicine (Our Live Doc)",
+        "Rx: $20 generic / $180 preferred brand / $220 non-preferred brand",
+        "Elective surgeries/procedures not covered the first 90 days"
+      ],
+      "brochureUrl": "docs/sbc/ameribenefit-mm-5500-sbc.pdf",
+      "sbcUrl": "docs/sbc/ameribenefit-mm-5500-sbc.pdf",
+      "extraDocs": [
+        {
+          "label": "Association Plan Comparison (Basic / Plus / Preferred)",
+          "url": "docs/brochures/ameribenefit-association-plans.pdf"
+        }
+      ],
+      "requiresAssociation": true,
+      "description": "AmeriBenefit MM $5,500 on the Cigna PPO network. Medically underwritten, but you can't be declined — your rate is set by your health tier (Tier 1 very healthy, Tier 2 somewhat healthy, Tier 3 higher health needs). Rate shown is the starting price (Tier 1, age 18-29, Employee only). Requires an AmeriBenefit Association Plan membership ($19.99–$49.99/mo, not included in the rate)."
+    },
+    {
+      "id": "ameribenefit-mm-8300",
+      "program": "ameribenefit",
+      "category": "major-medical",
+      "subType": "Major Medical",
+      "carrier": "AmeriBenefit Plan",
+      "planName": "MM $8,300",
+      "tier": "N/A",
+      "network": "Cigna PPO",
+      "monthlyPriceIndividual": 516.86,
+      "monthlyPriceFamily": null,
+      "priceUnitLabel": "starting /mo",
+      "healthTierRates": {
+        "Tier 1": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                516.86,
+                907.91,
+                833.66,
+                1195.01
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                536.66,
+                937.61,
+                863.36,
+                1244.51
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                566.36,
+                987.11,
+                883.16,
+                1294.01
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                605.96,
+                1046.51,
+                962.36,
+                1393.01
+              ]
+            }
+          ]
+        },
+        "Tier 2": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                635.08,
+                1116.98,
+                1025.48,
+                1470.78
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                659.48,
+                1153.58,
+                1062.08,
+                1531.78
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                696.08,
+                1214.58,
+                1086.48,
+                1592.78
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                744.88,
+                1287.78,
+                1184.08,
+                1714.78
+              ]
+            }
+          ]
+        },
+        "Tier 3": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                763.58,
+                1344.23,
+                1233.98,
+                1770.53
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                792.98,
+                1388.33,
+                1278.08,
+                1844.03
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                837.08,
+                1461.83,
+                1307.48,
+                1917.53
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                895.88,
+                1550.03,
+                1425.08,
+                2064.53
+              ]
+            }
+          ]
+        }
+      },
+      "deductible": 8300,
+      "outOfPocketMax": 8300,
+      "states": [
+        "ALL"
+      ],
+      "keyBenefits": [
+        "Cigna PPO network with out-of-network coverage — no referral needed",
+        "$8,300 individual / $16,600 family deductible; 100/0 coinsurance in-network",
+        "$50 primary care / $75 specialist / $90 urgent care copay",
+        "$8,300 individual / $16,600 family out-of-pocket max (in-network)",
+        "$0 preventive care and $0 telemedicine (Our Live Doc)",
+        "Rx: $20 generic / $180 preferred brand / $220 non-preferred brand; GLP-1 $550 copay",
+        "Elective surgeries/procedures not covered the first 90 days"
+      ],
+      "brochureUrl": "docs/sbc/ameribenefit-mm-8300-sbc.pdf",
+      "sbcUrl": "docs/sbc/ameribenefit-mm-8300-sbc.pdf",
+      "extraDocs": [
+        {
+          "label": "Association Plan Comparison (Basic / Plus / Preferred)",
+          "url": "docs/brochures/ameribenefit-association-plans.pdf"
+        }
+      ],
+      "requiresAssociation": true,
+      "description": "AmeriBenefit MM $8,300 on the Cigna PPO network. Medically underwritten, but you can't be declined — your rate is set by your health tier (Tier 1 very healthy, Tier 2 somewhat healthy, Tier 3 higher health needs). Rate shown is the starting price (Tier 1, age 18-29, Employee only). Requires an AmeriBenefit Association Plan membership ($19.99–$49.99/mo, not included in the rate)."
+    },
+    {
+      "id": "ameribenefit-mm-2700",
+      "program": "ameribenefit",
+      "category": "major-medical",
+      "subType": "Major Medical",
+      "carrier": "AmeriBenefit Plan",
+      "planName": "MM $2,700",
+      "tier": "N/A",
+      "network": "Cigna PPO",
+      "monthlyPriceIndividual": 683.22,
+      "monthlyPriceFamily": null,
+      "priceUnitLabel": "starting /mo",
+      "healthTierRates": {
+        "Tier 1": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                683.22,
+                1202.62,
+                1173.22,
+                1653.42
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                712.62,
+                1251.62,
+                1213.22,
+                1722.02
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                751.82,
+                1300.62,
+                1232.02,
+                1790.62
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                830.22,
+                1467.22,
+                1339.82,
+                2065.02
+              ]
+            }
+          ]
+        },
+        "Tier 2": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                848.58,
+                1495.18,
+                1458.58,
+                2056.38
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                885.18,
+                1556.18,
+                1498.58,
+                2141.78
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                933.98,
+                1617.18,
+                1531.78,
+                2227.18
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                1031.58,
+                1824.58,
+                1665.98,
+                2568.78
+              ]
+            }
+          ]
+        }
+      },
+      "deductible": 2700,
+      "outOfPocketMax": 9000,
+      "states": [
+        "ALL"
+      ],
+      "keyBenefits": [
+        "Cigna PPO network with out-of-network coverage — no referral needed",
+        "$2,700 individual / $5,400 family deductible; 80/20 coinsurance in-network",
+        "$50 primary care / $75 specialist / $90 urgent care copay",
+        "$9,000 individual / $18,000 family out-of-pocket max (in-network)",
+        "$0 preventive care and $0 telemedicine (Our Live Doc)",
+        "Rx: $20 generic / $180 preferred brand / $220 non-preferred brand; GLP-1 $550 copay",
+        "Elective surgeries/procedures not covered the first 90 days",
+        "Available for Tier 1 and Tier 2 health ratings only"
+      ],
+      "brochureUrl": "docs/sbc/ameribenefit-mm-2700-sbc.pdf",
+      "sbcUrl": "docs/sbc/ameribenefit-mm-2700-sbc.pdf",
+      "extraDocs": [
+        {
+          "label": "Association Plan Comparison (Basic / Plus / Preferred)",
+          "url": "docs/brochures/ameribenefit-association-plans.pdf"
+        }
+      ],
+      "requiresAssociation": true,
+      "description": "AmeriBenefit MM $2,700 on the Cigna PPO network. Medically underwritten, but you can't be declined — your rate is set by your health tier (Tier 1 very healthy, Tier 2 somewhat healthy, Tier 3 higher health needs). Rate shown is the starting price (Tier 1, age 18-29, Employee only). Requires an AmeriBenefit Association Plan membership ($19.99–$49.99/mo, not included in the rate)."
+    },
+    {
+      "id": "ameribenefit-hsa-4500",
+      "program": "ameribenefit",
+      "category": "major-medical",
+      "subType": "HSA",
+      "carrier": "AmeriBenefit Plan",
+      "planName": "HSA $4,500",
+      "tier": "N/A",
+      "network": "Cigna PPO",
+      "monthlyPriceIndividual": 527.14,
+      "monthlyPriceFamily": null,
+      "priceUnitLabel": "starting /mo",
+      "healthTierRates": {
+        "Tier 1": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                527.14,
+                926.09,
+                850.34,
+                1259.39
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                547.34,
+                956.39,
+                880.64,
+                1309.89
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                577.64,
+                1006.89,
+                921.04,
+                1370.49
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                618.04,
+                1097.79,
+                1001.84,
+                1481.59
+              ]
+            }
+          ]
+        },
+        "Tier 2": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                640.22,
+                1126.07,
+                1033.82,
+                1531.97
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                664.82,
+                1162.97,
+                1070.72,
+                1593.47
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                701.72,
+                1224.47,
+                1119.92,
+                1667.27
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                750.92,
+                1335.17,
+                1218.32,
+                1802.57
+              ]
+            }
+          ]
+        },
+        "Tier 3": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                753.3,
+                1326.05,
+                1217.3,
+                1804.55
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                782.3,
+                1369.55,
+                1260.8,
+                1877.05
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                825.8,
+                1442.05,
+                1318.8,
+                1964.05
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                883.8,
+                1572.55,
+                1434.8,
+                2123.55
+              ]
+            }
+          ]
+        }
+      },
+      "deductible": 4500,
+      "outOfPocketMax": 9000,
+      "states": [
+        "ALL"
+      ],
+      "keyBenefits": [
+        "Cigna PPO network with out-of-network coverage — no referral needed",
+        "$4,500 individual / $9,000 family deductible; 80/20 coinsurance in-network",
+        "Office visits: 20% after deductible (HSA-qualified)",
+        "$9,000 individual / $18,000 family out-of-pocket max (in-network)",
+        "$0 preventive care and $0 telemedicine (Our Live Doc)",
+        "Rx after deductible: $20 generic / $180 preferred brand / $220 non-preferred brand",
+        "Elective surgeries/procedures not covered the first 90 days"
+      ],
+      "brochureUrl": "docs/sbc/ameribenefit-hsa-4500-sbc.pdf",
+      "sbcUrl": "docs/sbc/ameribenefit-hsa-4500-sbc.pdf",
+      "extraDocs": [
+        {
+          "label": "Association Plan Comparison (Basic / Plus / Preferred)",
+          "url": "docs/brochures/ameribenefit-association-plans.pdf"
+        }
+      ],
+      "requiresAssociation": true,
+      "description": "AmeriBenefit HSA $4,500 on the Cigna PPO network. Medically underwritten, but you can't be declined — your rate is set by your health tier (Tier 1 very healthy, Tier 2 somewhat healthy, Tier 3 higher health needs). Rate shown is the starting price (Tier 1, age 18-29, Employee only). Requires an AmeriBenefit Association Plan membership ($19.99–$49.99/mo, not included in the rate)."
+    },
+    {
+      "id": "ameribenefit-hsa-8000",
+      "program": "ameribenefit",
+      "category": "major-medical",
+      "subType": "HSA",
+      "carrier": "AmeriBenefit Plan",
+      "planName": "HSA $8,000",
+      "tier": "N/A",
+      "network": "Cigna PPO",
+      "monthlyPriceIndividual": 466.54,
+      "monthlyPriceFamily": null,
+      "priceUnitLabel": "starting /mo",
+      "healthTierRates": {
+        "Tier 1": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                466.54,
+                765.49,
+                749.34,
+                905.89
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                496.84,
+                855.39,
+                840.24,
+                966.49
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                527.14,
+                926.09,
+                900.84,
+                1077.59
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                567.54,
+                1027.09,
+                991.74,
+                1188.69
+              ]
+            }
+          ]
+        },
+        "Tier 2": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                566.42,
+                830.87,
+                910.82,
+                1101.47
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                603.32,
+                1039.97,
+                1021.52,
+                1175.27
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                640.22,
+                1126.07,
+                1095.32,
+                1310.57
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                689.42,
+                1249.07,
+                1206.02,
+                1445.87
+              ]
+            }
+          ]
+        },
+        "Tier 3": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                666.3,
+                978.05,
+                1072.3,
+                1297.05
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                709.8,
+                1224.55,
+                1202.8,
+                1384.05
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                753.3,
+                1326.05,
+                1289.8,
+                1543.55
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                811.3,
+                1471.05,
+                1420.3,
+                1703.05
+              ]
+            }
+          ]
+        }
+      },
+      "deductible": 8000,
+      "outOfPocketMax": 9000,
+      "states": [
+        "ALL"
+      ],
+      "keyBenefits": [
+        "Cigna PPO network with out-of-network coverage — no referral needed",
+        "$8,000 individual / $16,000 family deductible; 80/20 coinsurance in-network",
+        "Office visits: 20% after deductible (HSA-qualified)",
+        "$9,000 individual / $18,000 family out-of-pocket max (in-network)",
+        "$0 preventive care and $0 telemedicine (Our Live Doc)",
+        "Rx after deductible: $20 generic / $180 preferred brand / $220 non-preferred brand",
+        "Elective surgeries/procedures not covered the first 90 days"
+      ],
+      "brochureUrl": "docs/sbc/ameribenefit-hsa-8000-sbc.pdf",
+      "sbcUrl": "docs/sbc/ameribenefit-hsa-8000-sbc.pdf",
+      "extraDocs": [
+        {
+          "label": "Association Plan Comparison (Basic / Plus / Preferred)",
+          "url": "docs/brochures/ameribenefit-association-plans.pdf"
+        }
+      ],
+      "requiresAssociation": true,
+      "description": "AmeriBenefit HSA $8,000 on the Cigna PPO network. Medically underwritten, but you can't be declined — your rate is set by your health tier (Tier 1 very healthy, Tier 2 somewhat healthy, Tier 3 higher health needs). Rate shown is the starting price (Tier 1, age 18-29, Employee only). Requires an AmeriBenefit Association Plan membership ($19.99–$49.99/mo, not included in the rate)."
+    },
+    {
+      "id": "ameribenefit-copay-2500",
+      "program": "ameribenefit",
+      "category": "major-medical",
+      "subType": "Copay PPO",
+      "carrier": "AmeriBenefit Plan",
+      "planName": "Copay $2,500",
+      "tier": "N/A",
+      "network": "Cigna PPO",
+      "monthlyPriceIndividual": 367.0,
+      "monthlyPriceFamily": null,
+      "priceUnitLabel": "starting /mo",
+      "healthTierRates": {
+        "Tier 1": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                367.0,
+                712.62,
+                702.82,
+                967.42
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                399.02,
+                742.02,
+                732.22,
+                1006.62
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                418.62,
+                800.82,
+                791.02,
+                1085.02
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                448.02,
+                830.22,
+                810.62,
+                1114.42
+              ]
+            }
+          ]
+        },
+        "Tier 2": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                470.38,
+                885.18,
+                872.98,
+                1202.38
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                494.78,
+                921.78,
+                909.58,
+                1251.18
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                519.18,
+                994.98,
+                982.78,
+                1348.78
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                555.78,
+                1031.58,
+                1007.18,
+                1385.38
+              ]
+            }
+          ]
+        },
+        "Tier 3": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                561.34,
+                1057.74,
+                1043.14,
+                1437.34
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                590.54,
+                1101.54,
+                1086.94,
+                1495.74
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                619.74,
+                1189.14,
+                1174.54,
+                1612.54
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                663.54,
+                1232.94,
+                1203.74,
+                1656.34
+              ]
+            }
+          ]
+        }
+      },
+      "deductible": 2500,
+      "outOfPocketMax": 9200,
+      "states": [
+        "ALL"
+      ],
+      "keyBenefits": [
+        "Cigna PPO network with out-of-network coverage — no referral needed",
+        "$2,500 individual / $5,000 family deductible; 80/20 coinsurance in-network",
+        "$50 primary care / $75 specialist / $90 urgent care copay",
+        "$9,200 individual / $18,400 family out-of-pocket max (in-network)",
+        "$0 preventive care and $0 telemedicine (Our Live Doc)",
+        "Generic Rx $0 copay; brand-name not covered (patient assistance program available)",
+        "Elective surgeries/procedures not covered the first 90 days"
+      ],
+      "brochureUrl": "docs/sbc/ameribenefit-copay-2500-sbc.pdf",
+      "sbcUrl": "docs/sbc/ameribenefit-copay-2500-sbc.pdf",
+      "extraDocs": [
+        {
+          "label": "Association Plan Comparison (Basic / Plus / Preferred)",
+          "url": "docs/brochures/ameribenefit-association-plans.pdf"
+        }
+      ],
+      "requiresAssociation": true,
+      "description": "AmeriBenefit Copay $2,500 on the Cigna PPO network. Medically underwritten, but you can't be declined — your rate is set by your health tier (Tier 1 very healthy, Tier 2 somewhat healthy, Tier 3 higher health needs). Rate shown is the starting price (Tier 1, age 18-29, Employee only). Requires an AmeriBenefit Association Plan membership ($19.99–$49.99/mo, not included in the rate)."
+    },
+    {
+      "id": "ameribenefit-copay-1750",
+      "program": "ameribenefit",
+      "category": "major-medical",
+      "subType": "Copay PPO",
+      "carrier": "AmeriBenefit Plan",
+      "planName": "Copay $1,750",
+      "tier": "N/A",
+      "network": "Cigna PPO",
+      "monthlyPriceIndividual": 379.42,
+      "monthlyPriceFamily": null,
+      "priceUnitLabel": "starting /mo",
+      "healthTierRates": {
+        "Tier 1": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                379.42,
+                722.42,
+                712.62,
+                1016.42
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                408.82,
+                761.62,
+                751.82,
+                1045.82
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                428.42,
+                820.42,
+                810.62,
+                1114.42
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                457.82,
+                840.02,
+                820.42,
+                1153.62
+              ]
+            }
+          ]
+        },
+        "Tier 2": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                482.58,
+                897.38,
+                885.18,
+                1263.38
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                506.98,
+                946.18,
+                933.98,
+                1299.98
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                531.38,
+                1019.38,
+                1007.18,
+                1385.38
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                567.98,
+                1043.78,
+                1019.38,
+                1434.18
+              ]
+            }
+          ]
+        }
+      },
+      "deductible": 1750,
+      "outOfPocketMax": 9200,
+      "states": [
+        "ALL"
+      ],
+      "keyBenefits": [
+        "Cigna PPO network with out-of-network coverage — no referral needed",
+        "$1,750 individual / $3,500 family deductible; 80/20 coinsurance in-network",
+        "$50 primary care / $75 specialist / $90 urgent care copay",
+        "$9,200 individual / $18,400 family out-of-pocket max (in-network)",
+        "$0 preventive care and $0 telemedicine (Our Live Doc)",
+        "Generic Rx $0 copay; brand-name not covered (patient assistance program available)",
+        "Elective surgeries/procedures not covered the first 90 days",
+        "Available for Tier 1 and Tier 2 health ratings only"
+      ],
+      "brochureUrl": "docs/sbc/ameribenefit-copay-1750-sbc.pdf",
+      "sbcUrl": "docs/sbc/ameribenefit-copay-1750-sbc.pdf",
+      "extraDocs": [
+        {
+          "label": "Association Plan Comparison (Basic / Plus / Preferred)",
+          "url": "docs/brochures/ameribenefit-association-plans.pdf"
+        }
+      ],
+      "requiresAssociation": true,
+      "description": "AmeriBenefit Copay $1,750 on the Cigna PPO network. Medically underwritten, but you can't be declined — your rate is set by your health tier (Tier 1 very healthy, Tier 2 somewhat healthy, Tier 3 higher health needs). Rate shown is the starting price (Tier 1, age 18-29, Employee only). Requires an AmeriBenefit Association Plan membership ($19.99–$49.99/mo, not included in the rate)."
+    },
+    {
+      "id": "ameribenefit-copay-4250",
+      "program": "ameribenefit",
+      "category": "major-medical",
+      "subType": "Copay PPO",
+      "carrier": "AmeriBenefit Plan",
+      "planName": "Copay $4,250",
+      "tier": "N/A",
+      "network": "Cigna PPO",
+      "monthlyPriceIndividual": 363.41,
+      "monthlyPriceFamily": null,
+      "priceUnitLabel": "starting /mo",
+      "healthTierRates": {
+        "Tier 1": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                363.41,
+                690.11,
+                680.21,
+                947.51
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                383.21,
+                719.81,
+                709.91,
+                987.11
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                403.01,
+                779.21,
+                769.31,
+                1076.21
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                428.42,
+                800.82,
+                791.02,
+                1096.01
+              ]
+            }
+          ]
+        },
+        "Tier 2": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                445.98,
+                848.58,
+                836.38,
+                1165.78
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                470.38,
+                885.18,
+                872.98,
+                1214.58
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                494.78,
+                958.38,
+                946.18,
+                1324.38
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                531.38,
+                994.98,
+                982.78,
+                1348.78
+              ]
+            }
+          ]
+        },
+        "Tier 3": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                517.78,
+                986.38,
+                972.18,
+                1355.58
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                546.18,
+                1028.98,
+                1014.78,
+                1412.38
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                574.58,
+                1114.18,
+                1099.98,
+                1540.18
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                617.18,
+                1156.78,
+                1142.58,
+                1568.58
+              ]
+            }
+          ]
+        }
+      },
+      "deductible": 4250,
+      "outOfPocketMax": 9200,
+      "states": [
+        "ALL"
+      ],
+      "keyBenefits": [
+        "Cigna PPO network with out-of-network coverage — no referral needed",
+        "$4,250 individual / $8,500 family deductible; 80/20 coinsurance in-network",
+        "$50 primary care / $75 specialist / $90 urgent care copay",
+        "$9,200 individual / $18,400 family out-of-pocket max (in-network)",
+        "$0 preventive care and $0 telemedicine (Our Live Doc)",
+        "Generic Rx $0 copay; brand-name not covered (patient assistance program available)",
+        "Elective surgeries/procedures not covered the first 90 days"
+      ],
+      "brochureUrl": "docs/sbc/ameribenefit-copay-4250-sbc.pdf",
+      "sbcUrl": "docs/sbc/ameribenefit-copay-4250-sbc.pdf",
+      "extraDocs": [
+        {
+          "label": "Association Plan Comparison (Basic / Plus / Preferred)",
+          "url": "docs/brochures/ameribenefit-association-plans.pdf"
+        }
+      ],
+      "requiresAssociation": true,
+      "description": "AmeriBenefit Copay $4,250 on the Cigna PPO network. Medically underwritten, but you can't be declined — your rate is set by your health tier (Tier 1 very healthy, Tier 2 somewhat healthy, Tier 3 higher health needs). Rate shown is the starting price (Tier 1, age 18-29, Employee only). Requires an AmeriBenefit Association Plan membership ($19.99–$49.99/mo, not included in the rate)."
+    },
+    {
+      "id": "ameribenefit-vl-2750",
+      "program": "ameribenefit",
+      "category": "major-medical",
+      "subType": "Visit-Limited",
+      "carrier": "AmeriBenefit Plan",
+      "planName": "VL $2,750",
+      "tier": "N/A",
+      "network": "PHCS PPO",
+      "monthlyPriceIndividual": 317.0,
+      "monthlyPriceFamily": null,
+      "priceUnitLabel": "starting /mo",
+      "healthTierRates": {
+        "Tier 1": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                317.0,
+                557.0,
+                552.39,
+                835.19
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                327.0,
+                617.0,
+                612.99,
+                895.79
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                367.0,
+                698.84,
+                683.69,
+                966.49
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                377.0,
+                749.34,
+                734.19,
+                1014.97
+              ]
+            }
+          ]
+        },
+        "Tier 2": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                397.34,
+                706.04,
+                687.14,
+                1039.94
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                409.94,
+                781.64,
+                762.74,
+                1115.54
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                460.34,
+                869.84,
+                850.94,
+                1203.74
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                485.54,
+                932.84,
+                913.94,
+                1264.22
+              ]
+            }
+          ]
+        },
+        "Tier 3": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                480.77,
+                855.62,
+                832.67,
+                1261.07
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                496.07,
+                947.42,
+                924.47,
+                1352.87
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                572.57,
+                1054.52,
+                1031.57,
+                1459.97
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                587.87,
+                1131.02,
+                1108.07,
+                1533.41
+              ]
+            }
+          ]
+        }
+      },
+      "deductible": 2750,
+      "outOfPocketMax": 10600,
+      "states": [
+        "ALL"
+      ],
+      "keyBenefits": [
+        "PHCS PPO network — in-network coverage only",
+        "$2,750 individual / $5,500 family deductible",
+        "$50 primary care / $75 specialist / $90 urgent care copay — 12 visits per year combined",
+        "$10,600 individual / $21,200 family out-of-pocket max (in-network)",
+        "$0 preventive care and $0 telemedicine (Our Live Doc)",
+        "Generic Rx $0 copay; brand-name not covered (patient assistance program available)",
+        "Elective surgeries/procedures not covered the first 90 days"
+      ],
+      "brochureUrl": "docs/sbc/ameribenefit-vl-2750-sbc.pdf",
+      "sbcUrl": "docs/sbc/ameribenefit-vl-2750-sbc.pdf",
+      "extraDocs": [
+        {
+          "label": "Association Plan Comparison (Basic / Plus / Preferred)",
+          "url": "docs/brochures/ameribenefit-association-plans.pdf"
+        }
+      ],
+      "requiresAssociation": true,
+      "description": "AmeriBenefit VL $2,750 on the PHCS PPO network. Medically underwritten, but you can't be declined — your rate is set by your health tier (Tier 1 very healthy, Tier 2 somewhat healthy, Tier 3 higher health needs). Rate shown is the starting price (Tier 1, age 18-29, Employee only). Requires an AmeriBenefit Association Plan membership ($19.99–$49.99/mo, not included in the rate)."
+    },
+    {
+      "id": "ameribenefit-vl-1250",
+      "program": "ameribenefit",
+      "category": "major-medical",
+      "subType": "Visit-Limited",
+      "carrier": "AmeriBenefit Plan",
+      "planName": "VL $1,250",
+      "tier": "N/A",
+      "network": "PHCS PPO",
+      "monthlyPriceIndividual": 332.55,
+      "monthlyPriceFamily": null,
+      "priceUnitLabel": "starting /mo",
+      "healthTierRates": {
+        "Tier 1": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                332.55,
+                604.37,
+                594.07,
+                872.17
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                344.5,
+                661.02,
+                645.57,
+                933.97
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                377.77,
+                733.12,
+                717.67,
+                1006.07
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                408.67,
+                784.62,
+                769.17,
+                1036.97
+              ]
+            }
+          ]
+        },
+        "Tier 2": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                409.77,
+                767.54,
+                749.55,
+                1076.95
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                417.87,
+                831.84,
+                801.95,
+                1151.95
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                472.94,
+                908.2,
+                889.45,
+                1239.45
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                518.14,
+                970.7,
+                951.95,
+                1276.77
+              ]
+            }
+          ]
+        }
+      },
+      "deductible": 1250,
+      "outOfPocketMax": 10600,
+      "states": [
+        "ALL"
+      ],
+      "keyBenefits": [
+        "PHCS PPO network — in-network coverage only",
+        "$1,250 individual / $2,500 family deductible",
+        "$50 primary care / $75 specialist / $90 urgent care copay — 12 visits per year combined",
+        "$10,600 individual / $21,200 family out-of-pocket max (in-network)",
+        "$0 preventive care and $0 telemedicine (Our Live Doc)",
+        "Generic Rx $0 copay; brand-name not covered (patient assistance program available)",
+        "Elective surgeries/procedures not covered the first 90 days",
+        "Available for Tier 1 and Tier 2 health ratings only"
+      ],
+      "brochureUrl": "docs/sbc/ameribenefit-vl-1250-sbc.pdf",
+      "sbcUrl": "docs/sbc/ameribenefit-vl-1250-sbc.pdf",
+      "extraDocs": [
+        {
+          "label": "Association Plan Comparison (Basic / Plus / Preferred)",
+          "url": "docs/brochures/ameribenefit-association-plans.pdf"
+        }
+      ],
+      "requiresAssociation": true,
+      "description": "AmeriBenefit VL $1,250 on the PHCS PPO network. Medically underwritten, but you can't be declined — your rate is set by your health tier (Tier 1 very healthy, Tier 2 somewhat healthy, Tier 3 higher health needs). Rate shown is the starting price (Tier 1, age 18-29, Employee only). Requires an AmeriBenefit Association Plan membership ($19.99–$49.99/mo, not included in the rate)."
+    },
+    {
+      "id": "ameribenefit-vl-3900",
+      "program": "ameribenefit",
+      "category": "major-medical",
+      "subType": "Visit-Limited",
+      "carrier": "AmeriBenefit Plan",
+      "planName": "VL $3,900",
+      "tier": "N/A",
+      "network": "PHCS PPO",
+      "monthlyPriceIndividual": 300.33,
+      "monthlyPriceFamily": null,
+      "priceUnitLabel": "starting /mo",
+      "healthTierRates": {
+        "Tier 1": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                300.33,
+                536.66,
+                521.81,
+                799.01
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                309.91,
+                596.06,
+                581.21,
+                858.41
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                353.51,
+                665.36,
+                650.51,
+                927.71
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                373.31,
+                714.86,
+                700.01,
+                957.41
+              ]
+            }
+          ]
+        },
+        "Tier 2": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                381.75,
+                675.5,
+                656.75,
+                1006.75
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                394.25,
+                750.5,
+                731.75,
+                1081.75
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                444.25,
+                838.0,
+                819.25,
+                1169.25
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                469.25,
+                900.5,
+                881.75,
+                1206.75
+              ]
+            }
+          ]
+        },
+        "Tier 3": {
+          "columns": [
+            "Employee",
+            "Employee + Spouse",
+            "Employee + Child(ren)",
+            "Family"
+          ],
+          "rows": [
+            {
+              "label": "18-29",
+              "prices": [
+                465.47,
+                825.02,
+                802.07,
+                1230.47
+              ]
+            },
+            {
+              "label": "30-44",
+              "prices": [
+                480.77,
+                916.82,
+                893.87,
+                1322.27
+              ]
+            },
+            {
+              "label": "45-54",
+              "prices": [
+                541.97,
+                1023.92,
+                1000.97,
+                1429.37
+              ]
+            },
+            {
+              "label": "55-64",
+              "prices": [
+                572.57,
+                1100.42,
+                1077.47,
+                1475.27
+              ]
+            }
+          ]
+        }
+      },
+      "deductible": 3900,
+      "outOfPocketMax": 10600,
+      "states": [
+        "ALL"
+      ],
+      "keyBenefits": [
+        "PHCS PPO network — in-network coverage only",
+        "$3,900 individual / $7,800 family deductible",
+        "$50 primary care / $75 specialist / $90 urgent care copay — 12 visits per year combined",
+        "$10,600 individual / $21,200 family out-of-pocket max (in-network)",
+        "$0 preventive care and $0 telemedicine (Our Live Doc)",
+        "Generic Rx $0 copay; brand-name not covered (patient assistance program available)",
+        "Elective surgeries/procedures not covered the first 90 days"
+      ],
+      "brochureUrl": "docs/sbc/ameribenefit-vl-3900-sbc.pdf",
+      "sbcUrl": "docs/sbc/ameribenefit-vl-3900-sbc.pdf",
+      "extraDocs": [
+        {
+          "label": "Association Plan Comparison (Basic / Plus / Preferred)",
+          "url": "docs/brochures/ameribenefit-association-plans.pdf"
+        }
+      ],
+      "requiresAssociation": true,
+      "description": "AmeriBenefit VL $3,900 on the PHCS PPO network. Medically underwritten, but you can't be declined — your rate is set by your health tier (Tier 1 very healthy, Tier 2 somewhat healthy, Tier 3 higher health needs). Rate shown is the starting price (Tier 1, age 18-29, Employee only). Requires an AmeriBenefit Association Plan membership ($19.99–$49.99/mo, not included in the rate)."
+    }
   ]
 };

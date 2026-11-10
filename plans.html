@@ -21,10 +21,10 @@ src="https://www.facebook.com/tr?id=854676951004368&ev=PageView&noscript=1"
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Browse Health Plans | Ascend Benefits Consulting Group</title>
-<meta name="description" content="Compare private major medical and supplemental health plans by price, carrier, and state.">
+<meta name="description" content="Compare private health plans for the self-employed, business owners, individuals and families — plus dental, vision and add-ons.">
 <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
 <meta property="og:title" content="Browse Health Plans | Ascend Benefits Consulting Group">
-<meta property="og:description" content="Compare private major medical and supplemental health plans by price, carrier, and state.">
+<meta property="og:description" content="Compare private health plans for the self-employed, business owners, individuals and families — plus dental, vision and add-ons.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +32,6 @@ src="https://www.facebook.com/tr?id=854676951004368&ev=PageView&noscript=1"
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
 <header class="site-header">
   <div class="container">
     <a href="index.html" class="brand">Ascend Benefits <small>CONSULTING GROUP</small></a>
@@ -40,29 +39,77 @@ src="https://www.facebook.com/tr?id=854676951004368&ev=PageView&noscript=1"
     <label for="nav-toggle" class="nav-toggle-btn" aria-label="Menu">&#9776;</label>
     <nav>
       <a href="index.html">Home</a>
-      <a href="plans.html?category=major-medical">Health Plans</a>
-      <a href="plans.html?category=supplemental">Supplemental</a>
-      <a href="plans.html" class="active">Browse All Plans</a>
+      <a href="plans.html?path=business" >Self-Employed &amp; Business</a>
+      <a href="plans.html?path=individual">Individual &amp; Family</a>
+      <a href="plans.html?path=all&amp;tab=addons">Dental &amp; Vision</a>
       <a href="about.html">About</a>
       <a href="index.html#contact" class="btn-header-cta">Talk to an Agent</a>
     </nav>
   </div>
 </header>
 
-<div class="disclaimer-banner">
-  This website provides general information about private, off-exchange health insurance and supplemental plans and does not constitute a guarantee of coverage. Plan availability, pricing, and benefits vary by state and are subject to change by the issuing carrier. You cannot enroll on this website — you must contact a licensed agent to enroll.
-  <br><strong>Plans are simplified underwritten. Qualifications vary by company and not everyone qualifies. Talk to an agent to find out if you do.</strong>
-</div>
+<details class="disclaimer-banner">
+  <summary>Important plan info <span aria-hidden="true">▾</span></summary>
+  <p>This website provides general information about private, off-exchange health insurance and supplemental plans and does not constitute a guarantee of coverage. Plan availability, pricing, and benefits vary by state and are subject to change by the issuing carrier. You cannot enroll on this website — you must contact a licensed agent to enroll.</p>
+  <p><strong>Most plans are simplified underwritten. Qualifications vary by company and not everyone qualifies. Talk to an agent to find out if you do.</strong></p>
+</details>
 
-<section class="section">
+<section class="section plans-section">
   <div class="container">
-    <h2 id="page-title">Browse Plans</h2>
-    <p class="enrollment-note">✓ No open enrollment! You can enroll year-round. All applications must be submitted by the 20th of the month to be effective the first of the next month.</p>
-    <p class="lead" id="page-lead">Plans are grouped by company. Pick a health plan first, then add the supplemental coverage offered alongside it.</p>
+    <h2 id="page-title">Find Your Plan</h2>
+    <p class="lead" id="page-lead">Start here — which describes you?</p>
 
-    <div id="plans-container"></div>
-    <div class="no-results" id="no-results" style="display:none;">
-      <p>No plans are available in this category yet.</p>
+    <div class="path-picker" id="path-picker">
+      <button class="path-btn" data-path="business">
+        <span class="path-icon" aria-hidden="true">💼</span>
+        <span><b>Self-Employed or Business Owner</b><small>1099, LLC, S-Corp, sole proprietor</small></span>
+      </button>
+      <button class="path-btn" data-path="individual">
+        <span class="path-icon" aria-hidden="true">👨‍👩‍👧</span>
+        <span><b>Individual or Family</b><small>Coverage just for you and your family</small></span>
+      </button>
+    </div>
+    <button class="quiz-launch" data-open-quiz>Not sure? <b>Help me choose</b> — 3 quick questions ›</button>
+    <p class="enrollment-note">✓ No open enrollment — enroll any time. Apply by the 20th to start the 1st of next month.</p>
+
+    <div id="browse" hidden>
+      <details class="business-intro" id="business-intro" hidden>
+        <summary>Who qualifies &amp; how these plans work <span aria-hidden="true">▾</span></summary>
+        <div class="bi-grid">
+          <div><b>AmeriBenefit Plan</b><p>You can't be declined. Your rate is based on your health tier (Tier 1 very healthy, Tier 2 somewhat healthy, Tier 3 higher health needs). Requires an AmeriBenefit association membership — $19.99, $29.99 or $49.99/mo.</p></div>
+          <div><b>Amerus Summit Health Plans</b><p>Cigna, PHCS and First Health plans for self-employed people and their families.</p></div>
+          <div><b>Ameristead Health</b><p>Cigna PPO plans. You'll need a business EIN to apply.</p></div>
+        </div>
+      </details>
+      <p class="cross-link" id="cross-link" hidden></p>
+
+      <div class="toolbar" id="toolbar">
+        <div class="tabs" role="tablist">
+          <button class="tab-btn active" data-tab="health">Health Plans</button>
+          <button class="tab-btn" data-tab="addons">Dental, Vision &amp; More</button>
+        </div>
+        <div class="toolbar-row">
+          <div class="chips" id="group-chips"></div>
+          <button class="tool-btn" id="open-filters" aria-label="Filters and sort">⚙ Filter <span id="filter-count"></span></button>
+        </div>
+      </div>
+      <p class="results-count" id="results-count"></p>
+
+      <div class="quiz-banner" id="quiz-banner" hidden>
+        <span id="quiz-banner-text"></span>
+        <span class="quiz-banner-actions"><button class="link-btn" data-open-quiz>Change answers</button> · <button class="link-btn" id="quiz-clear">Show all</button></span>
+      </div>
+
+      <div id="plans-container"></div>
+      <div class="no-results" id="no-results" hidden>
+        <p>No plans match those filters.</p>
+        <button class="btn btn-primary" id="no-results-clear">Clear filters</button>
+      </div>
+
+      <div class="doctor-cta">
+        <div><b>Want to keep your doctor?</b><span>Check if they're in-network before you pick a plan.</span></div>
+        <button class="btn btn-outline" data-open-doctor>Check my doctor</button>
+      </div>
     </div>
   </div>
 </section>
@@ -76,9 +123,9 @@ src="https://www.facebook.com/tr?id=854676951004368&ev=PageView&noscript=1"
       </div>
       <div>
         <h4>Shop</h4>
-        <a href="plans.html?category=major-medical">Health Plans</a>
-        <a href="plans.html?category=supplemental">Supplemental Plans</a>
-        <a href="plans.html">Browse All Plans</a>
+        <a href="plans.html?path=business">Self-Employed &amp; Business Plans</a>
+        <a href="plans.html?path=individual">Individual &amp; Family Plans</a>
+        <a href="plans.html?path=all&amp;tab=addons">Dental, Vision &amp; Add-ons</a>
       </div>
       <div>
         <h4>Contact</h4>
@@ -98,11 +145,78 @@ src="https://www.facebook.com/tr?id=854676951004368&ev=PageView&noscript=1"
   </div>
 </footer>
 
-<!-- Plan detail modal -->
+
+<!-- Sticky bottom bar (phones) -->
+<div class="mobile-bar">
+  <button class="mb-btn" data-open-doctor>Check my doctor</button>
+  <a href="index.html#contact" class="mb-btn mb-primary">Talk to an Agent</a>
+</div>
+
+<!-- Plan details -->
 <div class="modal-overlay" id="plan-modal">
-  <div class="modal" id="plan-modal-content">
-    <button class="modal-close" id="modal-close">&times;</button>
+  <div class="modal">
+    <button class="modal-close" data-close="plan-modal" aria-label="Close">&times;</button>
     <div id="modal-body"></div>
+  </div>
+</div>
+
+<!-- Doctor search -->
+<div class="modal-overlay" id="doctor-modal">
+  <div class="modal">
+    <button class="modal-close" data-close="doctor-modal" aria-label="Close">&times;</button>
+    <div id="doctor-body"></div>
+  </div>
+</div>
+
+<!-- Filters -->
+<div class="modal-overlay" id="filter-modal">
+  <div class="modal">
+    <button class="modal-close" data-close="filter-modal" aria-label="Close">&times;</button>
+    <h3>Filter &amp; sort</h3>
+    <div class="filter-field">
+      <label for="sort-select">Sort plans by</label>
+      <select id="sort-select">
+        <option value="recommended">Recommended</option>
+        <option value="price">Price: low to high</option>
+        <option value="deductible">Deductible: low to high</option>
+      </select>
+    </div>
+    <div class="filter-field" id="f-network-wrap">
+      <label for="f-network">Doctor network</label>
+      <select id="f-network">
+        <option value="all">Any network</option>
+        <option>Cigna</option>
+        <option>Aetna</option>
+        <option>PHCS</option>
+        <option>First Health</option>
+      </select>
+    </div>
+    <div class="filter-field">
+      <label for="f-company">Insurance company</label>
+      <select id="f-company"></select>
+    </div>
+    <div class="filter-field">
+      <label for="f-price">Starting price (one person)</label>
+      <select id="f-price">
+        <option value="0">Any price</option>
+        <option value="300">Under $300/mo</option>
+        <option value="400">Under $400/mo</option>
+        <option value="500">Under $500/mo</option>
+        <option value="700">Under $700/mo</option>
+      </select>
+    </div>
+    <div class="filter-actions">
+      <button class="btn btn-outline" id="f-clear">Clear all</button>
+      <button class="btn btn-primary" id="f-apply">Show plans</button>
+    </div>
+  </div>
+</div>
+
+<!-- Help me choose -->
+<div class="modal-overlay" id="quiz-modal">
+  <div class="modal">
+    <button class="modal-close" data-close="quiz-modal" aria-label="Close">&times;</button>
+    <div id="quiz-body"></div>
   </div>
 </div>
 
