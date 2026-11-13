@@ -3010,7 +3010,7 @@ const PLANS_DATA = {
         "GLP-1s (Ozempic, Mounjaro, etc.) available through Curate Health mail order at $230/mo for up to a 7.5mg dose — no diabetes diagnosis required; not available in AL or MS"
       ],
       brochureUrl: "docs/brochures/ameristead-health-flyer.pdf",
-      sbcUrl: null,
+      sbcUrl: "docs/sbc/ameristead-hsa-8500-sbc.pdf",
       description: "Ameristead Health's lowest-premium plan: an HSA-qualified Cigna PPO plan with an $8,500 deductible that's also the out-of-pocket max — after that, covered care is 100% paid.",
     },
     {
