@@ -2981,12 +2981,12 @@ const PLANS_DATA = {
        site's Brochure link, since no source PDF exists. ---- */
 
     {
-      id: "ameristead-hsa-9000",
+      id: "ameristead-hsa-8500",
       program: "ameristead",
       category: "major-medical",
       subType: "Cigna PPO",
       carrier: "Ameristead Health",
-      planName: "Ameristead HSA 9000",
+      planName: "Ameristead HSA 8500",
       tier: "N/A",
       network: "Cigna PPO",
       monthlyPriceIndividual: 426,
@@ -2997,20 +2997,21 @@ const PLANS_DATA = {
         { label: "Employee & Child(ren)", price: 549 },
         { label: "Family", price: 789 }
       ],
-      deductible: 9000,
-      outOfPocketMax: 10100,
+      deductible: 8500,
+      outOfPocketMax: 8500,
       states: ["ALL"],
       keyBenefits: [
-        "Cigna PPO network with in- and out-of-network coverage; no referral needed",
-        "$9,000 individual / $18,000 family deductible, 70/30 coinsurance",
-        "$10,100 individual / $20,200 family out-of-pocket maximum",
-        "$0 preventive care; free telehealth visits",
-        "HSA-compatible: office visits, urgent care, ER and hospital care are 30% after deductible",
-        "Rx after deductible: generic 0%, preferred brand 25%, non-preferred brand 45%, specialty 30%"
+        "Cigna PPO network — no referral needed",
+        "$8,500 individual / $17,000 family deductible, 100/0 coinsurance",
+        "$8,500 individual / $17,000 family out-of-pocket max — your deductible is your max",
+        "$0 preventive care and $0 teledoctor visits",
+        "HSA-qualified: office visits, labs, imaging, ER, surgery, hospital, maternity and Rx are 0% after deductible (covered in full)",
+        "Specialty Rx: PBM management required",
+        "GLP-1s (Ozempic, Mounjaro, etc.) available through Curate Health mail order at $230/mo for up to a 7.5mg dose — no diabetes diagnosis required; not available in AL or MS"
       ],
-      brochureUrl: "docs/brochures/ameristead-health-brochure.pdf",
-      sbcUrl: "docs/sbc/ameristead-hsa-9000-sbc.pdf",
-      description: "Ameristead Health's lowest-premium plan: an HSA-compatible Cigna PPO plan (Bronze 4.2 HSA PPO), administered by Marpai, with a $9,000 deductible and a $10,100 out-of-pocket max."
+      brochureUrl: "docs/brochures/ameristead-health-flyer.pdf",
+      sbcUrl: null,
+      description: "Ameristead Health's lowest-premium plan: an HSA-qualified Cigna PPO plan with an $8,500 deductible that's also the out-of-pocket max — after that, covered care is 100% paid.",
     },
     {
       id: "ameristead-bronze",
@@ -3049,13 +3050,15 @@ const PLANS_DATA = {
       keyBenefits: [
         "Cigna PPO network",
         "$8,000 individual / $16,000 family deductible, 70/30 coinsurance",
-        "$8,700 individual / $17,400 family out-of-pocket maximum",
-        "$0 copay preventive care and $0 copay teledoctor visits",
-        "$50 primary care, $120 specialist, $100 urgent care",
-        "30% After Deductible for labs/X-ray, diagnostic imaging, ER, outpatient surgery, hospital admission, and maternity",
-        "Rx: $0 / $35 / $75 (generic/brand/non-preferred brand); specialty Rx Contact PBM"
+        "$8,700 individual / $17,400 family out-of-pocket max",
+        "$0 preventive care and $0 teledoctor visits",
+        "$50 primary care / $120 specialist / $100 urgent care copay",
+        "30% after deductible for labs/X-ray, imaging, ER, outpatient surgery, hospital admission and maternity",
+        "Rx: $0 generic / $35 brand / $75 non-preferred brand",
+        "Specialty Rx: PBM management required",
+        "GLP-1s (Ozempic, Mounjaro, etc.) available through Curate Health mail order at $230/mo for up to a 7.5mg dose — no diabetes diagnosis required; not available in AL or MS"
       ],
-      brochureUrl: "docs/brochures/ameristead-health-brochure.pdf",
+      brochureUrl: "docs/brochures/ameristead-health-flyer.pdf",
       sbcUrl: "docs/sbc/ameristead-bronze-sbc.pdf",
       description: "Ameristead Health Bronze plan, administered by Marpai on the Cigna PPO network."
     },
@@ -3096,14 +3099,13 @@ const PLANS_DATA = {
       keyBenefits: [
         "Cigna PPO network",
         "$6,000 individual / $12,000 family deductible, 70/30 coinsurance",
-        "$7,000 individual / $14,000 family out-of-pocket maximum",
-        "$0 copay preventive care and $0 copay teledoctor visits",
-        "30% After Deductible for office visits, labs, and diagnostics before the deductible is met",
-        "30% After Deductible for labs/X-ray, diagnostic imaging, ER, outpatient surgery, hospital admission, and maternity",
-        "Rx: Contact PBM (generic/brand/non-preferred brand); specialty Rx Contact PBM",
-        "HSA-compatible — office visits, labs, and diagnostics are coinsurance-based (30% after deductible), not flat copays"
+        "$7,000 individual / $14,000 family out-of-pocket max",
+        "$0 preventive care and $0 teledoctor visits",
+        "HSA-qualified: office visits, labs, imaging, ER, surgery, hospital, maternity and Rx are 30% after deductible",
+        "Specialty Rx: PBM management required",
+        "GLP-1s (Ozempic, Mounjaro, etc.) available through Curate Health mail order at $230/mo for up to a 7.5mg dose — no diabetes diagnosis required; not available in AL or MS"
       ],
-      brochureUrl: "docs/brochures/ameristead-health-brochure.pdf",
+      brochureUrl: "docs/brochures/ameristead-health-flyer.pdf",
       sbcUrl: "docs/sbc/ameristead-hsa-sbc.pdf",
       description: "Ameristead Health HSA 6000 plan, administered by Marpai on the Cigna PPO network."
     },
@@ -3144,13 +3146,15 @@ const PLANS_DATA = {
       keyBenefits: [
         "Cigna PPO network",
         "$5,000 individual / $10,000 family deductible, 70/30 coinsurance",
-        "$8,700 individual / $17,400 family out-of-pocket maximum",
-        "$0 copay preventive care and $0 copay teledoctor visits",
-        "$35 primary care, $80 specialist, $60 urgent care",
-        "30% After Deductible for labs/X-ray, diagnostic imaging, ER, outpatient surgery, hospital admission, and maternity",
-        "Rx: $0 / $35 / $75 (generic/brand/non-preferred brand); specialty Rx Contact PBM"
+        "$8,700 individual / $17,400 family out-of-pocket max",
+        "$0 preventive care and $0 teledoctor visits",
+        "$40 primary care / $80 specialist / $60 urgent care copay",
+        "30% after deductible for labs/X-ray, imaging, ER, outpatient surgery, hospital admission and maternity",
+        "Rx: $0 generic / $35 brand / $75 non-preferred brand",
+        "Specialty Rx: PBM management required",
+        "GLP-1s (Ozempic, Mounjaro, etc.) available through Curate Health mail order at $230/mo for up to a 7.5mg dose — no diabetes diagnosis required; not available in AL or MS"
       ],
-      brochureUrl: "docs/brochures/ameristead-health-brochure.pdf",
+      brochureUrl: "docs/brochures/ameristead-health-flyer.pdf",
       sbcUrl: "docs/sbc/ameristead-silver-sbc.pdf",
       description: "Ameristead Health Silver plan, administered by Marpai on the Cigna PPO network."
     },
@@ -3191,13 +3195,15 @@ const PLANS_DATA = {
       keyBenefits: [
         "Cigna PPO network",
         "$3,000 individual / $6,000 family deductible, 80/20 coinsurance",
-        "$8,700 individual / $17,400 family out-of-pocket maximum",
-        "$0 copay preventive care and $0 copay teledoctor visits",
-        "$25 primary care, $55 specialist, $55 urgent care",
-        "20% After Deductible for labs/X-ray, diagnostic imaging, ER, outpatient surgery, hospital admission, and maternity",
-        "Rx: $0 / $35 / $75 (generic/brand/non-preferred brand); specialty Rx Contact PBM"
+        "$8,700 individual / $17,400 family out-of-pocket max",
+        "$0 preventive care and $0 teledoctor visits",
+        "$35 primary care / $55 specialist / $55 urgent care copay",
+        "20% after deductible for labs/X-ray, imaging, ER, outpatient surgery, hospital admission and maternity",
+        "Rx: $0 generic / $35 brand / $75 non-preferred brand",
+        "Specialty Rx: PBM management required",
+        "GLP-1s (Ozempic, Mounjaro, etc.) available through Curate Health mail order at $230/mo for up to a 7.5mg dose — no diabetes diagnosis required; not available in AL or MS"
       ],
-      brochureUrl: "docs/brochures/ameristead-health-brochure.pdf",
+      brochureUrl: "docs/brochures/ameristead-health-flyer.pdf",
       sbcUrl: "docs/sbc/ameristead-gold-sbc.pdf",
       description: "Ameristead Health Gold plan, administered by Marpai on the Cigna PPO network."
     },
@@ -3238,13 +3244,15 @@ const PLANS_DATA = {
       keyBenefits: [
         "Cigna PPO network",
         "$250 individual / $500 family deductible, 80/20 coinsurance",
-        "$1,250 individual / $2,500 family out-of-pocket maximum",
-        "$0 copay preventive care and $0 copay teledoctor visits",
-        "$25 primary care, $45 specialist, $50 urgent care",
-        "20% After Deductible for labs/X-ray, diagnostic imaging, ER, outpatient surgery, hospital admission, and maternity",
-        "Rx: Contact PBM (generic/brand/non-preferred brand); specialty Rx Contact PBM"
+        "$1,250 individual / $2,500 family out-of-pocket max",
+        "$0 preventive care and $0 teledoctor visits",
+        "$25 primary care / $45 specialist / $45 urgent care copay",
+        "20% after deductible for labs/X-ray, imaging, ER, outpatient surgery, hospital admission and maternity",
+        "Rx: $0 generic / $35 brand / $75 non-preferred brand",
+        "Specialty Rx: PBM management required",
+        "GLP-1s (Ozempic, Mounjaro, etc.) available through Curate Health mail order at $230/mo for up to a 7.5mg dose — no diabetes diagnosis required; not available in AL or MS"
       ],
-      brochureUrl: "docs/brochures/ameristead-health-brochure.pdf",
+      brochureUrl: "docs/brochures/ameristead-health-flyer.pdf",
       sbcUrl: "docs/sbc/ameristead-platinum-sbc.pdf",
       description: "Ameristead Health Platinum plan, administered by Marpai on the Cigna PPO network."
     },
@@ -3278,21 +3286,22 @@ const PLANS_DATA = {
         }
       ],
       deductible: 0,
-      outOfPocketMax: 7000,
+      outOfPocketMax: 6000,
       states: [
         "ALL"
       ],
       keyBenefits: [
         "Cigna PPO network",
         "$0 individual / $0 family deductible, 70/30 coinsurance",
-        "$7,000 individual / $14,000 family out-of-pocket maximum",
-        "$0 copay preventive care and $0 copay teledoctor visits",
-        "30% for office visits, labs, and diagnostics before the deductible is met",
-        "30% for labs/X-ray, diagnostic imaging, ER, outpatient surgery, hospital admission, and maternity",
-        "Rx: $0 / $35 / $75 (generic/brand/non-preferred brand); specialty Rx 100% Member Cost",
-        "$0 deductible — richest plan in the lineup; office visits, labs, and diagnostics are coinsurance-based (30%)"
+        "$6,000 individual / $12,000 family out-of-pocket max",
+        "$0 preventive care and $0 teledoctor visits",
+        "$25 primary care / $50 specialist / $50 urgent care copay",
+        "30% for labs/X-ray, imaging, ER, outpatient surgery, hospital admission and maternity — no deductible",
+        "Rx: $0 generic / $35 brand / $75 non-preferred brand",
+        "Specialty Rx: PBM management required",
+        "GLP-1s (Ozempic, Mounjaro, etc.) available through Curate Health mail order at $230/mo for up to a 7.5mg dose — no diabetes diagnosis required; not available in AL or MS"
       ],
-      brochureUrl: "docs/brochures/ameristead-health-brochure.pdf",
+      brochureUrl: "docs/brochures/ameristead-health-flyer.pdf",
       sbcUrl: "docs/sbc/ameristead-diamond-sbc.pdf",
       description: "Ameristead Health Diamond plan, administered by Marpai on the Cigna PPO network."
     },
