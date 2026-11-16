@@ -488,7 +488,7 @@ function associationBoxHtml() {
             <ul>${l.perks.map(x => `<li>${esc(x)}</li>`).join('')}</ul>
           </details>`).join('')}
       </div>
-      <a class="assoc-pdf" href="docs/brochures/ameribenefit-association-plans.pdf" target="_blank" rel="noopener">📄 Full membership comparison (PDF)</a>
+      <a class="assoc-pdf" href="docs/brochures/ameribenefit-association-plans.pdf" target="_blank" rel="noopener">Full membership comparison (PDF)</a>
     </div>
   `;
 }
@@ -567,7 +567,7 @@ function openPlanModal(id) {
 
   const badges = badgesFor(plan).map(b => `<span class="pc-badge pc-badge-${b.tone}">${esc(b.text)}</span>`).join('');
   const benefits = (plan.keyBenefits || []).filter(b => !/^Rate is/i.test(b)).map(b => `<li>${esc(b)}</li>`).join('');
-  const docs = docLinks(plan).map(d => `<a href="${d.url}" target="_blank" rel="noopener">📄 ${esc(d.label)}</a>`).join('');
+  const docs = docLinks(plan).map(d => `<a href="${d.url}" target="_blank" rel="noopener">${esc(d.label)}</a>`).join('');
   const providers = networkOf(plan) ? (PROVIDER_SEARCH[networkOf(plan)] || []).filter(e => !(e.label.startsWith('MagnaCare') && plan.program !== 'lifex')) : [];
 
   document.getElementById('modal-body').innerHTML = `
