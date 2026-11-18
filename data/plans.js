@@ -5753,7 +5753,8 @@ const PLANS_DATA = {
         "Elective surgeries/procedures not covered the first 90 days"
       ],
       "brochureUrl": "docs/sbc/ameribenefit-cat-10000-sbc.pdf",
-      "sbcUrl": null,
+      "sbcUrl": "docs/sbc/ameribenefit-cat-10000-sbc-2026.pdf",
+    "sbc2027Url": "docs/sbc/ameribenefit-cat-10000-sbc-2027.pdf",
       "extraDocs": [
         {
           "label": "Association Plan Comparison (Basic / Plus / Preferred)",
@@ -5931,7 +5932,8 @@ const PLANS_DATA = {
         "Elective surgeries/procedures not covered the first 90 days"
       ],
       "brochureUrl": "docs/sbc/ameribenefit-mm-5500-sbc.pdf",
-      "sbcUrl": null,
+      "sbcUrl": "docs/sbc/ameribenefit-mm-5500-sbc-2026.pdf",
+    "sbc2027Url": "docs/sbc/ameribenefit-mm-5500-sbc-2027.pdf",
       "extraDocs": [
         {
           "label": "Association Plan Comparison (Basic / Plus / Preferred)",
@@ -6109,7 +6111,8 @@ const PLANS_DATA = {
         "Elective surgeries/procedures not covered the first 90 days"
       ],
       "brochureUrl": "docs/sbc/ameribenefit-mm-8300-sbc.pdf",
-      "sbcUrl": null,
+      "sbcUrl": "docs/sbc/ameribenefit-mm-8300-sbc-2026.pdf",
+    "sbc2027Url": "docs/sbc/ameribenefit-mm-8300-sbc-2027.pdf",
       "extraDocs": [
         {
           "label": "Association Plan Comparison (Basic / Plus / Preferred)",
@@ -6242,7 +6245,8 @@ const PLANS_DATA = {
         "Available for Tier 1 and Tier 2 health ratings only"
       ],
       "brochureUrl": "docs/sbc/ameribenefit-mm-2700-sbc.pdf",
-      "sbcUrl": null,
+      "sbcUrl": "docs/sbc/ameribenefit-mm-2700-sbc-2026.pdf",
+    "sbc2027Url": "docs/sbc/ameribenefit-mm-2700-sbc-2027.pdf",
       "extraDocs": [
         {
           "label": "Association Plan Comparison (Basic / Plus / Preferred)",
@@ -6420,7 +6424,8 @@ const PLANS_DATA = {
         "Elective surgeries/procedures not covered the first 90 days"
       ],
       "brochureUrl": "docs/sbc/ameribenefit-hsa-4500-sbc.pdf",
-      "sbcUrl": null,
+      "sbcUrl": "docs/sbc/ameribenefit-hsa-4500-sbc-2026.pdf",
+    "sbc2027Url": "docs/sbc/ameribenefit-hsa-4500-sbc-2027.pdf",
       "extraDocs": [
         {
           "label": "Association Plan Comparison (Basic / Plus / Preferred)",
@@ -6598,7 +6603,8 @@ const PLANS_DATA = {
         "Elective surgeries/procedures not covered the first 90 days"
       ],
       "brochureUrl": "docs/sbc/ameribenefit-hsa-8000-sbc.pdf",
-      "sbcUrl": null,
+      "sbcUrl": "docs/sbc/ameribenefit-hsa-8000-sbc-2026.pdf",
+    "sbc2027Url": "docs/sbc/ameribenefit-hsa-8000-sbc-2027.pdf",
       "extraDocs": [
         {
           "label": "Association Plan Comparison (Basic / Plus / Preferred)",
@@ -6776,7 +6782,8 @@ const PLANS_DATA = {
         "Elective surgeries/procedures not covered the first 90 days"
       ],
       "brochureUrl": "docs/sbc/ameribenefit-copay-2500-sbc.pdf",
-      "sbcUrl": null,
+      "sbcUrl": "docs/sbc/ameribenefit-copay-2500-sbc-2026.pdf",
+    "sbc2027Url": "docs/sbc/ameribenefit-copay-2500-sbc-2027.pdf",
       "extraDocs": [
         {
           "label": "Association Plan Comparison (Basic / Plus / Preferred)",
@@ -6909,7 +6916,8 @@ const PLANS_DATA = {
         "Available for Tier 1 and Tier 2 health ratings only"
       ],
       "brochureUrl": "docs/sbc/ameribenefit-copay-1750-sbc.pdf",
-      "sbcUrl": null,
+      "sbcUrl": "docs/sbc/ameribenefit-copay-1750-sbc-2026.pdf",
+    "sbc2027Url": "docs/sbc/ameribenefit-copay-1750-sbc-2027.pdf",
       "extraDocs": [
         {
           "label": "Association Plan Comparison (Basic / Plus / Preferred)",
@@ -7087,7 +7095,8 @@ const PLANS_DATA = {
         "Elective surgeries/procedures not covered the first 90 days"
       ],
       "brochureUrl": "docs/sbc/ameribenefit-copay-4250-sbc.pdf",
-      "sbcUrl": null,
+      "sbcUrl": "docs/sbc/ameribenefit-copay-4250-sbc-2026.pdf",
+    "sbc2027Url": "docs/sbc/ameribenefit-copay-4250-sbc-2027.pdf",
       "extraDocs": [
         {
           "label": "Association Plan Comparison (Basic / Plus / Preferred)",
@@ -7265,7 +7274,8 @@ const PLANS_DATA = {
         "Elective surgeries/procedures not covered the first 90 days"
       ],
       "brochureUrl": "docs/sbc/ameribenefit-vl-2750-sbc.pdf",
-      "sbcUrl": null,
+      "sbcUrl": "docs/sbc/ameribenefit-vl-2750-sbc-2026.pdf",
+    "sbc2027Url": "docs/sbc/ameribenefit-vl-2750-sbc-2027.pdf",
       "extraDocs": [
         {
           "label": "Association Plan Comparison (Basic / Plus / Preferred)",
@@ -7398,7 +7408,8 @@ const PLANS_DATA = {
         "Available for Tier 1 and Tier 2 health ratings only"
       ],
       "brochureUrl": "docs/sbc/ameribenefit-vl-1250-sbc.pdf",
-      "sbcUrl": null,
+      "sbcUrl": "docs/sbc/ameribenefit-vl-1250-sbc-2026.pdf",
+    "sbc2027Url": "docs/sbc/ameribenefit-vl-1250-sbc-2027.pdf",
       "extraDocs": [
         {
           "label": "Association Plan Comparison (Basic / Plus / Preferred)",
@@ -7576,7 +7587,8 @@ const PLANS_DATA = {
         "Elective surgeries/procedures not covered the first 90 days"
       ],
       "brochureUrl": "docs/sbc/ameribenefit-vl-3900-sbc.pdf",
-      "sbcUrl": null,
+      "sbcUrl": "docs/sbc/ameribenefit-vl-3900-sbc-2026.pdf",
+    "sbc2027Url": "docs/sbc/ameribenefit-vl-3900-sbc-2027.pdf",
       "extraDocs": [
         {
           "label": "Association Plan Comparison (Basic / Plus / Preferred)",
