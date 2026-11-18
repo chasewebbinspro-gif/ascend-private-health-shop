@@ -241,7 +241,8 @@ function docLinks(plan) {
   const seen = new Set();
   const add = (label, url) => { if (url && !seen.has(url)) { seen.add(url); out.push({ label, url }); } };
   add(plan.program === 'ameribenefit' ? 'Plan summary & rates' : 'Brochure', plan.brochureUrl);
-  add('Summary of Benefits (SBC)', plan.sbcUrl);
+  add(plan.sbc2027Url ? 'SBC — 2026 (Dec 1 start)' : 'Summary of Benefits (SBC)', plan.sbcUrl);
+  add('SBC — 2027 (Jan 1 start or later)', plan.sbc2027Url);
   add('Plan document (SPD)', plan.spdUrl);
   (plan.extraDocs || []).forEach(d => add(d.label, d.url));
   return out;
