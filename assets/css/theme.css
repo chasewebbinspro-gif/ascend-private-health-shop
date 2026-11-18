@@ -216,6 +216,18 @@ details.disclaimer-banner summary { font-weight: 500; font-size: 0.8rem; letter-
 .quiz-progress { color: var(--gold-dark); }
 .modal-cta { background: var(--navy); color: #fff; border-color: var(--navy); }
 
+/* Integrated gap explainer */
+.gap-box { background: #fff; border: 1px solid var(--border); border-top: 2px solid var(--navy); padding: 14px 16px; }
+.gap-box h4 { margin: 0 0 4px; }
+.gap-cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 12px 0 8px; }
+.gap-label { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold-dark); font-weight: 600; margin-bottom: 6px; }
+.gap-row { display: flex; justify-content: space-between; gap: 8px; font-size: 0.86rem; padding: 6px 0; border-bottom: 1px solid #EFEBE2; color: var(--text-muted); }
+.gap-row b { color: var(--navy); font-weight: 600; white-space: nowrap; }
+.gap-covered b { color: #24543A; }
+.gap-you { border-bottom: none; color: var(--navy); font-weight: 600; }
+.gap-you b { font-family: var(--serif); font-size: 1.1rem; }
+.gap-notes { margin: 6px 0 0; padding-left: 18px; font-size: 0.82rem; color: var(--text-muted); }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
   .util-bar { display: none; }
@@ -244,4 +256,5 @@ details.disclaimer-banner summary { font-weight: 500; font-size: 0.8rem; letter-
   .mb-primary { background: var(--gold-light); border-color: var(--gold-light); color: var(--navy); }
   .modal { border-radius: 0; }
   .plans-section h2#page-title { font-size: 1.7rem; }
+  .gap-cols { grid-template-columns: 1fr; }
 }

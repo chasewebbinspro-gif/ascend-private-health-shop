@@ -220,6 +220,7 @@ function badgesFor(plan) {
     b.push({ text: "Can't be declined", tone: 'good' });
     b.push({ text: 'Membership required', tone: 'warn' });
   }
+  if (plan.gapExplanation) b.push({ text: 'Integrated gap', tone: 'good' });
   if (plan.program === 'ameristead' || plan.program === 'ameribenefit') b.push({ text: 'Requires an EIN', tone: 'warn' });
   if (plan.standalone === false) b.push({ text: `Add-on to ${companyOf(plan)} medical`, tone: 'warn' });
   const sl = stateLimitNote(plan);
@@ -239,12 +240,9 @@ function docLinks(plan) {
   const out = [];
   const seen = new Set();
   const add = (label, url) => { if (url && !seen.has(url)) { seen.add(url); out.push({ label, url }); } };
-  if (plan.program === 'ameribenefit') {
-    add('Summary of Benefits (SBC)', plan.sbcUrl || plan.brochureUrl);
-  } else {
-    add('Brochure', plan.brochureUrl);
-    add('Summary of Benefits (SBC)', plan.sbcUrl);
-  }
+  add(plan.program === 'ameribenefit' ? 'Plan summary & rates' : 'Brochure', plan.brochureUrl);
+  add('Summary of Benefits (SBC)', plan.sbcUrl);
+  add('Plan document (SPD)', plan.spdUrl);
   (plan.extraDocs || []).forEach(d => add(d.label, d.url));
   return out;
 }
@@ -465,6 +463,26 @@ function shortHousehold(label) {
     .replace(/^\+ Family$/i, 'Family');
 }
 
+// "How the integrated gap works" — plan deductible, what the gap covers, what you pay
+function gapHtml(plan) {
+  const g = plan.gapExplanation;
+  if (!g) return '';
+  const col = (label, x) => `
+    <div class="gap-col">
+      <div class="gap-label">${label}</div>
+      <div class="gap-row"><span>Plan deductible</span><b>${formatMoney(x.planDeductible)}</b></div>
+      <div class="gap-row gap-covered"><span>Gap pays (eligible costs)</span><b>− ${formatMoney(x.gapCovers)}</b></div>
+      <div class="gap-row gap-you"><span>You pay</span><b>${formatMoney(x.youPay)}</b></div>
+    </div>`;
+  return `
+    <div class="modal-block gap-box">
+      <h4>How the integrated gap works</h4>
+      <p class="fine">This plan has a built-in gap benefit. It pays most of the deductible and coinsurance on eligible in-network costs, so your share is much lower than the plan's deductible.</p>
+      <div class="gap-cols">${col('Individual', g.individual)}${col('Family', g.family)}</div>
+      <ul class="gap-notes">${(g.notes || []).map(n => `<li>${esc(n)}</li>`).join('')}</ul>
+    </div>`;
+}
+
 function rateTableHtml(table) {
   return `
     <div class="rate-table-wrap">
@@ -580,6 +598,7 @@ function openPlanModal(id) {
       <h4>Monthly pricing</h4>
       ${pricingHtml}
     </div>
+    ${gapHtml(plan)}
     ${plan.program === 'ameribenefit' ? associationBoxHtml() : ''}
     <div class="modal-block">
       <h4>What's covered</h4>

@@ -51,8 +51,10 @@ const PLANS_DATA = {
       ],
       brochureUrl: "docs/brochures/ultimate-epo-1500-brochure.pdf",
       sbcUrl: "docs/sbc/ultimate-epo-1500-sbc.pdf",
-      description: "A Cigna EPO plan where your deductible and out-of-pocket max are the same: $1,500 individual / $3,000 family. Everyday visits are flat copays, prescriptions skip the deductible, and no specialist referral is needed. In-network coverage only, except emergencies. The plan's built-in gap benefit covers the difference between the underlying $9,000 deductible and your $1,500 share on eligible in-network costs."
-    },
+      description: "A Cigna EPO plan where your deductible and out-of-pocket max are the same: $1,500 individual / $3,000 family. Everyday visits are flat copays, prescriptions skip the deductible, and no specialist referral is needed. In-network coverage only, except emergencies. The plan's built-in gap benefit covers the difference between the underlying $9,000 deductible and your $1,500 share on eligible in-network costs.",
+    "gapExplanation": {"individual": {"planDeductible": 9000, "gapCovers": 7500, "youPay": 1500}, "family": {"planDeductible": 18000, "gapCovers": 15000, "youPay": 3000}, "notes": ["Copays still apply (office visits, urgent care, ER, Rx)", "In-network only \u2014 out-of-network is not covered", "Gap covers eligible deductible and coinsurance, subject to plan terms and limits"]},
+    "extraDocs": [{"label": "How the integrated gap works (PDF)", "url": "docs/brochures/ultimate-epo-1500-gap-explanation.pdf"}]
+  },
     {
       id: "ultimate-epo-3500",
       program: "amerus-summit",
@@ -121,8 +123,10 @@ const PLANS_DATA = {
       ],
       brochureUrl: "docs/brochures/ultimate-ppo-brochure.pdf",
       sbcUrl: "docs/sbc/ultimate-ppo-sbc.pdf",
-      description: "A Cigna PPO plan with a $0 in-network deductible and low fixed copays — $25 for primary care, $50 for a specialist or urgent care, and $500 for the ER — with most other in-network care, including imaging, surgery and hospital stays, covered at no charge. The plan's built-in gap benefit offsets the underlying $6,000 deductible on eligible in-network costs. Out-of-network care is also covered at a higher cost share."
-    },
+      description: "A Cigna PPO plan with a $0 in-network deductible and low fixed copays — $25 for primary care, $50 for a specialist or urgent care, and $500 for the ER — with most other in-network care, including imaging, surgery and hospital stays, covered at no charge. The plan's built-in gap benefit offsets the underlying $6,000 deductible on eligible in-network costs. Out-of-network care is also covered at a higher cost share.",
+    "gapExplanation": {"individual": {"planDeductible": 6000, "gapCovers": 6000, "youPay": 0}, "family": {"planDeductible": 12000, "gapCovers": 12000, "youPay": 0}, "notes": ["Copays still apply: $25 primary care, $50 specialist, $50 urgent care, $500 ER, Rx copays", "Gap applies to eligible in-network deductible and coinsurance, subject to plan terms and limits", "Excluded charges and penalties may still be payable"]},
+    "extraDocs": [{"label": "How the integrated gap works (PDF)", "url": "docs/brochures/ultimate-ppo-gap-explanation.pdf"}]
+  },
     {
       id: "ultimate-5k-ppo",
       program: "amerus-summit",
@@ -5583,6 +5587,7 @@ const PLANS_DATA = {
     // AmeriBenefit Plan (association-based, self-employed / business owners) — added 2026-11-10
     {
       "id": "ameribenefit-cat-10000",
+    "spdUrl": "docs/plan-documents/ameribenefit-cat-spd.pdf",
       "program": "ameribenefit",
       "category": "major-medical",
       "subType": "Catastrophic",
@@ -5748,7 +5753,7 @@ const PLANS_DATA = {
         "Elective surgeries/procedures not covered the first 90 days"
       ],
       "brochureUrl": "docs/sbc/ameribenefit-cat-10000-sbc.pdf",
-      "sbcUrl": "docs/sbc/ameribenefit-cat-10000-sbc.pdf",
+      "sbcUrl": null,
       "extraDocs": [
         {
           "label": "Association Plan Comparison (Basic / Plus / Preferred)",
@@ -5760,6 +5765,7 @@ const PLANS_DATA = {
     },
     {
       "id": "ameribenefit-mm-5500",
+    "spdUrl": "docs/plan-documents/ameribenefit-mm-spd.pdf",
       "program": "ameribenefit",
       "category": "major-medical",
       "subType": "Major Medical",
@@ -5925,7 +5931,7 @@ const PLANS_DATA = {
         "Elective surgeries/procedures not covered the first 90 days"
       ],
       "brochureUrl": "docs/sbc/ameribenefit-mm-5500-sbc.pdf",
-      "sbcUrl": "docs/sbc/ameribenefit-mm-5500-sbc.pdf",
+      "sbcUrl": null,
       "extraDocs": [
         {
           "label": "Association Plan Comparison (Basic / Plus / Preferred)",
@@ -5937,6 +5943,7 @@ const PLANS_DATA = {
     },
     {
       "id": "ameribenefit-mm-8300",
+    "spdUrl": "docs/plan-documents/ameribenefit-mm-spd.pdf",
       "program": "ameribenefit",
       "category": "major-medical",
       "subType": "Major Medical",
@@ -6102,7 +6109,7 @@ const PLANS_DATA = {
         "Elective surgeries/procedures not covered the first 90 days"
       ],
       "brochureUrl": "docs/sbc/ameribenefit-mm-8300-sbc.pdf",
-      "sbcUrl": "docs/sbc/ameribenefit-mm-8300-sbc.pdf",
+      "sbcUrl": null,
       "extraDocs": [
         {
           "label": "Association Plan Comparison (Basic / Plus / Preferred)",
@@ -6114,6 +6121,7 @@ const PLANS_DATA = {
     },
     {
       "id": "ameribenefit-mm-2700",
+    "spdUrl": "docs/plan-documents/ameribenefit-mm-spd.pdf",
       "program": "ameribenefit",
       "category": "major-medical",
       "subType": "Major Medical",
@@ -6234,7 +6242,7 @@ const PLANS_DATA = {
         "Available for Tier 1 and Tier 2 health ratings only"
       ],
       "brochureUrl": "docs/sbc/ameribenefit-mm-2700-sbc.pdf",
-      "sbcUrl": "docs/sbc/ameribenefit-mm-2700-sbc.pdf",
+      "sbcUrl": null,
       "extraDocs": [
         {
           "label": "Association Plan Comparison (Basic / Plus / Preferred)",
@@ -6246,6 +6254,7 @@ const PLANS_DATA = {
     },
     {
       "id": "ameribenefit-hsa-4500",
+    "spdUrl": "docs/plan-documents/ameribenefit-hsa-spd.pdf",
       "program": "ameribenefit",
       "category": "major-medical",
       "subType": "HSA",
@@ -6411,7 +6420,7 @@ const PLANS_DATA = {
         "Elective surgeries/procedures not covered the first 90 days"
       ],
       "brochureUrl": "docs/sbc/ameribenefit-hsa-4500-sbc.pdf",
-      "sbcUrl": "docs/sbc/ameribenefit-hsa-4500-sbc.pdf",
+      "sbcUrl": null,
       "extraDocs": [
         {
           "label": "Association Plan Comparison (Basic / Plus / Preferred)",
@@ -6423,6 +6432,7 @@ const PLANS_DATA = {
     },
     {
       "id": "ameribenefit-hsa-8000",
+    "spdUrl": "docs/plan-documents/ameribenefit-hsa-spd.pdf",
       "program": "ameribenefit",
       "category": "major-medical",
       "subType": "HSA",
@@ -6588,7 +6598,7 @@ const PLANS_DATA = {
         "Elective surgeries/procedures not covered the first 90 days"
       ],
       "brochureUrl": "docs/sbc/ameribenefit-hsa-8000-sbc.pdf",
-      "sbcUrl": "docs/sbc/ameribenefit-hsa-8000-sbc.pdf",
+      "sbcUrl": null,
       "extraDocs": [
         {
           "label": "Association Plan Comparison (Basic / Plus / Preferred)",
@@ -6600,6 +6610,7 @@ const PLANS_DATA = {
     },
     {
       "id": "ameribenefit-copay-2500",
+    "spdUrl": "docs/plan-documents/ameribenefit-copay-spd.pdf",
       "program": "ameribenefit",
       "category": "major-medical",
       "subType": "Copay PPO",
@@ -6765,7 +6776,7 @@ const PLANS_DATA = {
         "Elective surgeries/procedures not covered the first 90 days"
       ],
       "brochureUrl": "docs/sbc/ameribenefit-copay-2500-sbc.pdf",
-      "sbcUrl": "docs/sbc/ameribenefit-copay-2500-sbc.pdf",
+      "sbcUrl": null,
       "extraDocs": [
         {
           "label": "Association Plan Comparison (Basic / Plus / Preferred)",
@@ -6777,6 +6788,7 @@ const PLANS_DATA = {
     },
     {
       "id": "ameribenefit-copay-1750",
+    "spdUrl": "docs/plan-documents/ameribenefit-copay-spd.pdf",
       "program": "ameribenefit",
       "category": "major-medical",
       "subType": "Copay PPO",
@@ -6897,7 +6909,7 @@ const PLANS_DATA = {
         "Available for Tier 1 and Tier 2 health ratings only"
       ],
       "brochureUrl": "docs/sbc/ameribenefit-copay-1750-sbc.pdf",
-      "sbcUrl": "docs/sbc/ameribenefit-copay-1750-sbc.pdf",
+      "sbcUrl": null,
       "extraDocs": [
         {
           "label": "Association Plan Comparison (Basic / Plus / Preferred)",
@@ -6909,6 +6921,7 @@ const PLANS_DATA = {
     },
     {
       "id": "ameribenefit-copay-4250",
+    "spdUrl": "docs/plan-documents/ameribenefit-copay-spd.pdf",
       "program": "ameribenefit",
       "category": "major-medical",
       "subType": "Copay PPO",
@@ -7074,7 +7087,7 @@ const PLANS_DATA = {
         "Elective surgeries/procedures not covered the first 90 days"
       ],
       "brochureUrl": "docs/sbc/ameribenefit-copay-4250-sbc.pdf",
-      "sbcUrl": "docs/sbc/ameribenefit-copay-4250-sbc.pdf",
+      "sbcUrl": null,
       "extraDocs": [
         {
           "label": "Association Plan Comparison (Basic / Plus / Preferred)",
@@ -7086,6 +7099,7 @@ const PLANS_DATA = {
     },
     {
       "id": "ameribenefit-vl-2750",
+    "spdUrl": "docs/plan-documents/ameribenefit-vl-spd.pdf",
       "program": "ameribenefit",
       "category": "major-medical",
       "subType": "Visit-Limited",
@@ -7251,7 +7265,7 @@ const PLANS_DATA = {
         "Elective surgeries/procedures not covered the first 90 days"
       ],
       "brochureUrl": "docs/sbc/ameribenefit-vl-2750-sbc.pdf",
-      "sbcUrl": "docs/sbc/ameribenefit-vl-2750-sbc.pdf",
+      "sbcUrl": null,
       "extraDocs": [
         {
           "label": "Association Plan Comparison (Basic / Plus / Preferred)",
@@ -7263,6 +7277,7 @@ const PLANS_DATA = {
     },
     {
       "id": "ameribenefit-vl-1250",
+    "spdUrl": "docs/plan-documents/ameribenefit-vl-spd.pdf",
       "program": "ameribenefit",
       "category": "major-medical",
       "subType": "Visit-Limited",
@@ -7383,7 +7398,7 @@ const PLANS_DATA = {
         "Available for Tier 1 and Tier 2 health ratings only"
       ],
       "brochureUrl": "docs/sbc/ameribenefit-vl-1250-sbc.pdf",
-      "sbcUrl": "docs/sbc/ameribenefit-vl-1250-sbc.pdf",
+      "sbcUrl": null,
       "extraDocs": [
         {
           "label": "Association Plan Comparison (Basic / Plus / Preferred)",
@@ -7395,6 +7410,7 @@ const PLANS_DATA = {
     },
     {
       "id": "ameribenefit-vl-3900",
+    "spdUrl": "docs/plan-documents/ameribenefit-vl-spd.pdf",
       "program": "ameribenefit",
       "category": "major-medical",
       "subType": "Visit-Limited",
@@ -7560,7 +7576,7 @@ const PLANS_DATA = {
         "Elective surgeries/procedures not covered the first 90 days"
       ],
       "brochureUrl": "docs/sbc/ameribenefit-vl-3900-sbc.pdf",
-      "sbcUrl": "docs/sbc/ameribenefit-vl-3900-sbc.pdf",
+      "sbcUrl": null,
       "extraDocs": [
         {
           "label": "Association Plan Comparison (Basic / Plus / Preferred)",
